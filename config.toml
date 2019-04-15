@@ -1,0 +1,4 @@
+baseURL = "https://ted027.github.io/"
+languageCode = "ja"
+title = "テストのページ"
+theme = "hpstr"
