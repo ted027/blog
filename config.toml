@@ -1,4 +1,48 @@
 baseURL = "https://ted027.github.io/"
 languageCode = "ja"
-title = "退職への祈りを込めたブログ"
-theme = "hpstr"
+title = "行けたら行く"
+theme = "mainroad"
+paginate = "10"
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[Author]
+  name = "imait"
+  bio = "自堕落な日々から仕事＆育児生活への急変に戸惑う自称エンジニア。"
+  avatar = ""
+
+[Params]
+  subtitle = "野球と育児とコンピュータサイエンスのブログ"
+  opengraph = true
+  twitter_cards = true
+  readmore = false
+  authorbox = true
+  toc = false
+  post_navigation = true
+  post_meta = ["date", "categories", "translations"] # Order of post meta information. Use ["none"] to turn off completely.
+  #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+  #postSections = ["blog", "news"]
+  dateformat = "2006-01-02"
+
+[Params.sidebar]
+  home = "right"
+  list = "left"
+  single = false
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 7
+  tags_counter = false
+
+[Params.widgets.social]
+  twitter = "imaitt"
+  github = "ted027"
+  facebook = "imai.tetsu"
+  #instagram = "username"
+  #linkedin = "username"
+  #telegram = "username"
+  #gitlab = "username"
+  #bitbucket = "username"
+  #email = ""
