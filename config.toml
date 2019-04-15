@@ -4,8 +4,8 @@ title = "行けたら行く"
 theme = "mainroad"
 paginate = "10"
 
-disqusShortname = ""
-googleAnalytics = ""
+disqusShortname = "ted027-com"
+googleAnalytics = "UA-138367212-1"
 
 [Author]
   name = "imait"
@@ -39,10 +39,10 @@ googleAnalytics = ""
 [Params.widgets.social]
   twitter = "imaitt"
   github = "ted027"
-  facebook = "imai.tetsu"
+  facebook = "imaitt"
+  email = "imaitt0207@gmail.com"
   #instagram = "username"
   #linkedin = "username"
   #telegram = "username"
   #gitlab = "username"
   #bitbucket = "username"
-  #email = ""
