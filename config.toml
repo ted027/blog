@@ -9,7 +9,7 @@ googleAnalytics = ""
 
 [Author]
   name = "imait"
-  bio = "自堕落な日々から仕事＆育児生活への急変に戸惑う自称エンジニア。"
+  bio = "自堕落な日々から仕事＆育児生活への急変に戸惑いを隠せない自称エンジニア。"
   avatar = ""
 
 [Params]
@@ -28,7 +28,7 @@ googleAnalytics = ""
 [Params.sidebar]
   home = "right"
   list = "left"
-  single = false
+  single = true
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social"]
 
