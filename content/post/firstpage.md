@@ -3,7 +3,7 @@ title: "Hugo + GitHub Pagesでブログを始めた話"
 date: 2019-04-15T11:20:46+09:00
 draft: false
 comment: true
-categories: ["Ubuntu"]
+categories: ["Hugo"]
 tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 ---
 
@@ -155,6 +155,8 @@ draft: true
 少し待って`https://[ユーザ名].github.io`にアクセスすると公開されてるはず。
 
 ___
+
+## おわりに
 
 自動化とか諸々はまたの機会に。
 
