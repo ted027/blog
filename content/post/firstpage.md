@@ -9,7 +9,7 @@ tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 
 ## ほんのりエンジニアっぽいブログが書きたい
 
-[GitHub Pages](https://pages.github.com/) + [Hugo](https://gohugo.io/)でブログ始めてみました。
+[Hugo](https://gohugo.io/) + [GitHub Pages](https://pages.github.com/)でブログ始めてみました。
 
 ___
 
