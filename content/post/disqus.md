@@ -1,7 +1,7 @@
 ---
 title: "HugoブログにDisqusでコメント欄をつけた話"
 date: 2019-04-16T08:23:08+09:00
-draft: false
+draft: true
 comments: true
 categories: []
 tags: []

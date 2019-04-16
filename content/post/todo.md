@@ -2,6 +2,7 @@
 title: "今後書きたいことの備忘録"
 date: 2019-04-15T18:07:43+09:00
 draft: false
+comment: true
 categories: ["todo"]
 tags: ["todo"]
 ---
