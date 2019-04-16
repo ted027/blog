@@ -64,6 +64,7 @@ ___
 
 ```
 hugo new site blog
+cd blog
 ```
 
 ### Hugoの設定
@@ -74,9 +75,9 @@ hugo new site blog
  - `blog/thmem`以下にテーマを落とす
 
         ```
-        cd blog/themes
+        cd themes
         git clone https://github.com/[好きなテーマ]
-        cd -
+        cd ../
         ```
 
 2. Hugoの設定ファイルを編集する
@@ -93,9 +94,7 @@ hugo new site blog
 ### 記事を作成
 
 ```
-cd blog
 hugo new post/first.md
-cd -
 ```
 
 こんな記事ができる。
@@ -127,13 +126,11 @@ draft: true
 1. 「blog」を上げる
 
     ```
-    cd blog
     git init
     git remote add origin git@github.com:[GitHubのユーザ名]/blog.git
     git add -A
     git commit -m "initial commit"
     git push origin master
-    cd -
     ```
 
 2. 「blog」の公開用ディレクトリをサブモジュール化する
@@ -141,13 +138,12 @@ draft: true
  - なので、`[GitHubのユーザ名].github.io`レポジトリをサブモジュールとして`blog/public`に追加しておくと、ビルドしてpushするだけで、GitHub Pagesを使ってブログが公開できます
 
     ```
-    git submodule add git@github.com:[GitHubのユーザ名]/[GitHubのユーザ名].github.io.git hugo/public
+    git submodule add git@github.com:[GitHubのユーザ名]/[GitHubのユーザ名].github.io.git public
     ```
 
 3. ビルドして公開
 
     ```
-    cd blog
     hugo
     git add -A
     git commit -m "initial commit"

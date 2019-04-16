@@ -41,11 +41,15 @@ ___
 
 10. 設定が完了したら、「Configure your site's community settings」を選択。「Shortname」の文字列をコピーします。
 
-    `Your website shortname is ted027-com`
+    ```
+    Your website shortname is ted027-com
+    ```
 
 11. コピーしたShortnameを、config.tomlに追加
 
-    `disqusShortname = "ted027-com"`
+    ```
+    disqusShortname = "ted027-com"
+    ```
 
 12. 記事に`comments: true`を追加
 
