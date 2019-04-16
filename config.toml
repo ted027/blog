@@ -20,20 +20,20 @@ googleAnalytics = "UA-138367212-1"
   authorbox = true
   toc = false
   post_navigation = true
-  post_meta = ["date", "categories", "translations"] # Order of post meta information. Use ["none"] to turn off completely.
+  post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
   #postSections = ["blog", "news"]
   dateformat = "2006-01-02"
 
 [Params.sidebar]
   home = "right"
-  list = "left"
-  single = true
+  list = "right"
+  single = "right"
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social"]
 
 [Params.widgets]
-  recent_num = 7
+  recent_num = 5
   tags_counter = false
 
 [Params.widgets.social]
