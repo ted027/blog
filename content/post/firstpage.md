@@ -7,9 +7,11 @@ categories: ["Hugo"]
 tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 ---
 
-## ほんのりエンジニアっぽいブログが書きたい
-
 [Hugo](https://gohugo.io/) + [GitHub Pages](https://pages.github.com/)でブログ始めてみました。
+
+ほんのりエンジニアっぽいブログを書きたいなあ、とふと思い立ったので。
+
+ <!--more-->
 
 ___
 
@@ -160,7 +162,7 @@ ___
 
 自動化とか諸々はまたの機会に。
 
-参考サイトは以下
+以下参考サイト
 
 - https://uqichi.net/posts/github-pages-x-hugo/
 - https://qiita.com/h6m3_u/items/5893a61091d258936716
