@@ -1,0 +1,3 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:ted027/ted027.github.io.git
