@@ -20,6 +20,7 @@ tags: ["Ubuntu", "OS", "セットアップ"]
      - [Universal USB Installer](https://universal-usb-installer.jp.uptodown.com/windows)とか -->
 
 以下のサイトを参考
+
  - [UbuntuのLive USBをつくる](https://blog.mktia.com/how-to-make-ubuntu-live-usb/)
 
 ### 自分好みに設定を弄る

@@ -162,3 +162,5 @@ ___
 
 - https://uqichi.net/posts/github-pages-x-hugo/
 - https://qiita.com/h6m3_u/items/5893a61091d258936716
+
+<a href="https://t.afi-b.com/visit.php?guid=ON&a=99886h-W336947J&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9886-1534983315-3.jpg" width="728" height="90" style="border:none;" alt="CodeCampGATE" /></a><img src="https://t.afi-b.com/lead/99886h/J690746r/W336947J" width="1" height="1" style="border:none;" />
