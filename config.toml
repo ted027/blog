@@ -30,7 +30,7 @@ googleAnalytics = "UA-138367212-1"
   list = "right"
   single = "right"
   # Enable widgets in given order
-  widgets = ["change_job", "search", "recent", "categories", "taglist", "social"]
+  widgets = ["change_job", "search", "recent", "categories", "taglist", "social", "books"]
 
 [Params.widgets]
   recent_num = 5

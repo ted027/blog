@@ -7,7 +7,7 @@ categories: ["Hugo"]
 tags: ["Disqus", "コメント欄", "Hugo"]
 ---
 
-出来上がったブログを眺めていて、あれこれ言いたいことはあるんですが、まずコメント欄が無い。
+出来上がったブログを眺めていて、あれこれ言いたいことはあるが、とりあえずコメント欄がほしい。
 
 ちょっと調べたところ[Disqus](https://help.disqus.com/)というオンラインサービスが簡単そう。
 
@@ -55,17 +55,12 @@ ___
     disqusShortname = "ted027-com"
     ```
 
-12. 記事に`comments: true`を追加
+12. テンプレートhtmlファイルにdisqus用の記載を追加
+    - テーマによっては最初から記載されています
+    - themes/layouts/_default/sigle.htmlあたりのファイルで、ページ下部に追記
 
     ```
-    ---
-    title: "HugoブログにDisqusでコメント欄をつけた話"
-    date: 2019-04-16T08:23:08+09:00
-    draft: true
-    comments: true
-    categories: ["Hugo"]
-    tags: ["Disqus", "コメント欄", "Hugo"]
-    ---
+    {{ template "_internal/disqus.html" . }}
     ```
 
 ___
