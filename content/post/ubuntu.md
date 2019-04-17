@@ -8,6 +8,7 @@ tags: ["Ubuntu", "OS", "セットアップ"]
 ---
 
 新しいノートPC購入を機に、OSをUbuntu 18.04 LTSにした際の備忘録。
+
  <!--more-->
 
 ### Live USBを作ってインストール
