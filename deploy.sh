@@ -3,7 +3,8 @@
 set -ex
 hugo
 
-git add public
+cd public
+git add .
 
 msg="rebuild site `date`"
 if [ $# -eq 1 ]
@@ -12,3 +13,4 @@ fi
 git commit -m "$msg"
 
 git push origin master
+cd -
