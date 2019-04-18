@@ -8,6 +8,7 @@ jobs:
       - run:
           name: update
           command: apk update && apk add git
+      - checkout
       - run:
           name: build
-          command: ls -al
+          command: ./deploy.sh
