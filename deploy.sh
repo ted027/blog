@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ex
-la -al
+ls -al
 hugo
 
 cd public
