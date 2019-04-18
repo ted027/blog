@@ -3,16 +3,18 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.11
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
+    working_directory: /go/src/github.com
     steps:
       - checkout
       - run:
           name: update
           command: |
+            mkdir $HOME/src
+            cd $HOME/src
             git clone https://github.com/gohugoio/hugo.git
             cd hugo
             go install
-            cd -
+            cd /go/src/github.com
       - run:
           name: build
           command: ./deploy.sh
