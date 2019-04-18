@@ -8,7 +8,11 @@ jobs:
       - checkout
       - run:
           name: update
-          command: go get -v github.com/spf13/hugo
+          command: |
+            git clone https://github.com/gohugoio/hugo.git
+            cd hugo
+            go install
+            cd -
       - run:
           name: build
           command: ./deploy.sh
