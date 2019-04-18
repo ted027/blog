@@ -5,9 +5,8 @@ jobs:
       - image: circleci/golang:1.11
     working_directory: /go/src/github.com
     steps:
-      - checkout
       - run:
-          name: update
+          name: install hugo
           command: |
             mkdir $HOME/src
             cd $HOME/src
@@ -15,6 +14,7 @@ jobs:
             cd hugo
             go install
             cd /go/src/github.com
+      - checkout
       - run:
           name: build
           command: ./deploy.sh
