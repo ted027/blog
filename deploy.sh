@@ -4,7 +4,7 @@ set -ex
 hugo
 
 cd public
-git add -A
+git add .
 
 msg="rebuild site `date`"
 if [ $# -eq 1 ]

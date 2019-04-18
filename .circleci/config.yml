@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
-    working_directory: ~/hugo
+      - image: circleci/golang:1.9
+    working_directory: /go/src/github.com
     steps:
+      - checkout
       - run:
           name: update
-          command: apk update && apk add git
-      - checkout
+          command: go get -v github.com/spf13/hugo
       - run:
           name: build
           command: ./deploy.sh
