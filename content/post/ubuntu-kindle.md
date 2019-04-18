@@ -4,7 +4,7 @@ date: 2019-04-16T22:34:09+09:00
 draft: false
 comments: true
 categories: ["Ubuntu"]
-tags: ["Ubuntu", "Kindle", "Wine"]
+tags: ["Ubuntu", "Kindle", "Wine", "Linux"]
 ---
 
 UbuntuにKindleをインストールしようとして苦労したのでメモ。
