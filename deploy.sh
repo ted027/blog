@@ -1,11 +1,11 @@
 #!/bin/bash
 
 set -ex
+la -al
 hugo
 
 cd public
-ls -al
-git add -A .
+git add
 
 msg="rebuild site `date`"
 if [ $# -eq 1 ]
