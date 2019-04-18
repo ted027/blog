@@ -10,4 +10,4 @@ jobs:
           command: apk update && apk add git
       - run:
           name: build
-          command: ls && . ./deploy.sh
+          command: ls -al
