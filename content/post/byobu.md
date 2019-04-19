@@ -1,7 +1,7 @@
 ---
 title: "byobuでよく使うコマンドの話"
 date: 2019-04-19T12:41:06+09:00
-draft: true
+draft: false
 comments: true
 categories: ["Shell"]
 tags: ["Shell", "Byobu", "コマンド"]
