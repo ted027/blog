@@ -9,15 +9,15 @@ tags: ["Ubuntu", "Kindle", "Wine", "Linux"]
 
 UbuntuにKindleをインストールしようとして苦労したのでメモ。
 
-Ubuntu用のKindle for PCクライアントはありません。なので、少々面倒ですがwineというwindowsエミュレータを使ってwindows版をインストールします。
+Ubuntu用のKindle for PCクライアントは無いので、少々手間を掛けてwineというwindowsエミュレータを使ってwindows版をインストールする。
 
  <!--more-->
 
-___
+---
 
- <a href="https://t.afi-b.com/visit.php?guid=ON&a=z10341W-l353325a&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10341-1547340072-3.jpg" width="468" height="60" style="border:none;" alt="若手向け" /></a><img src="https://t.afi-b.com/lead/z10341W/J690746r/l353325a" width="1" height="1" style="border:none;" />
+<a href="https://t.afi-b.com/visit.php?guid=ON&a=C9511S-D324435S&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9511-1520235201-3.gif" width="728" height="90" style="border:none;" alt="フォスターフリーランス" /></a><img src="https://t.afi-b.com/lead/C9511S/J690746r/D324435S" width="1" height="1" style="border:none;" />
 
-___
+---
 
 ### Wineをインストール
 
@@ -42,6 +42,8 @@ ___
     sudo apt install winehq-stable
     ```
 
+---
+
 ### Wineの設定
 
 1. OSを選択
@@ -50,11 +52,13 @@ ___
     winecfg
     ```
 
-→ Windows 8.1を選択。10だとうまくいかなかったです。
+→ Windows 8.1を選択。10だとうまくいかなかった。
+
+---
 
 ### winetricksで表示を直す
 
-このままだと文字化けしちゃうので、Wineの諸々を簡単にインストールできるスクリプト、`winetricks`を使って表示を整えます。
+このままだと文字化けするので、`winetricks`を使って表示を整える。
 
 1. winetricksをインストール
 
@@ -71,14 +75,16 @@ ___
     sudo sh winetricks fontsmooth-rgb
     ```
 
+---
+
 ### Kindle for PCをインストール
 
 - https://kindle-for-pc.jp.uptodown.com/windows
 
 起動したら無事読めました。
 
-___
+---
 
 <a href="https://t.afi-b.com/visit.php?guid=ON&a=99886h-W336947J&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9886-1534983315-3.jpg" width="728" height="90" style="border:none;" alt="CodeCampGATE" /></a><img src="https://t.afi-b.com/lead/99886h/J690746r/W336947J" width="1" height="1" style="border:none;" />
 
-___
+---

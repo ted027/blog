@@ -7,7 +7,7 @@ categories: ["生活"]
 tags: ["鞄", "紐", "まとめる"]
 ---
 
-ビジネス用のリュックを購入したけど、ピロピロした紐が邪魔だったので、まとめるやつを買った話。
+ビジネス用のリュックを購入したけど、ピロピロした紐が邪魔だったので、まとめるやつを買った。
 
 ウェブドミネーターというらしい。
 
@@ -50,7 +50,7 @@ tags: ["鞄", "紐", "まとめる"]
                         </a> </div> </div> </div> <div class="booklink-footer" style="clear: left"></div>
         </div>
 
-___
+---
 
 使い方は簡単で、
 
@@ -58,10 +58,10 @@ ___
 
 それをぐるぐる巻いて、根本まで巻き取ったら、ゴム紐を一周ぐるっと回して、引っかけて止める。
 
-職場や電車で床に置く時も紐が邪魔にならず快適。
+職場や電車で床に置く時も紐が邪魔にならず快適。切ったりする羽目にならなくてよかった。
 
-___
+---
 
-<a href="https://t.afi-b.com/visit.php?guid=ON&a=99886h-W336947J&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9886-1534983315-3.jpg" width="728" height="90" style="border:none;" alt="CodeCampGATE" /></a><img src="https://t.afi-b.com/lead/99886h/J690746r/W336947J" width="1" height="1" style="border:none;" />
+<a href="https://t.afi-b.com/visit.php?guid=ON&a=C9511S-D324435S&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9511-1520235201-3.gif" width="728" height="90" style="border:none;" alt="フォスターフリーランス" /></a><img src="https://t.afi-b.com/lead/C9511S/J690746r/D324435S" width="1" height="1" style="border:none;" />
 
-___
+---
