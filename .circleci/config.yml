@@ -5,9 +5,6 @@ jobs:
       - image: circleci/golang:1.11
     working_directory: ~/work
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "cb:6b:93:05:ca:cf:a7:50:16:bc:d2:cb:1e:a5:27:6b"
       - run:
           name: install hugo
           command: |
@@ -22,6 +19,9 @@ jobs:
             rm -rf public
             git clone git@github.com:ted027/ted027.github.io public
             hugo
+      - add_ssh_keys:
+          fingerprints:
+            - "cb:6b:93:05:ca:cf:a7:50:16:bc:d2:cb:1e:a5:27:6b"
       - run:
           name: push
           command: |
