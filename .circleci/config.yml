@@ -22,22 +22,20 @@ jobs:
       - save_cache:
           key: hugo-cache-public-{{ epoch }}
           paths:
-            - /go/src/github.com/public
+            - ~/hugo/public
   
   deploy:
     machine:
       enabled: true
     working_directory: ~/hugo/public
     steps:
+      - restore_cache:
+          key: hugo-cache-public
       - run:
           command: |
             git init
             git config --global user.name "CircleCI"
             git config --global user.email "circleci@example.com"
-      - restore_cache:
-          key: hugo-cache-public
-      - run:
-          command: |
             git add --all
             msg="rebuilding site `date`"
             git commit -m "$msg"
