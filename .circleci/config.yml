@@ -21,7 +21,7 @@ jobs:
             hugo
       - add_ssh_keys:
           fingerprints:
-            - "cb:6b:93:05:ca:cf:a7:50:16:bc:d2:cb:1e:a5:27:6b"
+            - "d8:5b:56:36:7a:f6:6a:0a:fd:6e:7c:21:aa:7e:2b:31"
       - run:
           name: push
           command: |
