@@ -39,7 +39,7 @@ jobs:
             git add --all
             msg="rebuilding site `date`"
             git commit -m "$msg"
-            git push git@github.com:ted027/ted027.github.io
+            git push --set-upstream git@github.com:ted027/ted027.github.io master
 
 workflows:
   version: 2
