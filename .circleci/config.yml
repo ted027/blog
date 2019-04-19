@@ -26,6 +26,8 @@ jobs:
           name: push
           command: |
             cd public
+            git config --global user.name "CircleCI"
+            git config --global user.email "circleci@example.com"
             git add --all
             msg="rebuilding site `date`"
             git commit -m "$msg"
