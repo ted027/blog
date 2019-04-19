@@ -67,9 +67,9 @@ tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 
 markdownでブログが書けるなんて素晴らしい。
 
-自分のUbuntu 18.04環境では、aptだとバージョンが古かったので、snapでインストール。
-
 ### 導入
+
+自分のUbuntu 18.04環境では、aptだとバージョンが古かったので、snapでインストール。
 
 ```
 sudo snap install hugo --channel=extended
@@ -77,7 +77,7 @@ cd /usr/bin
 sudo ln -s /snap/bin/hugo hugo
 ```
 
-でも後で公式見たら、gitから取れって言ってました。
+gitからでも取れる。
 
 ```
 git clone https://github.com/gohugoio/hugo.git
@@ -140,7 +140,7 @@ cd blog
 
 2. Hugoの設定ファイルを編集する
  - `blog/config.toml`を編集
- - これ以外にもテーマによって設定項目が色々ありますが、テーマのページを見ると大抵書いてあります
+ - これ以外にもテーマによって設定項目が色々あるが、テーマのページを見ると大抵書いてある
 
         ```
         baseURL = "https://[github_user].github.io/"
@@ -181,7 +181,7 @@ draft: true
  - `--watch`をつけておくと記事を更新するたびにプレビューも更新される
  - http://localhost:1313 で確認
 
- `hugo`コマンドでビルドし公開用ディレクトリが作成されるが、その前にGihHub側の準備
+ `hugo`コマンドでビルドし公開用ディレクトリが作成されるけど、その前にGihHub Pagesとの連携の準備をします。
 
  ---
 

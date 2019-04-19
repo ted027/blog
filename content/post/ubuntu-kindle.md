@@ -9,7 +9,7 @@ tags: ["Ubuntu", "Kindle", "Wine", "Linux"]
 
 UbuntuにKindleをインストールしようとして苦労したのでメモ。
 
-Ubuntu用のKindle for PCクライアントは無いので、少々手間を掛けてwineというwindowsエミュレータを使ってwindows版をインストールする。
+Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間を掛けてWineというWindowsエミュレータを使ってWindows版をインストールする。
 
  <!--more-->
 

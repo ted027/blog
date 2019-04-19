@@ -120,7 +120,7 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 
 適当な別ディレクトリ使ってhugoをインストールしてからビルドしてcommit, pushする。
 
-本当はさっきの`deploy.sh`を使ってサラッと書きたかったが、CIからsubmoduleをpushするところが手元と同じようには動かず、結局publicを消してからcloneしてきてビルドしてpush、という微妙な感じに。
+本当はさっきの`deploy.sh`を使ってサラッと書きたかったけど、CIからsubmoduleをpushするところが手元と同じようには動かず、結局publicを消してからcloneしてきてビルドしてpush、という微妙な感じに。
 
 ---
 
