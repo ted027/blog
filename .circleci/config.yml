@@ -33,6 +33,7 @@ jobs:
           key: hugo-cache-public
       - run:
           command: |
+            git init
             git config --global user.name "CircleCI"
             git config --global user.email "circleci@example.com"
             git add --all
