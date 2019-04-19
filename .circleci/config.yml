@@ -36,7 +36,7 @@ jobs:
             git config --global user.name "CircleCI"
             git config --global user.email "circleci@example.com"
             git add --all
-            msg="rebuild site `date`"
+            msg="rebuilding site `date`"
             git commit -m "$msg"
             git push git@github.com:ted027/ted027.github.io
 
@@ -44,7 +44,7 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build:
+      - build
       - deploy:
           filters:
             branches:
