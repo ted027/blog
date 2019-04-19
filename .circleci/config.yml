@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.11
-    working_directory: /go/src/github.com
+    working_directory: ~/hugo
     steps:
       - run:
           name: install hugo
@@ -27,7 +27,7 @@ jobs:
   deploy:
     machine:
       enabled: true
-    working_directory: /go/src/github.com/public
+    working_directory: ~/hugo/public
     steps:
       - restore_cache:
           key: hugo-cache-public
