@@ -1,5 +1,5 @@
 ---
-title: "byobuでよく使うコマンドの話"
+title: "byobuでよく使うコマンドとか"
 date: 2019-04-19T12:41:06+09:00
 draft: false
 comments: true

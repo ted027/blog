@@ -1,5 +1,5 @@
 ---
-title: "HugoブログにDisqusでコメント欄をつけた話"
+title: "HugoブログにDisqusでコメント欄をつけた"
 date: 2019-04-16T08:23:08+09:00
 draft: false
 comments: true
