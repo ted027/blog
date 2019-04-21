@@ -27,9 +27,6 @@ tags: ["Ubuntu", "OS", "セットアップ"]
                 target="_blank" rel="nofollow">Transcend USBメモリ 32GB USB 3.1 スライド式 ブラック TS32GJF790KBE</a><img
                 src="//i.moshimo.com/af/i/impression?a_id=1414800&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" width="1" height="1"
                 style="border:none;">
-            <div class="kaerebalink-powered-date"
-                style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a
-                    href="https://kaereba.com" rel="nofollow" target="_blank">カエレバ</a></div>
         </div>
         <div class="kaerebalink-detail" style="margin-bottom:5px;"></div>
         <div class="kaerebalink-link1" style="margin-top:10px;">
