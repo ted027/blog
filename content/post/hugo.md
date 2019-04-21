@@ -223,7 +223,7 @@ draft: true
 
 自動化とか諸々はまたの機会に。
 
- - [CircleCIでHugoのビルドを自動化した話"](https://www.ted027.com/hugo.md)
+ - [CircleCIでHugoのビルドを自動化した話](https://www.ted027.com/post/circleci)
 
 以下参考サイト
 

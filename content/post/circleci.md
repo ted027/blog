@@ -17,9 +17,9 @@ Hugoのビルドとブログの更新を自動で行うようにした。
 
 ---
 
-[Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/hugo.md)
+### [[過去記事]Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
 
-手動でビルドしてブログを更新しようとすると以下のような感じ。
+現状、手動でビルドしてブログを更新しようとすると以下のような感じ。
 
 1. markdownで記事を書く
 2. `hugo`でビルド
