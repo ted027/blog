@@ -39,10 +39,14 @@ googleAnalytics = "UA-138367212-1"
 [Params.widgets.social]
   twitter = "imaitt"
   github = "ted027"
-  facebook = "imaitt"
   email = "imaitt0207@gmail.com"
+  #facebook = "username"
   #instagram = "username"
   #linkedin = "username"
   #telegram = "username"
   #gitlab = "username"
   #bitbucket = "username"
+
+# [outputs]
+# home = [ "HTML", "AMP"]
+# page = [ "HTML", "AMP"]
