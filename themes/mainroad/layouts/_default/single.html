@@ -9,7 +9,9 @@
 			{{ with partial "post_meta.html" . -}}
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
+			<br/>
 			{{ partial "share" . }}
+			<br/>
 		</header>
 		{{- if .Params.thumbnail }}
 		<figure class="post__thumbnail">

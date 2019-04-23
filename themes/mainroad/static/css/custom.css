@@ -40,11 +40,11 @@
   }
   
   .twitter:hover a {
-    color: #1B95E0;
+    color: #55acee;
   }
   
   .facebook:hover a {
-    color: #3B5999;
+    color: #3B5998;
   }
   
   .google:hover a {
@@ -62,9 +62,19 @@
   .hatena:hover a {
     color: #4BA3D9;
   }
+
+  .line:hover a {
+    color: #1dcd00;
+  }
   
   .fa-hatena:before {
       content: "B!";
       font-family: Verdana;
       font-weight: bold
+  }
+
+  .fa-line:before {
+    content: "L";
+    font-family: Verdana;
+    font-weight: bold
   }
