@@ -7,7 +7,7 @@ categories: ["パワプロ"]
 tags: ["パワプロ2018", "ペナント", "補強思考", "Python"]
 ---
 
-[前記事](https://www.ted027.com/post/penant-add-descript)の補強思考設定、各項目の判断基準の説明です。
+補強思考設定、各項目の判断基準の説明です。
 
  <!--more-->
 
