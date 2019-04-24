@@ -58,6 +58,8 @@ tags: ["Ubuntu", "OS", "セットアップ"]
 
 ---
 
+{{< img src="/img/ubuntu.png" >}}
+
 ### Live USBを作成してインストール
 
 以下のサイトを参考

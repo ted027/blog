@@ -19,6 +19,8 @@ Hugoのビルドとブログの更新を自動で行うようにした。
 
 ### [[過去記事]Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
 
+---
+
 現状、手動でビルドしてブログを更新しようとすると以下のような感じ。
 
 1. markdownで記事を書く
@@ -59,6 +61,8 @@ git push origin master
 ひと手間になったが、できればひと手間すらかけたくないので、CIで自動化。
 
 GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました。
+
+{{< img src="/img/circleci.png" >}}
 
 1. CircleCIに登録
     - https://circleci.com
