@@ -61,7 +61,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考", "Python"]
 
 2019年4月現在の計算結果は以下。
 
-- [パワプロ ペナントの補強思考設定（2019年4月時点）](https://www.ted027.com/post/penant-add-descript)
+- [パワプロ ペナントの補強思考設定（2019年4月時点）](https://www.ted027.com/post/penant-add)
 
 ---
 
