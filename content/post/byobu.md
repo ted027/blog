@@ -13,7 +13,7 @@ tags: ["Shell", "Byobu", "コマンド"]
 
  ---
 
-<a href="https://t.afi-b.com/visit.php?guid=ON&a=C9511S-D324435S&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9511-1520235201-3.gif" width="728" height="90" style="border:none;" alt="フォスターフリーランス" /></a><img src="https://t.afi-b.com/lead/C9511S/J690746r/D324435S" width="1" height="1" style="border:none;" />
+<a href="https://t.afi-b.com/visit.php?guid=ON&a=M10262Q-X351704n&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10262-1549272488-3.jpg" width="728" height="90" style="border:none;" alt="BTCエージェント forエンジニア" /></a><img src="https://t.afi-b.com/lead/M10262Q/J690746r/X351704n" width="1" height="1" style="border:none;" />
 
  ---
 
