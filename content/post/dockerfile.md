@@ -28,12 +28,11 @@ Dockerfileを書く時に気にしていること、よくわからなくて調�
 複数モジュールインストールする場合は一行ずつ分けて、アルファベット順に並べておくのがいい。追加削除がしやすく、重複も防げる。
 
 ```Dockerfile
-WORKDIR /usr/my/path
 RUN set -ex && \
-    apt-get update && apt-get install -y \
-    automake \
-    build-essential \
-    curl
+    yum -yq install \
+    clock \
+    gcc \
+    make
 ```
 
 ---
