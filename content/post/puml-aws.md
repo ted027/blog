@@ -1,7 +1,7 @@
 ---
 title: "PlantUMLでAWSアイコンを使ったシステム構成図を作る"
 date: 2019-04-25T17:02:54+09:00
-draft: true
+draft: false
 comments: true
 categories: ["PlantUML"]
 tags: ["AWS", "PlantUML", "構成図"]
