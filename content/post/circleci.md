@@ -42,15 +42,13 @@ hugo
 cd public
 git add .
 
-msg="rebuilding site `date`"
+msg="rebuilding site `date +'%Y-%m-%d %H:%M:%S'`"
 git commit -m "$msg"
 
 git push origin master
 ```
 
 - 参考: https://github.com/uqichi/blog/blob/master/deploy.sh
-
-参考というかほぼパクらせていただきました。。
 
 これで2と4がひと手間になった。
 
