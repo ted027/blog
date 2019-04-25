@@ -17,9 +17,9 @@ Hugoのビルドとブログの更新を自動で行うようにした。
 
 ---
 
-### [[過去記事]Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
+### ビルドフローが手間
 
----
+- [※ Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
 
 現状、手動でビルドしてブログを更新しようとすると以下のような感じ。
 

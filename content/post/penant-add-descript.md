@@ -61,7 +61,11 @@ tags: ["パワプロ2018", "ペナント", "補強思考", "Python"]
 
 2019年4月現在の計算結果は以下。
 
-- [パワプロ ペナントの補強思考設定（2019年4月時点）](https://www.ted027.com/post/penant-add)
+[パワプロ ペナントの補強思考設定（2019年4月時点）](https://www.ted027.com/post/penant-add)
+
+---
+
+{{< img src="/img/penant-add-bs.png" >}}
 
 ---
 
@@ -147,6 +151,10 @@ tags: ["パワプロ2018", "ペナント", "補強思考", "Python"]
 
 - [ここ](https://www.gurazeni.com/)やWikipediaを見ながらjsonで書きました
 - https://github.com/ted027/Scripts/blob/master/other/free_agent_player.json
+
+---
+
+{{< img src="/img/penant-add-g.png" >}}
 
 ---
 

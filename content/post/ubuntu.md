@@ -4,7 +4,7 @@ date: 2019-04-21T22:52:31+09:00
 draft: false
 comments: true
 categories: ["Ubuntu"]
-tags: ["Ubuntu", "OS", "セットアップ"]
+tags: ["Ubuntu", "OS", "Linux"]
 ---
 
 新しいノートPC購入を機に、OSをUbuntu 18.04 LTSにした際の備忘録。
@@ -74,7 +74,7 @@ tags: ["Ubuntu", "OS", "セットアップ"]
 
 ---
 
-### byobuを入れる
+### Byobuを入れる
 
 仮想端末ソフト。画面分割等機能が多彩で使いやすい。
 
