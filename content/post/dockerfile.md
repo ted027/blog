@@ -72,9 +72,10 @@ RUN export VAR3="piyo"
 ```Dockerfile
 ADD add.tar /tmp
 
-# zipはADDでも解凍してくれないらしい
 COPY copy.zip /tmp
 ```
+
+※ zipはADDでも解凍してくれないらしい
 
 ---
 
