@@ -65,19 +65,23 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 1. CircleCIに登録
     - https://circleci.com
     - GitHubアカウント、Bitbucketアカウントで登録できる
-    - Hugoのレポジトリをフォローしておく
+    - CIを回したいレポジトリをフォローしておく
+        今回はHugoのレポジトリ
 
 2. CircleCI用のSSH Keyを作成
     - ビルドした静的ファイルをGitHub Pagesのレポジトリにpushしたいので必要
 
     ```
-    ssh-keygen -t rsa -b 4096 -m pem -C "CircleCI" -f id_rsa_circleci -N ""
+    $ ssh-keygen -t rsa -b 4096 -m pem -C "CircleCI" -f id_rsa_circleci -N ""
     ```
 
 3. 公開鍵をGitHubに登録する
 
 4. 秘密鍵をCirCleCIに登録しておく
     - プロジェクト（レポジトリ）横の設定歯車から、`SSH Permissions`を選択し、`Add SSH Key`する
+
+        {{< img src="/img/circleci_ssh.png" >}}
+
     - 同時に、`Checkout SSH Permissions`から、自動登録されたRead OnlyのKeyを`Remove`する。こちらが優先で使われてしまうため
 
 5. .circleci/config.ymlを書く
