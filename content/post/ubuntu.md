@@ -78,7 +78,7 @@ tags: ["Ubuntu", "OS", "Linux"]
 
 仮想端末ソフト。画面分割等機能が多彩で使いやすい。
 
- - [Byobuの導入とよく使うコマンド等](https://www.ted027.com/post/byobu)
+ - [端末ソフトByobuの導入とよく使うコマンド等](https://www.ted027.com/post/byobu)
 
 ---
 
@@ -102,7 +102,7 @@ Ubuntu用のクライアントは無いけど、Google ChromeやChromiumの拡�
 
 Ubuntu用のクライアントは無いし拡張機能も多分無い。Wineを使ってwindows版をインストール。
 
- - [Ubuntu 18.04にKindleをインストールした話](https://www.ted027.com/post/ubuntu-kindle)
+ - [Ubuntu 18.04にKindleをインストールした](https://www.ted027.com/post/ubuntu-kindle)
 
 ---
 

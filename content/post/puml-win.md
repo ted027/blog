@@ -72,7 +72,6 @@ deactivate Form
 
 `Alt + D`で作成中の図をプレビューできる。
 
-
 {{< img src="/img/puml.png" >}}
 
 [PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)

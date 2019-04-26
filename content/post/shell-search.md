@@ -1,70 +1,67 @@
 ---
-title: "端末ソフトByobuの導入とよく使うコマンド等"
-date: 2019-04-19T12:41:06+09:00
+title: "Linuxでファイル検索する際のコマンド"
+date: 2019-04-26T14:23:28+09:00
 draft: false
 comments: true
 categories: ["Shell"]
-tags: ["Shell", "Byobu", "仮想端末", "画面分割"]
+tags: ["Linux", "検索", "find", "grep"]
 ---
 
-仮想端末ソフトByobuの導入やよく使うコマンドについてのメモ。
+特定ディレクトリや配下ディレクトリのファイル名/ファイルの中身を検索する。
 
  <!--more-->
 
- ---
+---
 
-<a href="https://t.afi-b.com/visit.php?guid=ON&a=M10262Q-X351704n&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10262-1549272488-3.jpg" width="728" height="90" style="border:none;" alt="BTCエージェント forエンジニア" /></a><img src="https://t.afi-b.com/lead/M10262Q/J690746r/X351704n" width="1" height="1" style="border:none;" />
-
- ---
-
-### About
-
-- [Byobu](http://byobu.co/)
-    - オープンソースの仮想端末ソフト。画面分割やら移動やらが楽。
+<a href="https://t.afi-b.com/visit.php?guid=ON&a=99886h-W336947J&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9886-1534983315-3.jpg" width="728" height="90" style="border:none;" alt="CodeCampGATE" /></a><img src="https://t.afi-b.com/lead/99886h/J690746r/W336947J" width="1" height="1" style="border:none;" />
 
 ---
 
-### インストール
+### ファイル名検索
 
-- http://byobu.co/downloads.html
+- 特定ディレクトリのファイル名検索
 
-|  OS  |  コマンド  |
-| ---- | ---- |
-| Alpine Linux | `apk add byobu` |
-| Arch | `pacman -Sy byobu` |
-| Debian | `apt-get install byobu` |
-| Fedora | `yum install byobu` |
-| Gentoo | `emerge byobu` |
-| Mac OS | `brew install byobu` |
-| Mint | `sudo apt-get install byobu` |
-| Ubuntu | `sudo apt-get install byobu` |
+```
+$ ls {directory/path} | grep {search_word}
+```
 
----
+- 特定ディレクトリ配下のファイル名検索
 
-### よく使うコマンド
+```
+$ find {directory/path} | -type f -name \*{search_word}\*
+```
 
-|  コマンド  |  機能  |
-| ---- | ---- |
-| F2 | 新しいウィンドウを開く |
-| F3 | 前のウィンドウに移動 |
-| F4 | 次のウィンドウに移動 |
-| Ctrl + F2 | 横並びに画面分割 |
-| Shift + F2 | 縦並びに画面分割 |
-| F6 | デタッチ |
-| Ctrl + F6 | 現在の分割画面を閉じる |
-| F7 | スクロールモードに |
-| Shiht + ↑↓←→ | 分割画面間を移動 |
-| Shift + F3,F4 | 分割画面間を移動 |
-| Ctrl + F3,F4 | 分割画面を入れ替え |
-| Shiht + Alt + ↑↓←→ | 分割画面のサイズ変更 |
+- 特定ディレクトリ配下のディレクトリ名検索
 
----
+```
+$ find {directory/path} | -type d -name \*{search_word}\*
+```
 
-### 全画面にしても画面が小さい時
+### ファイル内容検索
 
-フルスクリーンにしても、有効な範囲が小さいままの時。
+- 特定ディレクトリのファイル内容検索（一致場所表示）
 
-`Alt + F6`で直りました。
+```
+grep {search_word} {directory/path}/*
+```
+
+- 特定ディレクトリのファイル内容検索（一致場所非表示）
+
+```
+grep {search_word} -l {directory/path}/*
+```
+
+- 特定ディレクトリ配下のファイル内容検索（一致場所表示）
+
+```
+grep {search_word} -r {directory/path}
+```
+
+- 特定ディレクトリ配下のファイル内容検索（一致場所非表示）
+
+```
+grep {search_word} -rl {directory/path}
+```
 
 ---
 
