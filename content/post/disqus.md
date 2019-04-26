@@ -9,7 +9,7 @@ tags: ["Disqus", "コメント欄", "Hugo"]
 
 ブログなのでコメント欄くらいはほしい。
 
-[Disqus](https://help.disqus.com/)というサービスが簡単そう。
+DisqusというサービスならHugoに簡単に導入できそう。
 
  <!--more-->
 

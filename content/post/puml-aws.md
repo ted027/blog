@@ -59,7 +59,7 @@ includeしたAWSアイコンは、基本的に以下の書式で書ける。
 AWS_SERVICE_NAME_UPPERCASE(puml resource name, display name)
 ```
 
-`cloud`みたいに、`{}`で括って他のサービスを入れたりできる。
+`cloud`みたいに、`{}`で括って他のサービスを入れられる。
 
 ```sample.pu
 @startuml

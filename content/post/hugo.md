@@ -7,7 +7,7 @@ categories: ["Blog"]
 tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 ---
 
-[Hugo](https://gohugo.io/) + [GitHub Pages](https://pages.github.com/)でブログを作った。
+Hugo + GitHub Pagesを使ってブログを作った。
 
  <!--more-->
 
@@ -62,7 +62,7 @@ tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 
 - https://gohugo.io/
 
-静的サイトジェネレータ。テーマが豊富。
+静的サイトジェネレータ。テーマが豊富でカスタマイズ性が高い。
 
 markdownでブログが書けるなんて素晴らしい。
 
@@ -71,17 +71,17 @@ markdownでブログが書けるなんて素晴らしい。
 自分のUbuntu 18.04環境では、aptだとバージョンが古かったので、snapでインストール。
 
 ```
-sudo snap install hugo --channel=extended
-cd /usr/bin
-sudo ln -s /snap/bin/hugo hugo
+$ sudo snap install hugo --channel=extended
+$ cd /usr/bin
+$ sudo ln -s /snap/bin/hugo hugo
 ```
 
 gitからでも取れる。
 
 ```
-git clone https://github.com/gohugoio/hugo.git
-cd hugo
-go install --tags extended
+$ git clone https://github.com/gohugoio/hugo.git
+$ cd hugo
+$ go install --tags extended
 ```
 
 ---
@@ -118,8 +118,8 @@ Hugoで生成したファイルをGitHub Pagesで公開する感じ。
 ### Hugoで静的サイトを作成
 
 ```
-hugo new site blog
-cd blog
+$ hugo new site blog
+$ cd blog
 ```
 
 ---
@@ -132,16 +132,16 @@ cd blog
  - `blog/thmem`以下にテーマを落とす
 
         ```
-        cd themes
-        git clone https://github.com/[theme_name]
-        cd ../
+        $ cd themes
+        $ git clone https://github.com/[theme_name]
+        $ cd ../
         ```
 
 2. Hugoの設定ファイルを編集する
  - `blog/config.toml`を編集
  - これ以外にもテーマによって設定項目が色々あるが、テーマのページを見ると大抵書いてある
 
-        ```
+        ```config.toml
         baseURL = "https://[github_user].github.io/"
         languageCode = "ja"
         title = "My Blog"
@@ -153,7 +153,7 @@ cd blog
 ### 記事を作成
 
 ```
-hugo new post/first.md
+$ hugo new post/first.md
 ```
 
 こんな記事ができる。
@@ -174,7 +174,9 @@ draft: true
 
 ### ローカルサーバで確認
 
-`hugo server --buildDrafts --watch`
+```
+$ hugo server --buildDrafts --watch
+```
 
  - `--buildDrafts`をつけると`draft: true`の記事もプレビューできる
  - `--watch`をつけておくと記事を更新するたびにプレビューも更新される
@@ -189,11 +191,11 @@ draft: true
 1. 「blog」をpushする
 
     ```
-    git init
-    git remote add origin git@github.com:[github_user]/blog.git
-    git add -A
-    git commit -m "initial commit"
-    git push origin master
+    $ git init
+    $ git remote add origin git@github.com:[github_user]/blog.git
+    $ git add -A
+    $ git commit -m "initial commit"
+    $ git push origin master
     ```
 
 2. 「blog」の公開用ディレクトリをサブモジュール化する
@@ -201,17 +203,17 @@ draft: true
  - なので、`[github_user].github.io`レポジトリをサブモジュールとして`blog/public`に追加しておくと、ビルドしてpushすることで、GitHub Pagesを使ってブログが公開できる
 
     ```
-    git submodule add git@github.com:[github_user]/[github_user].github.io.git public
+    $ git submodule add git@github.com:[github_user]/[github_user].github.io.git public
     ```
 
 3. ビルドして公開
 
     ```
-    hugo
-    cd public
-    git add -A
-    git commit -m "initial article"
-    git push origin master
+    $ hugo
+    $ cd public
+    $ git add -A
+    $ git commit -m "initial article"
+    $ git push origin master
     ```
 
 少し待って`https://[github_user].github.io`にアクセスすると公開されてるはず。

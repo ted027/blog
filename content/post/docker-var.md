@@ -35,7 +35,6 @@ RUN set -ex &&\
 
 ```Dockerfile
 ENV URL_SUFFIX=$(curl -s http://www.oracle.com/technetwork/java/javase/downloads/index.html | egrep -m1 -o '/technetwork/java/javase/downloads/jdk8-downloads-[0-9]+\.html')
-
 ```
 
 ---

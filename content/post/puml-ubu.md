@@ -35,17 +35,17 @@ Visual Studio Code + PlantUMLをUbuntuに導入する。
 
 1. Visual Studio Codeをインストール
     ```
-    sudo apt -y install code
+    $ sudo apt -y install code
     ```
 
 2. Javaをインストール
     ```
-    sudo apt -y install default-jre 
+    $ sudo apt -y install default-jre 
     ```
 
 3. Graphvizをインストール
     ```
-    sudo apt -y install graphviz
+    $ sudo apt -y install graphviz
     ```
 
 4. Visual Studio Codeの拡張機能から`PlantUML`を検索しインストールする
