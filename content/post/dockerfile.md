@@ -130,7 +130,7 @@ COPY copy.zip /tmp
 
 それぞれ`docker run`の時に実行するプロセスを指定する。
 
-使い方がすごく似ているけど意味合いはかなり異なるらしい。
+使い方が似ているけど意味合いはかなり異なるみたい。
 
 ---
 
@@ -144,13 +144,15 @@ COPY copy.zip /tmp
 
 ちなみにこの二つが競合した場合は、`ENTRYPOINT`が優先される。
 
+ただし、`docker run {image} --entrypoint command`で`ENTRYPOINT`を上書きすることもできる。
+
 ---
 
 #### CMDは上記のデフォルト値指定
 
 `CMD`は、`docker run {image}`に続く入力のデフォルト値を指定しているだけ。
 
-デフォルト値なので、`docker run {image}`の後に入力があればそちらが優先され、上書きされる。
+デフォルトなので、`docker run {image}`の後にコマンドを指定すればそちらが優先される。
 
 1. `docker run {image}`
 
@@ -212,6 +214,8 @@ Dockerfile用のディレクトリを一つ掘って置いておく。
 
 ---
 
-<a href="https://t.afi-b.com/visit.php?guid=ON&a=C9511S-i324416Z&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9511-1521815201-3.gif" width="728" height="90" style="border:none;" alt="フォスターフリーランス" /></a><img src="https://t.afi-b.com/lead/C9511S/J690746r/i324416Z" width="1" height="1" style="border:none;" />
+<a href="https://px.a8.net/svt/ejp?a8mat=35DFWV+F4RNAQ+50+2HLITT" target="_blank" rel="nofollow">
+<img border="0" width="728" height="90" alt="" src="https://www29.a8.net/svt/bgt?aid=190423759915&wid=001&eno=01&mid=s00000000018015049000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35DFWV+F4RNAQ+50+2HLITT" alt="">
 
 ---

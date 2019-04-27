@@ -13,7 +13,9 @@ Hugoのビルドとブログの更新を自動で行うようにした。
 
 ---
 
-<a href="https://t.afi-b.com/visit.php?guid=ON&a=C9511S-p324426y&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/9511-1526313401-3.gif" width="728" height="90" style="border:none;" alt="フォスターフリーランス" /></a><img src="https://t.afi-b.com/lead/C9511S/J690746r/p324426y" width="1" height="1" style="border:none;" />
+<a href="https://px.a8.net/svt/ejp?a8mat=35DFWV+F4RNAQ+50+2HLITT" target="_blank" rel="nofollow">
+<img border="0" width="728" height="90" alt="" src="https://www29.a8.net/svt/bgt?aid=190423759915&wid=001&eno=01&mid=s00000000018015049000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35DFWV+F4RNAQ+50+2HLITT" alt="">
 
 ---
 
