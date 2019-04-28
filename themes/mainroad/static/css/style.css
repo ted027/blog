@@ -427,6 +427,16 @@ select {
 	border: 0;
 }
 
+.narrow-area {
+	display: block;
+}
+
+@media screen and (min-width: 767px) {
+	.narrow-area {
+		display: none;
+	}
+}
+
 /* Main menu */
 .no-js .menu__btn {
 	display: none;
