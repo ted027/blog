@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+.narrow__area {
+    display: block;
+}
+
+@media screen and (min-width: 767px) {
+	.narrow__area {
+		display: none !important;
+	}
+}
+
 article,
 aside,
 dialog,
@@ -425,16 +435,6 @@ select {
 	margin: 0;
 	background: #e22d30;
 	border: 0;
-}
-
-.narrow-area {
-	display: block;
-}
-
-@media screen and (min-width: 767px) {
-	.narrow-area {
-		display: none;
-	}
 }
 
 /* Main menu */
