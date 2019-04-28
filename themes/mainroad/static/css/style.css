@@ -5,7 +5,8 @@
 }
 
 .narrow__area {
-    display: block;
+	display: block;
+	text-align: center;
 }
 
 @media screen and (min-width: 767px) {
