@@ -93,31 +93,22 @@ AWSCLOUD(aws) {
 USERS(users,Users)
 CLIENT(client)
 
-users -r-> client
-client -r-> route53
-client -r-> cloudfront
-cloudfront --> api
+users -> client
+client -> route53
+client -> cloudfront
+cloudfront -> api
 
-api -r-> lambda
-lambda -r-> web_bucket
-lambda -r-> table
+api -> lambda
+lambda -> web_bucket
+lambda -> table
 
-web_bucket .r.> log_bucket
+web_bucket .> log_bucket
 
 route53 .[hidden]. cloudfront
 table .[hidden]. web_bucket
 
 @enduml
-
 ```
-
-矢印中の`r`は右方向矢印、の意味。
-
-- `r`(right), `l`(left), `t`(top), `b`(bottom)
-
-指定しなければ`b`(bottom)にしようとするはず。
-
-自由に配置を変えることはできないけど、これを使ってある程度配置を整えられる。
 
 図にすると以下のような感じ。
 
