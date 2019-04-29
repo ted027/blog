@@ -5,8 +5,10 @@
 }
 
 .narrow__area {
-	display: inline-block;
+	display: block;
 	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
 @media screen and (min-width: 767px) {
