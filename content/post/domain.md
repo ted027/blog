@@ -46,7 +46,11 @@ GitHub Pages上で普通に静的ファイルを配置すると、
     {{< img src="/img/domain-set1.png">}}
 5. 「確認画面へ進む」→「設定する」
 
-これで、`https://www.[your.domain]`→`https://[github_user].github.io`に転送してくれるようになった。
+これで、
+
+`https://www.[your.domain]`→`https://[github_user].github.io`
+
+に転送してくれるようになった。
 
 ---
 
