@@ -15,7 +15,7 @@ DisqusというサービスならHugoに簡単に導入できそう。
 
  ---
 
- <a href="https://t.afi-b.com/visit.php?guid=ON&a=z10341W-l353325a&p=J690746r" target="_blank" rel="nofollow"><img src="https://www.afi-b.com/upload_image/10341-1547340072-3.jpg" width="468" height="60" style="border:none;" alt="若手向け" /></a><img src="https://t.afi-b.com/lead/z10341W/J690746r/l353325a" width="1" height="1" style="border:none;" />
+{{< ad/afb/backlog >}}
 
 ---
 
@@ -65,8 +65,6 @@ DisqusというサービスならHugoに簡単に導入できそう。
 
 ---
 
-<a href="https://px.a8.net/svt/ejp?a8mat=35DFWV+F4RNAQ+50+2HLITT" target="_blank" rel="nofollow">
-<img border="0" width="728" height="90" alt="" src="https://www29.a8.net/svt/bgt?aid=190423759915&wid=001&eno=01&mid=s00000000018015049000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35DFWV+F4RNAQ+50+2HLITT" alt="">
+{{< ad/a8/onamae >}}
 
 ---

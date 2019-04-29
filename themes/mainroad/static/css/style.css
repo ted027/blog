@@ -11,9 +11,17 @@
 	margin: 0 auto;
 }
 
+.wide__area {
+	display: none;
+}
+
 @media screen and (min-width: 767px) {
 	.narrow__area {
 		display: none !important;
+	}
+
+	.wide__area {
+		display: block;
 	}
 }
 
