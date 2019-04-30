@@ -1,5 +1,5 @@
 ---
-title: "Windows環境にPlantUML + Visual Studio Codeを導入する"
+title: "PlantUML + Visual Studio Codeを導入する（Windows環境）"
 date: 2019-04-25T09:33:57+09:00
 draft: false
 comments: true
