@@ -36,7 +36,7 @@ Hugoのビルドとブログの更新を自動で行うようにした。
 
 ### とりあえずシェル
 
-```deploy.sh
+```sh:deploy.sh
 set -ex
 hugo
 cd public
@@ -71,7 +71,7 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 2. CircleCI用のSSH Keyを作成
     - ビルドした静的ファイルをGitHub Pagesのレポジトリにpushしたいので必要
 
-    ```
+    ```sh
     $ ssh-keygen -t rsa -b 4096 -m pem -C "CircleCI" -f id_rsa_circleci -N ""
     ```
 
@@ -86,7 +86,7 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 
 5. .circleci/config.ymlを書く
 
-    ```config.yml
+    ```:config.yml
     version: 2
     jobs:
     build:

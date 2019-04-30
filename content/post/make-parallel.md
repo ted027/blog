@@ -21,7 +21,7 @@ Makefileでターゲットを呼ぶ際、全部でなく一部分だけ並列で
 
 Makeを並列で実行するには、`-j`のオプションをつけて実行する。
 
-```
+```sh
 $ make target -j3
 ```
 
@@ -87,7 +87,7 @@ target:
 
 `wait $(PID)`でプロセスIDごとに待ってみようとしても、改行すると効かなくなるので、
 
-```
+```Makefile
     wait $(PID1) && wait $(PID2)
 ```
 
@@ -108,7 +108,7 @@ target-post:
     command3
 ```
 
-```
+```sh
 $ make -j3 target-parallel
 $ make target-post
 ```

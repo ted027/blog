@@ -55,7 +55,7 @@ GitHubで公開されてます。
 
 includeしたAWSアイコンは、基本的に以下の書式で書ける。
 
-```
+```plantuml
 AWS_SERVICE_NAME_UPPERCASE(puml resource name, display name)
 ```
 

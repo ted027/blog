@@ -7,6 +7,9 @@ paginate = "10"
 disqusShortname = "ted027-com"
 googleAnalytics = "UA-138367212-1"
 
+pygmentsCodefences = true
+pygmentsStyle = "mainroad"
+
 [Author]
   name = "imait"
   bio = "横浜あたりでクラウドサービスをせこせこ開発しているエンジニァーです。"

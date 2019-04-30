@@ -21,19 +21,19 @@ tags: ["Linux", "検索", "find", "grep"]
 
 - 特定ディレクトリのファイル名検索
 
-```
+```sh
 $ ls {directory/path} | grep {search_word}
 ```
 
 - 特定ディレクトリ配下のファイル名検索
 
-```
+```sh
 $ find {directory/path} | -type f -name \*{search_word}\*
 ```
 
 - 特定ディレクトリ配下のディレクトリ名検索
 
-```
+```sh
 $ find {directory/path} | -type d -name \*{search_word}\*
 ```
 
@@ -41,26 +41,26 @@ $ find {directory/path} | -type d -name \*{search_word}\*
 
 - 特定ディレクトリのファイル内容検索（一致場所表示）
 
-```
-grep {search_word} {directory/path}/*
+```sh
+$ grep {search_word} {directory/path}/*
 ```
 
 - 特定ディレクトリのファイル内容検索（一致場所非表示）
 
-```
-grep {search_word} -l {directory/path}/*
+```sh
+$ grep {search_word} -l {directory/path}/*
 ```
 
 - 特定ディレクトリ配下のファイル内容検索（一致場所表示）
 
-```
-grep {search_word} -r {directory/path}
+```sh
+$ grep {search_word} -r {directory/path}
 ```
 
 - 特定ディレクトリ配下のファイル内容検索（一致場所非表示）
 
-```
-grep {search_word} -rl {directory/path}
+```sh
+$ grep {search_word} -rl {directory/path}
 ```
 
 ---

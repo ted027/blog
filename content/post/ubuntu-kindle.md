@@ -23,13 +23,13 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 1. 32bit版のWineを使えるようにする
 
-    ```
+    ```sh
     $ sudo dpkg --add-architecture i386
     ```
 
 2. レポジトリを追加
 
-    ```
+    ```sh
     $ wget -nc https://dl.winehq.org/wine-builds/winehq.key
     $ sudo apt-key add winehq.key
     $ sudo apt-add-repository -y -n https://dl.winehq.org/wine-builds/ubuntu/
@@ -37,7 +37,7 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 3. Wineをインストール
 
-    ```
+    ```sh
     $ sudo apt update
     $ sudo apt install winehq-stable
     ```
@@ -48,7 +48,7 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 1. OSを選択
 
-    ```
+    ```sh
     $ winecfg
     ```
 
@@ -62,7 +62,7 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 1. winetricksをインストール
 
-    ```
+    ```sh
     $ cd ~/.wine
     $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
     $ sudo chmod +x winetricks
@@ -70,7 +70,7 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 2. 文字化けを直す
 
-    ```
+    ```sh
     $ sudo sh winetricks allfonts
     $ sudo sh winetricks fontsmooth-rgb
     ```

@@ -29,7 +29,7 @@ markdownでブログが書けるなんて素晴らしい。
 
 自分のUbuntu 18.04環境では、aptだとバージョンが古かったので、snapでインストール。
 
-```
+```sh
 $ sudo snap install hugo --channel=extended
 $ cd /usr/bin
 $ sudo ln -s /snap/bin/hugo hugo
@@ -37,7 +37,7 @@ $ sudo ln -s /snap/bin/hugo hugo
 
 gitからでも取れる。
 
-```
+```sh
 $ git clone https://github.com/gohugoio/hugo.git
 $ cd hugo
 $ go install --tags extended
@@ -76,7 +76,7 @@ Hugoで生成したファイルをGitHub Pagesで公開する感じ。
 
 ### Hugoで静的サイトを作成
 
-```
+```sh
 $ hugo new site blog
 $ cd blog
 ```
@@ -90,7 +90,7 @@ $ cd blog
      - 「Demo」を押すとサンプルが見れて楽しい
  - `blog/thmem`以下にテーマを落とす
 
-        ```
+        ```sh
         $ cd themes
         $ git clone https://github.com/[theme_name]
         $ cd ../
@@ -111,13 +111,13 @@ $ cd blog
 
 ### 記事を作成
 
-```
+```sh
 $ hugo new post/first.md
 ```
 
 こんな記事ができる。
 
-```
+```markdown
 ---
 title: "First"
 date: 2019-04-15T00:00:00+09:00
@@ -133,7 +133,7 @@ draft: true
 
 ### ローカルサーバで確認
 
-```
+```sh
 $ hugo server --buildDrafts --watch
 ```
 
@@ -149,7 +149,7 @@ $ hugo server --buildDrafts --watch
 
 1. 「blog」をpushする
 
-    ```
+    ```sh
     $ git init
     $ git remote add origin git@github.com:[github_user]/blog.git
     $ git add -A
@@ -161,13 +161,13 @@ $ hugo server --buildDrafts --watch
  - `hugo`でビルドすると、`blog/public`に公開用ファイル一式が作成される
  - なので、`[github_user].github.io`レポジトリをサブモジュールとして`blog/public`に追加しておくと、ビルドしてpushすることで、GitHub Pagesを使ってブログが公開できる
 
-    ```
+    ```sh
     $ git submodule add git@github.com:[github_user]/[github_user].github.io.git public
     ```
 
 3. ビルドして公開
 
-    ```
+    ```sh
     $ hugo
     $ cd public
     $ git add -A

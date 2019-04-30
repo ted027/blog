@@ -28,7 +28,7 @@ Pythonは、記述がシンプルで書きやすく読みやすい、ライブ�
     - 「Add Python3.X to PATH」にチェックが入っていることを確認して「Install Now」
 3. 確認
     - コマンドプロンプトを起動して、  
-    ```
+    ```sh
     $ python --version
     ```
     と打ち実行、バージョンが表示されればインストールできています
@@ -49,7 +49,7 @@ Pythonは、対話モードでの実行と、ファイルを記述しての実�
 
 対話モードを使うには、コマンドプロンプトで
 
-```
+```sh
 $ python
 ```
 
@@ -57,7 +57,7 @@ $ python
 
 続けて`Hello, World.`を出力するコマンドを打ち、実行。
 
-```
+```sh
 $ print("Hello, World.")
 ```
 
@@ -65,7 +65,7 @@ Pythonが`"Hello, World."`と画面に出力してくれます。
 
 対話モードを抜けるには、`ctrl + D`を押すか、
 
-```
+```sh
 $ exit()
 ```
 
@@ -79,13 +79,13 @@ $ exit()
 
 `hello.py`ファイルを作成し、コマンドを入力して保存。
 
-```python :hello.py
+```python:hello.py
 print("Hello, World.")
 ```
 
 コマンドプロンプトで`hello.py`と同階層から、
 
-```
+```sh
 $ python hello.py
 ```
 
