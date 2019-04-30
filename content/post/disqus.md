@@ -11,9 +11,9 @@ tags: ["Disqus", "コメント欄", "Hugo"]
 
 DisqusというサービスならHugoに簡単に導入できそう。
 
- <!--more-->
+<!--more-->
 
- ---
+---
 
 {{< ad/afb/backlog >}}
 

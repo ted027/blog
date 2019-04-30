@@ -9,7 +9,7 @@ tags: ["Docker", "Pipeline"]
 
 Jenkins PipelineジョブのDocker仕様で便利〜と思って使ってたら軽く躓いた話。
 
- <!--more-->
+<!--more-->
 
 ---
 

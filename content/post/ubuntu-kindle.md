@@ -11,11 +11,12 @@ UbuntuにKindleをインストールしようとして苦労したのでメモ�
 
 Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間を掛けてWineというWindowsエミュレータを使ってWindows版をインストールする。
 
- <!--more-->
+<!--more-->
 
 ---
 
 {{< ad/afb/foster >}}
+
 ---
 
 ### Wineをインストール

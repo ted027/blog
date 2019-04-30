@@ -9,7 +9,7 @@ tags: ["AWS", "PlantUML", "構成図"]
 
 公開されているAWS Simple Iconsのpumlファイルをincludeすることで、PlantUMLで簡単に図に導入できる。
 
- <!--more-->
+<!--more-->
 
 ---
 

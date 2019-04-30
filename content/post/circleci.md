@@ -9,7 +9,7 @@ tags: ["CI", "CircleCI", "Hugo"]
 
 Hugoのビルドとブログの更新を自動で行うようにした。
 
- <!--more-->
+<!--more-->
 
 ---
 

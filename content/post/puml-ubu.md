@@ -7,7 +7,7 @@ categories: ["PlantUML"]
 tags: ["PlantUML", "Visual Studio Code", "Ubuntu"]
 ---
 
- <!--more-->
+<!--more-->
 
 ---
 

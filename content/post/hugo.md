@@ -9,7 +9,7 @@ tags: ["GitHub Pages", "Hugo", "Ubuntu"]
 
 Hugo + GitHub Pagesを使ってブログを作った。
 
- <!--more-->
+<!--more-->
 
 ---
 

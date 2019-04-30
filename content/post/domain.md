@@ -9,7 +9,7 @@ tags: ["ドメイン", "GitHub Pages", "Hugo"]
 
 GitHub Pagesに独自ドメインを設定した。
 
- <!--more-->
+<!--more-->
 
 ---
 

@@ -9,7 +9,7 @@ tags: ["Ubuntu", "OS", "Linux"]
 
 新しいノートPC購入を機に、OSをUbuntu 18.04 LTSにした際の備忘録。
 
- <!--more-->
+<!--more-->
 
 ---
 

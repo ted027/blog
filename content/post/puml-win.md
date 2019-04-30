@@ -9,7 +9,7 @@ tags: ["PlantUML", "Visual Studio Code", "Windows"]
 
 PlantUMLは、構成や関連を言語で記載しUML図を作成できるコンポーネント。
 
- <!--more-->
+<!--more-->
 
 ---
 
