@@ -1,10 +1,10 @@
 ---
-title: "Windows環境にVSCode+PlantUMLを導入する"
+title: "Windows環境にPlantUML + Visual Studio Codeを導入する"
 date: 2019-04-25T09:33:57+09:00
 draft: false
 comments: true
 categories: ["PlantUML"]
-tags: ["PlantUML", "VSCode", "Windows"]
+tags: ["PlantUML", "Visual Studio Code", "Windows"]
 ---
 
 PlantUMLは、構成や関連を言語で記載しUML図を作成できるコンポーネント。
