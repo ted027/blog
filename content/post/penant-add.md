@@ -3,7 +3,7 @@ title: "パワプロ ペナントの補強思考設定（2019年4月時点）"
 date: 2019-04-23T09:32:03+09:00
 draft: false
 comments: true
-categories: ["パワプロ"]
+categories: ["パワプロ", "野球"]
 tags: ["パワプロ2018", "ペナント", "補強思考", "野球"]
 ---
 
