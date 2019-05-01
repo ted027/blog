@@ -1,5 +1,5 @@
 ---
-title: "Pythonを導入する（Windows環境）"
+title: "Pythonの導入とコマンド実行（Windows環境）"
 date: 2019-04-30T20:37:26+09:00
 draft: false
 comments: true

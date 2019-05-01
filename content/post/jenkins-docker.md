@@ -1,5 +1,5 @@
 ---
-title: "JenkinsでDockerfileから実行する際のデフォルトオプション"
+title: "JenkinsジョブをDockerfileから実行する際のデフォルトオプション"
 date: 2019-04-26T16:05:19+09:00
 draft: false
 comments: true
