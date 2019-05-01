@@ -4,7 +4,7 @@ date: 2019-05-01T14:14:13+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["プロ野球", "速報", "Python", "スクレイピング"]
+tags: ["プロ野球", "Python", "スクレイピング"]
 ---
 
 昨年書いた、Pythonでプロ野球のスコア速報を取得するスクリプト。
@@ -52,12 +52,12 @@ def inningArray(soup):
     raw_innings = soup.select('.teams .yjMSt')
     for raw_inning in raw_innings:
         inning = raw_inning.text
-        inning = inning.replace("回", "")
-        inning = inning.replace("表", "t")
-        inning = inning.replace("裏", "b")
-        inning = inning.replace("試合前", "yet")
-        inning = inning.replace("結果", "end")
-        inning = inning.replace("中止", "stop")
+        inning = inning.replace('回', '')
+        inning = inning.replace('表', 't')
+        inning = inning.replace('裏', 'b')
+        inning = inning.replace('試合前', 'yet')
+        inning = inning.replace('結果', 'end')
+        inning = inning.replace('中止', 'stop')
         innings.append(inning)
     return innings
 
@@ -95,7 +95,7 @@ def liveScores():
     res = requests.get(url)
     res.raise_for_status()
 
-    soup = bs4.BeautifulSoup(res.text, "html.parser")
+    soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
     games = len(soup.select('.teams'))
     starts = startArray(soup)

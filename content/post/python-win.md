@@ -4,7 +4,7 @@ date: 2019-04-30T20:37:26+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["Python", "Windows", "初心者"]
+tags: ["Python", "Windows", "インストール"]
 ---
 
 <!--more-->
