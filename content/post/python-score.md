@@ -17,7 +17,7 @@ tags: ["プロ野球", "Python", "スクレイピング"]
 
 ---
 
-### Pythonで野球Hack
+### Pythonでスクレイピング
 
 Pythonでは、bs4というライブラリを使って簡単にウェブスクレイピングできる。
 
@@ -31,14 +31,17 @@ import bs4
 
 これを使って他サイトからプロ野球速報を取得したい。
 
-### 書いてみた
+---
+
+### 書いてみる
 
 ```python:scores.py
 import requests
 import bs4
 import json
 
-def startArray(soup):
+
+def start_array(soup):
     starts = []
     raw_starts = soup.select('.teams .yjSt')
     for raw_info in raw_starts:
@@ -47,7 +50,8 @@ def startArray(soup):
             starts.append(info)
     return starts
 
-def inningArray(soup):
+
+def inning_array(soup):
     innings = []
     raw_innings = soup.select('.teams .yjMSt')
     for raw_inning in raw_innings:
@@ -61,7 +65,8 @@ def inningArray(soup):
         innings.append(inning)
     return innings
 
-def teamArray(soup):
+
+def team_array(soup):
     teams = []
     team_alp = {
         '広島': 'C',
@@ -83,14 +88,17 @@ def teamArray(soup):
         teams.append(alp)
     return teams
 
-def scoreArray(soup):
+
+def score_array(soup):
     scores = []
     raw_scores = soup.select('.teams .score_r')
     for raw_score in raw_scores:
         scores.append(raw_score.text)
     return scores
 
-def liveScores():
+
+def live_scores():
+
     url = 'http://baseball.yahoo.co.jp/npb/schedule/'
     res = requests.get(url)
     res.raise_for_status()
@@ -98,10 +106,10 @@ def liveScores():
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
     games = len(soup.select('.teams'))
-    starts = startArray(soup)
-    innings = inningArray(soup)
-    teams = teamArray(soup)
-    scores = scoreArray(soup)
+    starts = start_array(soup)
+    innings = inning_array(soup)
+    teams = team_array(soup)
+    scores = score_array(soup)
 
     output = []
     for i in range(games):
@@ -111,20 +119,34 @@ def liveScores():
                 'inning': innings[i]
             },
             'home': {
-                'team': teams[i*2+1],
-                'score': scores[i*2+1]
+                'team': teams[i * 2 + 1],
+                'score': scores[i * 2 + 1]
             },
             'away': {
-                'team': teams[i*2],
-                'score': scores[i*2]
+                'team': teams[i * 2],
+                'score': scores[i * 2]
             }
         }
         output.append(game_score)
 
     return json.dumps(output)
 
-print(liveScores())
+
+print(live_scores())
 ```
+
+---
+
+### 結果
+
+以下のような`JSON`形式の配列が表示される。
+
+```json
+[{"info": {"start": "14:00", "inning": "end"}, "home": {"team": "G", "score": "5"}, "away": {"team": "D", "score": "1"}},
+...
+```
+
+---
 
 ### おわり
 
