@@ -37,8 +37,8 @@ import bs4
 
 ```python:scores.py
 import requests
-import bs4
 import json
+from bs4 import BeautifulSoup
 
 
 def start_array(soup):
@@ -103,7 +103,7 @@ def live_scores():
     res = requests.get(url)
     res.raise_for_status()
 
-    soup = bs4.BeautifulSoup(res.text, 'html.parser')
+    soup = BeautifulSoup(res.text, 'html.parser')
 
     games = len(soup.select('.teams'))
     starts = start_array(soup)
@@ -114,17 +114,17 @@ def live_scores():
     output = []
     for i in range(games):
         game_score = {
-            'info': {
-                'start': starts[i],
-                'inning': innings[i]
+            'Info': {
+                'Start': starts[i],
+                'Inning': innings[i]
             },
-            'home': {
-                'team': teams[i * 2 + 1],
-                'score': scores[i * 2 + 1]
+            'Home': {
+                'Team': teams[i * 2 + 1],
+                'Score': scores[i * 2 + 1]
             },
-            'away': {
-                'team': teams[i * 2],
-                'score': scores[i * 2]
+            'Away': {
+                'Team': teams[i * 2],
+                'Score': scores[i * 2]
             }
         }
         output.append(game_score)
@@ -142,8 +142,12 @@ print(live_scores())
 以下のような`JSON`形式の配列が表示される。
 
 ```json
-[{"info": {"start": "14:00", "inning": "end"}, "home": {"team": "G", "score": "5"}, "away": {"team": "D", "score": "1"}},
-...
+[{
+    "Info": {"Start": "14:00", "Inning": "end"},
+    "Home": {"Team": "G", "Score": "5"},
+    "Away": {"Team": "D", "Score": "1"}
+ },
+ ...
 ```
 
 ---
