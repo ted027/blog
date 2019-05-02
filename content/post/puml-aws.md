@@ -17,9 +17,9 @@ tags: ["AWS", "PlantUML", "構成図"]
 
 ---
 
-- [Windows環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-win)
+- [[参考記事]Windows環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-win)
 
-- [Ubuntu環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-ubu)
+- [[参考記事]Ubuntu環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-ubu)
 
 ---
 

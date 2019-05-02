@@ -23,7 +23,7 @@ GitHub Pages上で普通に静的ファイルを配置すると、
 
 のサブドメインに公開される。
 
-- [Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
+- [[参考記事]Hugo + GitHub Pagesでブログを始めた話](https://www.ted027.com/post/hugo)
 
 せっかくなので独自ドメインを取得して設定したい。
 

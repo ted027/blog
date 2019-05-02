@@ -183,7 +183,7 @@ $ hugo server --buildDrafts --watch
 
 自動化とか諸々はまたの機会に。
 
- - [CircleCIでHugoのビルドを自動化した話](https://www.ted027.com/post/circleci)
+ - [[参考記事]CircleCIでHugoのビルドを自動化した話](https://www.ted027.com/post/circleci)
 
 以下参考サイト
 

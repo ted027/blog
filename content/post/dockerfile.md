@@ -59,7 +59,7 @@ RUN export VAR3="piyo"
 
 ※ Dockerfileで、コマンドの実行結果を変数に格納することは（基本的に）できない。
 
- - [Dockerでコマンド実行結果を変数に入れられなくて困った話](https://www.ted027.com/post/docker-var)
+ - [[参考記事]Dockerでコマンド実行結果を変数に入れられなくて困った話](https://www.ted027.com/post/docker-var)
 
 ---
 

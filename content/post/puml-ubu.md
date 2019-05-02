@@ -17,7 +17,7 @@ tags: ["PlantUML", "Visual Studio Code", "Ubuntu"]
 
 Visual Studio Code + PlantUMLをUbuntuに導入する。
 
-[Windows環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-win)
+[[参考記事]Windows環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-win)
 
 自分の環境以外のインストール手順なんてどうでもいいよな、と思いWindows版と記事を分けることに。ほぼ一緒ですが。
 
@@ -78,7 +78,7 @@ deactivate Form
 
 {{< img src="/img/puml.png" >}}
 
-[PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)
+[[参考記事]PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)
 
 ### 出力する
 

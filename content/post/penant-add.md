@@ -29,7 +29,7 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 条件判断は以下に記載。
 
-- [パワプロ ペナント補強思考設定の条件判断を説明](https://www.ted027.com/post/penant-add-descript)
+- [[参考記事]パワプロ ペナント補強思考設定の条件判断を説明](https://www.ted027.com/post/penant-add-descript)
 
 ---
 

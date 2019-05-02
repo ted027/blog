@@ -57,7 +57,7 @@ agent {
 
 `ENTRYPOINT`の話は以下の記事に少し書きました。
 
-- [Dockerfileの書き方や紛らわしいコマンドの話](https://www.ted027.com/post/dockerfile)
+- [[参考記事]Dockerfileの書き方や紛らわしいコマンドの話](https://www.ted027.com/post/dockerfile)
 
 このデフォルトオプションには思惑があるだろうし、ジョブはworkspaceで実行する前提なんだろうけど、自分は少し困ることがあった。
 
@@ -72,6 +72,8 @@ agent {
 ---
 
 {{< img src="/img/jenkins-flow.png" >}}
+
+[[参考記事]PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)
 
 ---
 

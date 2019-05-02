@@ -21,7 +21,7 @@ PlantUMLは、構成や関連を言語で記載しUML図を作成できるコン
 
 自分はVisual Studio Codeに拡張機能を入れて使っています。
 
-[Ubuntu環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-ubu)
+[[参考記事]Ubuntu環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-ubu)
 
 ### 導入
 
@@ -74,7 +74,7 @@ deactivate Form
 
 {{< img src="/img/puml.png" >}}
 
-[PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)
+[[参考記事]PlantUMLでAWSアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-aws)
 
 ### 出力する
 
