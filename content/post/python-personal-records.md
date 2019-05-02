@@ -4,7 +4,7 @@ date: 2019-05-02T12:11:56+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["プロ野球", "Python", "スクレイピング"]
+tags: ["プロ野球", "Python", "個人成績"]
 ---
 
 スコア速報と同じく、Pythonでスクレイピングして各チーム最新の個人成績を取得したい。
