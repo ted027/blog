@@ -310,6 +310,8 @@ MLBはオープンデータがある程度提供されているが、日本だ�
 
 Webサイトのちょっとした仕様変更とかで動かなくなりそうなので、定期的に取るならメンテナンスが大変。
 
+[[参考記事]Pythonでプロ野球スコア速報を取得する](https://www.ted027.com/post/python-score)
+
 ---
 
 {{< ad/con/wide/python_taikutsu >}}

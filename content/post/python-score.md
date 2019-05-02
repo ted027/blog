@@ -156,6 +156,8 @@ print(live_scores())
 
 個人成績を取得してセイバーメトリクスを算出、みたいなこともやってみたい。
 
+[[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
 ---
 
 {{< ad/con/wide/python_taikutsu >}}
