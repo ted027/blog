@@ -13,6 +13,10 @@ Jenkins PipelineジョブのDocker仕様で便利〜と思って使ってたら�
 
 ---
 
+{{< ad/a8/techacademy>}}
+
+---
+
 {{< ad/con/wide/devops >}}
 
 ---
@@ -131,5 +135,9 @@ stage ('stage') {
 ---
 
 {{< ad/con/wide/docker >}}
+
+---
+
+{{< ad/a8/techacademy2>}}
 
 ---

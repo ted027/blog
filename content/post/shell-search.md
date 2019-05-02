@@ -68,3 +68,7 @@ $ grep {search_word} -rl {directory/path}
 {{< ad/con/wide/unix >}}
 
 ---
+
+{{< ad/a8/techacademy>}}
+
+---

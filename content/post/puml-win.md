@@ -93,3 +93,7 @@ plantuml: export current diagram
 {{< ad/con/wide/uml >}}
 
 ---
+
+{{< ad/a8/techacademy2>}}
+
+---

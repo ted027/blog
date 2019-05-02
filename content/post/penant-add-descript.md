@@ -13,6 +13,10 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
+{{< ad/a8/skyperfect>}}
+
+---
+
 {{< ad/con/wide/purosupi2019>}}
 
 ---
@@ -196,5 +200,9 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 ---
 
 {{< ad/con/wide/pawapuro2018>}}
+
+---
+
+{{< ad/a8/skyperfect>}}
 
 ---

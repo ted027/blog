@@ -171,6 +171,10 @@ Dockerfile用のディレクトリを一つ掘って置いておく。
 
 ---
 
+{{< ad/con/wide/docker >}}
+
+---
+
 {{< ad/a8/onamae >}}
 
 ---

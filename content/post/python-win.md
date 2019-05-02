@@ -11,6 +11,10 @@ tags: ["Python", "Windows", "インストール"]
 
 ---
 
+{{< ad/a8/techacademy2>}}
+
+---
+
 {{< ad/con/wide/python_dokugaku >}}
 
 ---
@@ -94,5 +98,9 @@ $ python hello.py
 ---
 
 {{< ad/con/wide/python_taikutsu >}}
+
+---
+
+{{< ad/a8/techacademy2>}}
 
 ---

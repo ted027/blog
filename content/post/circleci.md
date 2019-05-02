@@ -139,3 +139,7 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 {{< ad/con/wide/devops >}}
 
 ---
+
+{{< ad/a8/techacademy>}}
+
+---

@@ -195,3 +195,7 @@ $ hugo server --buildDrafts --watch
 {{< ad/con/wide/github >}}
 
 ---
+
+{{< ad/a8/techacademy1>}}
+
+---

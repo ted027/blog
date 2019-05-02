@@ -13,6 +13,10 @@ tags: ["プロ野球", "Python", "スコア速報"]
 
 ---
 
+{{< ad/a8/skyperfect>}}
+
+---
+
 {{< ad/con/wide/purosupi2019 >}}
 
 ---
@@ -161,5 +165,9 @@ print(live_scores())
 ---
 
 {{< ad/con/wide/python_taikutsu >}}
+
+---
+
+{{< ad/a8/skyperfect>}}
 
 ---

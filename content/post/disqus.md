@@ -15,7 +15,7 @@ DisqusというサービスならHugoに簡単に導入できそう。
 
 ---
 
-{{< ad/afb/backlog >}}
+{{< ad/a8/techacademy1>}}
 
 ---
 

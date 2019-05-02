@@ -13,6 +13,10 @@ tags: ["プロ野球", "Python", "個人成績"]
 
 ---
 
+{{< ad/a8/skyperfect>}}
+
+---
+
 {{< ad/con/wide/python_analytics >}}
 
 ---
@@ -315,5 +319,9 @@ Webサイトのちょっとした仕様変更とかで動かなくなりそう�
 ---
 
 {{< ad/con/wide/python_taikutsu >}}
+
+---
+
+{{< ad/a8/skyperfect>}}
 
 ---

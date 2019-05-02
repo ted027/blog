@@ -13,6 +13,10 @@ tags: ["AWS", "PlantUML", "構成図"]
 
 ---
 
+{{< ad/a8/techacademy1>}}
+
+---
+
 {{< ad/con/wide/uml >}}
 
 ---
@@ -121,5 +125,9 @@ table .[hidden]. web_bucket
 ---
 
 {{< ad/con/wide/aws >}}
+
+---
+
+{{< ad/a8/techacademy1>}}
 
 ---

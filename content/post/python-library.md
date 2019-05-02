@@ -11,6 +11,10 @@ tags: ["Python", "ライブラリ", "pip", "モジュール"]
 
 ---
 
+{{< ad/a8/techacademy>}}
+
+---
+
 {{< ad/con/wide/python_dokugaku >}}
 
 ---
@@ -83,5 +87,9 @@ soup = bs4.BeautifulSoup(res.content, "html.parser")
 ---
 
 {{< ad/con/wide/python_taikutsu >}}
+
+---
+
+{{< ad/a8/techacademy2>}}
 
 ---

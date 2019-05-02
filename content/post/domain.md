@@ -95,3 +95,8 @@ baseURL = "https://www.[your.domain]"
 {{< ad/con/wide/github >}}
 
 ---
+
+
+{{< ad/a8/techacademy>}}
+
+---

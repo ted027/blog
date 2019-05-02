@@ -13,6 +13,10 @@ tags: ["Ubuntu", "OS", "Linux"]
 
 ---
 
+{{< ad/a8/techacademy>}}
+
+---
+
 {{< ad/con/wide/usb >}}
 
 ---
@@ -66,5 +70,9 @@ Ubuntu用のクライアントは無いし拡張機能も多分無い。Wineを�
 ---
 
 {{< ad/con/wide/note_pc >}}
+
+---
+
+{{< ad/a8/techacademy>}}
 
 ---

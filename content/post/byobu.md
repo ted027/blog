@@ -71,3 +71,7 @@ tags: ["Shell", "Byobu", "仮想端末", "画面分割"]
 {{< ad/con/wide/unix >}}
 
 ---
+
+{{< ad/a8/techacademy1>}}
+
+---
