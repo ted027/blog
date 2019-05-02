@@ -25,7 +25,7 @@ tags: ["プロ野球", "Python", "個人成績"]
 
 ### 書いてみる
 
-```python:records.py
+```python :records.py
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -74,9 +74,9 @@ def confirm_pitcher_tables(tables):
     records_table = rl_table = None
     for table in tables:
         table_type = table.find('tr').text.replace('\n', '')
-        if '投手成績' in table_type:
+        if table_type == '投手成績':
             records_table = table
-        elif '左右打者別成績' in table_type:
+        elif table_type == '左右打者別成績':
             rl_table = table
     return records_table, rl_table
 
@@ -88,15 +88,15 @@ def confirm_hitter_tables(tables):
     records_table = chance_table = rl_table = count_table = runner_table = None
     for table in tables:
         table_type = table.find('tr').text.replace('\n', '')
-        if '打者成績' in table_type:
+        if table_type == '打者成績':
             records_table = table
-        elif '得点圏成績' in table_type:
+        elif table_type == '得点圏成績':
             chance_table = table
-        elif '左右投手別成績' in table_type:
+        elif table_type == '左右投手別成績':
             rl_table = table
-        elif 'カウント別成績' in table_type:
+        elif table_type == 'カウント別成績':
             count_table = table
-        elif '塁状況別成績' in table_type:
+        elif table_type == '塁状況別成績':
             runner_table = table
     return records_table, chance_table, rl_table, count_table, runner_table
 
@@ -122,8 +122,6 @@ def records_by_rl(rl_table, dump_val):
             hitter: 2 ('投手', '打席')
     """
     rl_header = [th.text for th in rl_table.find_all('th')][dump_val:]
-    r_header = ['対右' + h for h in rl_header]
-    l_header = ['対左' + h for h in rl_header]
 
     rl_trs = rl_table.find_all('tr')[EXCEPT_TITLE_HEADER:]
     rl_records = {}
@@ -252,35 +250,55 @@ with open('hitters.json', 'w') as hf:
       "Name": "山口 俊",
       "Team": "読売ジャイアンツ",
       "Records": {
-        "防御率": "3.60",
-        "登板": "2",
-        "先発": "2",
+        "防御率": "1.59",
+        "登板": "5",
+        "先発": "5",
         "完投": "0",
         "完封": "0",
         "無四球": "0",
-        "QS": "0",
+        "QS": "4",
         "交代完了": "0",
-        "勝利": "0",
-        "敗戦": "1",
+        "勝利": "4",
+        "敗戦": "0",
         "ホールド": "0",
         "HP": "0",
         "セーブ": "0",
-        "勝率": ".000",
-        "投球回": "10",
-        "打者": "35",
-        "被安打": "7",
-        "被本塁打": "2",
-        "奪三振": "9",
-        "奪三振率": "8.10",
-        "与四球": "2",
-        "与死球": "0",
-        "暴投": "0",
+        "勝率": "1.000",
+        "投球回": "34",
+        "打者": "137",
+        "被安打": "19",
+        "被本塁打": "1",
+        "奪三振": "30",
+        "奪三振率": "7.94",
+        "与四球": "16",
+        "与死球": "4",
+        "暴投": "1",
         "ボーク": "0",
-        "失点": "4",
-        "自責点": "4",
-        "被打率": ".212",
-        "K/BB": "4.50",
-        "WHIP": "0.90",
+        "失点": "7",
+        "自責点": "6",
+        "被打率": ".168",
+        "K/BB": "1.88",
+        "WHIP": "1.03",
+        "対右": {
+          "被打率": ".082",
+          "被打数": "49",
+          "被安打": "4",
+          "被本塁打": "1",
+          "奪三振": "15",
+          "与四球": "10",
+          "与死球": "4"
+        },
+        "対左": {
+          "被打率": ".234",
+          "被打数": "64",
+          "被安打": "15",
+          "被本塁打": "0",
+          "奪三振": "15",
+          "与四球": "6",
+          "与死球": "0"
+        }
+      }
+    },
         ...
 ```
 
