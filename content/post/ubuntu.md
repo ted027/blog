@@ -13,7 +13,7 @@ tags: ["Ubuntu", "OS", "Linux"]
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techstars>}}
 
 ---
 
