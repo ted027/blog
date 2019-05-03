@@ -29,7 +29,7 @@ tags: ["プロ野球", "Python", "個人成績"]
 
 ### 書いてみる
 
-```python :records.py
+```python:records.py
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -44,7 +44,7 @@ EXCEPT_TITLE_HEADER = 2
 
 EXCEPT_HEAD_CONTENT = 1
 
-CHANCE_STR_DIVIDER = 4
+CHANCE_STR_DIVIDER = 3
 
 PITCHER_DUMP_VAL = 1
 HITTER_DUMP_VAL = 2
@@ -55,12 +55,12 @@ TEAM_NUM_LIST = [376 if i == 10 else i for i in list(range(1, 13))]
 def request_soup(url):
     res = requests.get(url)
     res.raise_for_status()
-    return BeautifulSoup(res.content, "html.parser")
+    return BeautifulSoup(res.content, 'html.parser')
 
 
 def link_tail_list(url):
     soup = request_soup(url)
-    table = soup.find("table")
+    table = soup.find('table')
     td_player_list = table.find_all('td', class_='lt yjM')
     return [pl.find('a').get('href') for pl in td_player_list]
 
