@@ -3,7 +3,7 @@ title: "小学生からの教育用プログラミング言語 Scratchの使い�
 date: 2019-04-29T23:14:58+09:00
 draft: false
 comments: true
-categories: ["教育"]
+categories: ["Scratch"]
 tags: ["Scratch", "プログラミング教育"]
 ---
 
