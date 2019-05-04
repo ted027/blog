@@ -21,6 +21,8 @@ tags: ["プロ野球", "Python", "セイバーメトリクス"]
 
 ---
 
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
 今回追加するのはごくごく簡単な指標6つ。
 
 というか3つは既に取れているので実施3つ
