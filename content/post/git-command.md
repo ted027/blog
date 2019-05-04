@@ -137,6 +137,7 @@ $ git reset {file.name}   # 特定ファイルの更新のaddを取り消し
 ```
 
 - commitを取り消す
+  - `commit id`でなく、`HEAD~{n}`で、n個前のcommitを指定することもできる。
 
 ```sh
 $ git reset --hard HEAD^    # 直前のコミットを取り消し、ワークディレクトリも書き換える
@@ -145,8 +146,6 @@ $ git reset --soft HEAD^    # 直前のコミットを取り消す、ワーク�
 $ git reset --hard {commit_id}    # 特定のコミットを取り消し、ワークディレクトリも書き換える
 $ git reset --soft {commit_id}    # 特定のコミットを取り消す、ワークディレクトリはそのまま
 ```
-
-`commit id`でなく、`HEAD~{n}`で、n個前のcommitを指定することもできる。
 
 - pushを取り消す
 
@@ -196,7 +195,7 @@ $ git commit --amend "new commit message"
 
 - ファイルをgit管理から外す
 
-一度git管理したファイルは.gitignoreに追加しただけではgit管理から外れないので、これをする必要がある。
+  - 一度git管理したファイルは.gitignoreに追加しただけではgit管理から外れないので、`git rm`で明示的にgit管理から外す必要がある。
 
 ```sh
 $ git rm -f {file.name}
