@@ -21,7 +21,7 @@ PlantUMLは、構成や関連を言語で記載しUML図を作成できるコン
 
 自分はVisual Studio Codeに拡張機能を入れて使っています。
 
-[[参考記事]Ubuntu環境にVSCode+PlantUMLを導入する](https://www.ted027.com/post/puml-ubu)
+[[参考記事]PlantUML + Visual Studio Codeを導入する（Ubuntu環境）](https://www.ted027.com/post/puml-ubu)
 
 ### 導入
 

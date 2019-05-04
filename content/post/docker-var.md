@@ -17,7 +17,7 @@ Dockerfileではコマンド実行結果を変数に入れられない。それ�
 
 ---
 
- - [[参考記事]Dockerfileの書き方や紛らわしいコマンド達の話](https://www.ted027.com/post/dockerfile)
+ - [[参考記事]Dockerfileの書き方や紛らわしいコマンドの話](https://www.ted027.com/post/dockerfile)
 
 ### 問題
 
