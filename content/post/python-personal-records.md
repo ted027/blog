@@ -34,8 +34,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-BASEURL = 'https://baseball.yahoo.co.jp/'
-
 NAME_HI = -1
 TEAM_H1 = -2
 
@@ -50,6 +48,8 @@ PITCHER_DUMP_VAL = 1
 HITTER_DUMP_VAL = 2
 
 TEAM_NUM_LIST = [376 if i == 10 else i for i in list(range(1, 13))]
+
+BASEURL = 'https://baseball.yahoo.co.jp/'
 
 
 def request_soup(url):
