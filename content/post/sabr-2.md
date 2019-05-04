@@ -1,7 +1,7 @@
 ---
 title: "JSONで取得したプロ野球個人成績にwOBA,BB/Kを追加する"
 date: 2019-05-04T22:25:17+09:00
-draft: true
+draft: false
 comments: true
 categories: ["野球"]
 tags: ["プロ野球", "Python", "セイバーメトリクス"]
