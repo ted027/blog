@@ -115,7 +115,7 @@ def woba(hitter):
             hitter, '四球') - _int_records(hitter, '故意四球') + _int_records(
                 hitter, '死球') + _int_records(hitter, '犠飛')
         woba = numerator / denominator
-    hitter['Records']['wOBA'] = str(woba)[1:]
+    hitter['Records']['wOBA'] = str(woba)
 
 
 def woba_basic(hitter):
@@ -130,7 +130,7 @@ def woba_basic(hitter):
         denominator = _int_records(hitter, '打数') - _int_records(
             hitter, '故意四球') - _int_records(hitter, '犠打')
         woba_b = numerator / denominator
-    hitter['Records']['wOBA(Basic)'] = str(woba_b)[1:]
+    hitter['Records']['wOBA(Basic)'] = str(woba_b)
 
 
 def woba_speed(hitter):
@@ -148,7 +148,7 @@ def woba_speed(hitter):
         denominator = _int_records(hitter, '打数') - _int_records(
             hitter, '故意四球') - _int_records(hitter, '犠打')
         woba_s = numerator / denominator
-    hitter['Records']['wOBA(Speed)'] = str(woba_s)[1:]
+    hitter['Records']['wOBA(Speed)'] = str(woba_s)
 
 
 def bb_per_k(hitter):

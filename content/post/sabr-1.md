@@ -151,8 +151,8 @@ def whip(pitcher):
     if not outcounts:
         whip = '-'
     else:
-        whip = _int_records(
-            pitcher, '与四球') + _int_records(pitcher, '被安打') / outcounts
+        whip = (_int_records(
+            pitcher, '与四球') + _int_records(pitcher, '被安打')) * 3 / outcounts
     pitcher['Records']['WHIP'] = str(whip)
 ```
 
