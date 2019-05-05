@@ -7,7 +7,7 @@ categories: ["Python"]
 tags: ["有効数字", "decimal", "round"]
 ---
 
-指定の桁で四捨五入する。
+Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。
 
 <!--more-->
 
@@ -92,7 +92,7 @@ Pythonの組み込み関数`round`を使うと値を丸めることができる�
 
 ### decimal.quantize()で丸める
 
-decimalモジュールのquantizeメソッドを使って丸めを行うことができる。
+decimalモジュールのquantizeを使っても数値の丸めを行うことができる。
 
 この際、引数に`ROUND_HALF_UP`を指定すると、0.5 → 1とする一般的な四捨五入となる。
 
