@@ -23,6 +23,7 @@ pygmentsStyle = "mainroad"
   authorbox = true
   toc = false
   share = true
+  mathjax = true
   post_navigation = true
   post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget

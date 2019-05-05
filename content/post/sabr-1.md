@@ -74,10 +74,6 @@ tags: ["プロ野球", "Python", "セイバーメトリクス"]
 ### 実装
 
 ```py:sabr.py
-def _int_records(player, item):
-    return int(player['Records'][item])
-
-
 def _return_outcounts(innings):
     if innings == '-':
         return 0
@@ -99,7 +95,7 @@ def qs_rate(pitcher):
     elif start == '0':
         qsrate = '0'
     else:
-        qsrate = _int_records(pitcher, 'QS') * 100.0 / int(start)
+        qsrate = int(pitcher['Records']['QS']) * 100.0 / int(start)
     pitcher['Records']['QS率'] = str(qsrate)
 
 
@@ -108,7 +104,7 @@ def k_per_bb(pitcher):
     if bb == '0' or bb == '-':
         k_per_bb = '-'
     else:
-        k_per_bb = _int_records(pitcher, '奪三振') * 1.0 / int(bb)
+        k_per_bb = int(pitcher['Records']['奪三振']) * 1.0 / int(bb)
     pitcher['Records']['K/BB'] = str(k_per_bb)
 
 
@@ -118,8 +114,7 @@ def k_per_nine(pitcher):
     if not outcounts:
         k_per_n = '-'
     else:
-        k_per_n = _int_records(pitcher,
-                                '奪三振') * FULL_OUTCOUNTS * 1.0 / outcounts
+        k_per_n = int(pitcher['Records']['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['K/9'] = str(k_per_n)
 
 
@@ -129,8 +124,7 @@ def bb_per_nine(pitcher):
     if not outcounts:
         bb_per_n = '-'
     else:
-        bb_per_n = _int_records(pitcher,
-                                '与四球') * FULL_OUTCOUNTS * 1.0 / outcounts
+        bb_per_n = int(pitcher['Records']['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['BB/9'] = str(bb_per_n)
 
 
@@ -140,8 +134,7 @@ def hr_per_nine(pitcher):
     if not outcounts:
         hr_per_n = '-'
     else:
-        hr_per_n = _int_records(pitcher,
-                                '被本塁打') * FULL_OUTCOUNTS * 1.0 / outcounts
+        hr_per_n = int(pitcher['Records']['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['HR/9'] = str(hr_per_n)
 
 
@@ -151,8 +144,7 @@ def whip(pitcher):
     if not outcounts:
         whip = '-'
     else:
-        whip = (_int_records(
-            pitcher, '与四球') + _int_records(pitcher, '被安打')) * 3 / outcounts
+        whip = (int(pitcher['Records']['与四球']) + int(pitcher['Records']['被安打']) * 3 / outcounts
     pitcher['Records']['WHIP'] = str(whip)
 ```
 
