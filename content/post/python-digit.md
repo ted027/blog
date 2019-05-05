@@ -135,8 +135,7 @@ def _digits_under_one(value, digits):
 def whip(pitcher):
     ...
     else:
-        raw_whip = (_int_records(
-            pitcher, '与四球') + _int_records(pitcher, '被安打')) * 3 / outcounts
+        raw_whip = (int(pitcher['Records']['与四球']) + int(pitcher['Records']['被安打']) * 3 / outcounts
         whip = _digits_under_one(raw_whip, 2)
     pitcher['Records']['WHIP'] = str(whip)
 ...

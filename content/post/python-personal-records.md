@@ -36,21 +36,14 @@ from bs4 import BeautifulSoup
 
 NAME_HI = -1
 TEAM_H1 = -2
-
 EXCEPT_TITLE = 1
 EXCEPT_TITLE_HEADER = 2
-
 EXCEPT_HEAD_CONTENT = 1
-
 CHANCE_STR_DIVIDER = 3
-
 PITCHER_DUMP_VAL = 1
 HITTER_DUMP_VAL = 2
 
-TEAM_NUM_LIST = [376 if i == 10 else i for i in list(range(1, 13))]
-
-BASEURL = 'https://baseball.yahoo.co.jp/'
-
+...
 
 def request_soup(url):
     res = requests.get(url)
@@ -63,6 +56,12 @@ def link_tail_list(url):
     table = soup.find('table')
     td_player_list = table.find_all('td', class_='lt yjM')
     return [pl.find('a').get('href') for pl in td_player_list]
+
+
+def full_val(str_val):
+    if str_val == '-':
+        return '0'
+    return str_val
 
 
 def basic_information(personal_soup):
@@ -107,15 +106,18 @@ def confirm_hitter_tables(tables):
 
 def dict_records(records_table):
     rheader = [th.text for th in records_table.find_all('th')[EXCEPT_TITLE:]]
-    rbody = [td.text for td in records_table.find_all('td')]
+    rbody = [full_val(td.text) for td in records_table.find_all('td')]
     return dict(zip(rheader, rbody))
 
 
 def chance_records(chance_table):
     chheader_raw = [th.text for th in chance_table.find_all('th')]
-    chheader = [chheader_raw[0][:CHANCE_STR_DIVIDER] + h for h in chheader_raw[EXCEPT_HEAD_CONTENT:]]
+    chheader = [
+        chheader_raw[0][:CHANCE_STR_DIVIDER] + h
+        for h in chheader_raw[EXCEPT_HEAD_CONTENT:]
+    ]
 
-    chbody = [td.text for td in chance_table.find_all('td')]
+    chbody = [full_val(td.text) for td in chance_table.find_all('td')]
     return dict(zip(chheader, chbody))
 
 
@@ -130,11 +132,12 @@ def records_by_rl(rl_table, dump_val):
     rl_trs = rl_table.find_all('tr')[EXCEPT_TITLE_HEADER:]
     rl_records = {}
     for rl_tr in rl_trs:
-        rl_body = [td.text for td in rl_tr.find_all('td')]
-        if '右' in rl_body[0]:
-            rl_records['対右'] = dict(zip(rl_header, rl_body[dump_val:]))
-        elif '左' in rl_body[0]:
-            rl_records['対左'] = dict(zip(rl_header, rl_body[dump_val:]))
+        rl_text = rl_tr.find('td').text
+        rl_body = [full_val(td.text) for td in rl_tr.find_all('td')[dump_val:]]
+        if '右' in rl_text:
+            rl_records['対右'] = dict(zip(rl_header, rl_body))
+        elif '左' in rl_text:
+            rl_records['対左'] = dict(zip(rl_header, rl_body))
 
     return rl_records
 
@@ -145,8 +148,11 @@ def records_by_count_or_runner(table_by):
     body_tr = table_by.find_all('tr')[EXCEPT_TITLE_HEADER:]
     records_by_count_or_runner = {}
     for tr in body_tr:
-        body = [td.text for td in tr.find_all('td')]
-        records_by_count_or_runner[body[0]] = dict(zip(header, body[EXCEPT_HEAD_CONTENT:]))
+        situation = tr.find('td').text
+        body = [
+            full_val(td.text) for td in tr.find_all('td')[EXCEPT_HEAD_CONTENT:]
+        ]
+        records_by_count_or_runner[situation] = dict(zip(header, body))
     return records_by_count_or_runner
 
 
@@ -185,7 +191,8 @@ def append_team_hitter_array(link_tail_list):
         personal_dict = basic_information(personal_soup)
 
         tables = personal_soup.find_all('table')
-        records_table, chance_table, rl_table, count_table, runner_table = confirm_hitter_tables(tables)
+        records_table, chance_table, rl_table, count_table, runner_table = confirm_hitter_tables(
+            tables)
 
         records = dict_records(records_table)
 
