@@ -321,9 +321,9 @@ MLBはオープンデータがある程度提供されているが、日本だ�
 
 Webサイトのちょっとした仕様変更とかで動かなくなりそうなので、定期的に取るならメンテナンスが大変。
 
-[[参考記事]JSONで取得したプロ野球個人成績にQS率,K/BB,WHIP(,他)を追加する](https://www.ted027.com/post/sabr-1)
+[[参考記事]【投手指標】プロ野球個人成績からセイバーメトリクス投手指標を算出する①](https://www.ted027.com/post/sabr-1)
 
-[[参考記事]JSONで取得したプロ野球個人成績にwOBA,BB/Kを追加する](https://www.ted027.com/post/sabr-2)
+[[参考記事]【打者総合指標-1】プロ野球個人成績からセイバーメトリクス打者指標を算出する①](https://www.ted027.com/post/sabr-2)
 
 [[参考記事]Pythonでプロ野球スコア速報を取得する](https://www.ted027.com/post/python-score)
 

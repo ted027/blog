@@ -1,13 +1,13 @@
 ---
-title: "JSONで取得したプロ野球個人成績にwOBA,BB/Kを追加する"
+title: "【打者総合指標-1】プロ野球個人成績からセイバーメトリクス打者指標を算出する①"
 date: 2019-05-04T22:25:17+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["プロ野球", "Python", "セイバーメトリクス"]
+tags: ["打者", "Python", "セイバーメトリクス", "得点能力"]
 ---
 
-打者の得点への貢献度を表すwOBA、選球眼を表すBB/Kを算出し追加する。
+打者の得点への貢献度を表すwOBAを算出し追加する。
 
 <!--more-->
 
@@ -23,7 +23,9 @@ tags: ["プロ野球", "Python", "セイバーメトリクス"]
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]JSONで取得したプロ野球個人成績にQS率,K/BB,WHIP(,他)を追加する](https://www.ted027.com/post/sabr-1)
+- [[参考記事]【投手指標】プロ野球個人成績からセイバーメトリクス投手指標を算出する①](https://www.ted027.com/post/sabr-1)
+
+- [[参考記事]【長打力】プロ野球個人成績からセイバーメトリクス打者指標を算出する②](https://www.ted027.com/post/sabr-3)
 
 ---
 
@@ -75,12 +77,6 @@ $(0.7 * (四球 + 死球 - 故意四球) + 0.9 * 単打\\\\\\ + 1.25 * 二塁打
 
 - 係数を固定したwOBA
 - 打席結果と盗塁の成否を考慮する
-
-#### BB/K
-
-$\frac{四球}{三振}$
-
-- ゾーン管理能力(選球眼)
 
 ---
 
@@ -148,15 +144,6 @@ def woba_speed(hitter):
                                 hitter['Records']['盗塁死'])
         woba_s = numerator / denominator
     hitter['Records']['wOBA(Speed)'] = str(woba_s)
-
-
-def bb_per_k(hitter):
-    k = hitter['Records']['三振']
-    if k == '0' or k == '-':
-        bb_per_k = '-'
-    else:
-        bb_per_k = int(hitter['Records']['四球']) * 1.0 / int(k)
-    hitter['Records']['BB/K'] = str(bb_per_k)
 ```
 
 ---

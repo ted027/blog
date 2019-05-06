@@ -23,9 +23,9 @@ Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。
 
 以前記事で`K/BB`やら`wOBA`やらを算出するスクリプトを書いた。
 
-- [[参考記事]JSONで取得したプロ野球個人成績にQS率,K/BB,WHIP(,他)を追加する](https://www.ted027.com/post/sabr-1)
+- [[参考記事]【投手指標】プロ野球個人成績からセイバーメトリクス投手指標を算出する①](https://www.ted027.com/post/sabr-1)
 
-- [[参考記事]JSONで取得したプロ野球個人成績にwOBA,BB/Kを追加する](https://www.ted027.com/post/sabr-2)
+- [[参考記事]【打者総合指標-1】プロ野球個人成績からセイバーメトリクス打者指標を算出する①](https://www.ted027.com/post/sabr-2)
 
 この際、有効数字や小数点以下の桁数を気にせず計算結果を格納している。
 
