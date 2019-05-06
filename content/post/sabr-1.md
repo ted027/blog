@@ -40,40 +40,46 @@ $\frac{QS}{先発登板}$
 - 先発投手の安定感
 - 高いほどいい
 
-#### K/BB
+---
 
-$\frac{奪三振}{与四球}$
+#### K/BB
 
 - 投手の三振奪取力と制球力の総合指標
 - 高いほどいい
 
+$\frac{奪三振}{与四球}$
+
+---
+
 #### K/9
+
+- 9イニングあたり何奪三振とるか（奪三振率）
 
 $奪三振 * \frac{9}{投球回}$
 
-- 9イニングあたり何奪三振とるか（奪三振率）
-- 高いほどいい
+---
 
 #### BB/9
 
+- 9イニングあたり何四球与えるか
+
 $与四球 * \frac{9}{投球回}$
 
-- 9イニングあたり何四球与えるか
-- 低いほどいい
+---
 
 #### HR/9
 
+- 9イニングあたり何本塁打打たれるか
+
 $被本塁打 * \frac{9}{投球回}$
 
-- 9イニングあたり何本塁打打たれるか
-- 低いほどいい
+---
 
 #### WHIP
 
-$\frac{与四球 + 被安打}{投球回}$
-
 - 1イニングあたり何人（安打と四球の）走者を出すか
-- 低いほどいい
+
+$\frac{与四球 + 被安打}{投球回}$
 
 ---
 
@@ -81,76 +87,66 @@ $\frac{与四球 + 被安打}{投球回}$
 
 ```py:sabr.py
 def _return_outcounts(innings):
-    if innings == '-':
-        return 0
-    dec_innings, int_innings = modf(innings)
+    int_innings = int(innings)
+    dec_innings = innings - int_innings
     return 3 * int_innings + 10 * dec_innings
 
 
-def _return_outcounts(innings):
-    if innings == '-':
-        return 0
-    dec_innings, int_innings = modf(float(innings))
-    return int(3 * int_innings + 10 * dec_innings)
-
-
 def qs_rate(pitcher):
-    start = pitcher['Records']['先発']
-    if start == '-':
-        qsrate = '-'
-    elif start == '0':
-        qsrate = '0'
+    start = Decimal(pitcher['Records']['先発'])
+    if not start:
+        qsrate = -1
     else:
-        qsrate = int(pitcher['Records']['QS']) * 100.0 / int(start)
+        qsrate = Decimal(pitcher['Records']['QS']) * 100.0 / start
     pitcher['Records']['QS率'] = str(qsrate)
 
 
 def k_per_bb(pitcher):
-    bb = pitcher['Records']['与四球']
-    if bb == '0' or bb == '-':
-        k_per_bb = '-'
+    bb = Decimal(pitcher['Records']['与四球'])
+    if not bb:
+        k_per_bb = -1
     else:
-        k_per_bb = int(pitcher['Records']['奪三振']) * 1.0 / int(bb)
+        k_per_bb = Decimal(pitcher['Records']['奪三振']) * 1.0 / bb
     pitcher['Records']['K/BB'] = str(k_per_bb)
 
 
 def k_per_nine(pitcher):
-    innings = pitcher['Records']['投球回']
+    innings = Decimal(pitcher['Records']['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        k_per_n = '-'
+        k_per_n = -1
     else:
-        k_per_n = int(pitcher['Records']['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        k_per_n = Decimal(pitcher['Records']['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['K/9'] = str(k_per_n)
 
 
 def bb_per_nine(pitcher):
-    innings = pitcher['Records']['投球回']
+    innings = Decimal(pitcher['Records']['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        bb_per_n = '-'
+        bb_per_n = -1
     else:
-        bb_per_n = int(pitcher['Records']['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        bb_per_n = Decimal(pitcher['Records']['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['BB/9'] = str(bb_per_n)
 
 
 def hr_per_nine(pitcher):
-    innings = pitcher['Records']['投球回']
+    innings = Decimal(pitcher['Records']['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        hr_per_n = '-'
+        hr_per_n = -1
     else:
-        hr_per_n = int(pitcher['Records']['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        hr_per_n = Decimal(pitcher['Records']['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
     pitcher['Records']['HR/9'] = str(hr_per_n)
 
 
 def whip(pitcher):
-    innings = pitcher['Records']['投球回']
+    innings = Decimal(pitcher['Records']['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        whip = '-'
+        whip = -1
     else:
-        whip = (int(pitcher['Records']['与四球']) + int(pitcher['Records']['被安打']) * 3 / outcounts
+        whip = (Decimal(pitcher['Records']['与四球']) + Decimal(pitcher['Records']['被安打']) * 3 / outcounts
     pitcher['Records']['WHIP'] = str(whip)
 ```
 

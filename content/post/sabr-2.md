@@ -23,15 +23,18 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "得点能力"]
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【投手指標】プロ野球個人成績からセイバーメトリクス投手指標を算出する①](https://www.ted027.com/post/sabr-1)
-
 - [[参考記事]【長打力】プロ野球個人成績からセイバーメトリクス打者指標を算出する②](https://www.ted027.com/post/sabr-3)
+
+- [[参考記事]【打者総合指標-2】プロ野球個人成績からセイバーメトリクス打者指標を算出する④](https://www.ted027.com/post/sabr-5)
 
 ---
 
 ### 追加する指標
 
 #### wOBA (weighted On-Base Average)
+
+- 打者の得点貢献度
+- 出塁率と同等の基準で評価
 
 1打席あたりの得点貢献を表す指標。スケールは出塁率に合うように調整されており、.320程度が平均とされる。
 
@@ -41,32 +44,39 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "得点能力"]
 
 そのため係数はリーグやシーズンによって異なるが、今回は[DELTA Inc.](https://1point02.jp/op/gnav/glossary/gls_explanation.aspx?eid=20004)で紹介されているNPB版の式を利用する。
 
-$${0.692 * (四球 - 故意四球) + 0.73 * 死球\\\\\\ + 0.865 * 単打 + 1.334 * 二塁打\\\\\\ + 1.725 * 三塁打 + 2.065 * 本塁打}\\\\\\ / (打数 + 四球 - 故意四球 + 死球 + 犠飛)$$
+##### 計算式
 
-- 打者の得点貢献能力
-- 出塁率と同等の基準で評価
+${0.692 * (四球 - 故意四球) + 0.73 * 死球\\\\\\ + 0.865 * 単打 + 1.334 * 二塁打\\\\\\ + 1.725 * 三塁打 + 2.065 * 本塁打}\\\\\\ / (打数 + 四球 - 故意四球 + 死球 + 犠飛)$
+
+---
 
 #### wOBA(Basic)
+
+- 係数を固定したwOBA
+- 打席結果のみを考慮する
 
 「シーズンやリーグごとに係数を変えても影響は微々たるもの」として、上記係数を固定した`Standard wOBA`。
 
 打席結果のみ考慮するBasic版。
 
-$${0.7 * (四球 + 死球 - 故意四球) + 0.9 * 単打\\\\\\ + 1.3 * (二塁打 + 三塁打) + 2.0 * 本塁打}\\\\\\ / (打席 - 故意四球 - 犠打)$$
+##### 計算式
 
-- 係数を固定したwOBA
-- 打席結果のみを考慮する
+${0.7 * (四球 + 死球 - 故意四球) + 0.9 * 単打\\\\\\ + 1.3 * (二塁打 + 三塁打) + 2.0 * 本塁打}\\\\\\ / (打席 - 故意四球 - 犠打)$
+
+---
 
 #### wOBA(Speed)
+
+- 係数を固定したwOBA
+- 打席結果と盗塁の成否を考慮する
 
 「シーズンやリーグごとに係数を変えても影響は微々たるもの」として、上記係数を固定したバージョンの`wOBA`。
 
 盗塁を加味するSpeed版。
 
-$$(0.7 * (四球 + 死球 - 故意四球) + 0.9 * 単打\\\\\\ + 1.25 * 二塁打 + 1.6 * 三塁打\\\\\\ + 2.0 * 本塁打 + 0.25 * 盗塁 - 0.5 * 盗塁死)\\\\\\ / (打席 - 故意四球 - 犠打)$$
+##### 計算式
 
-- 係数を固定したwOBA
-- 打席結果と盗塁の成否を考慮する
+$(0.7 * (四球 + 死球 - 故意四球) + 0.9 * 単打\\\\\\ + 1.25 * 二塁打 + 1.6 * 三塁打\\\\\\ + 2.0 * 本塁打 + 0.25 * 盗塁 - 0.5 * 盗塁死)\\\\\\ / (打席 - 故意四球 - 犠打)$
 
 ---
 
@@ -90,55 +100,55 @@ WOBA_HR = 2.065
 
 
 def _single(hitter):
-    return (int(hitter['Records']['安打']) - int(hitter['Records']['二塁打']) -
-            int(hitter['Records']['三塁打']) - int(hitter['Records']['本塁打']))
+    return (Decimal(hitter['Records']['安打']) - Decimal(hitter['Records']['二塁打']) -
+            Decimal(hitter['Records']['三塁打']) - Decimal(hitter['Records']['本塁打']))
 
 
 def woba(hitter):
-    denominator = int(hitter['Records']['打数']) + int(
-        hitter['Records']['四球']) - int(hitter['Records']['故意四球']) + int(
-            hitter['Records']['死球']) + int(hitter['Records']['犠飛'])
+    denominator = Decimal(hitter['Records']['打数']) + Decimal(
+        hitter['Records']['四球']) - Decimal(hitter['Records']['故意四球']) + Decimal(
+            hitter['Records']['死球']) + Decimal(hitter['Records']['犠飛'])
     if not denominator:
         woba = 0
     else:
-        numerator = WOBA_BB * (int(hitter['Records']['四球']) - int(
-            hitter['Records']['故意四球'])) + WOBA_HBP * int(hitter['Records'][
-                '死球']) + WOBA_SINGLE * _single(hitter) + WOBA_DOUBLE * int(
-                    hitter['Records']['二塁打']) + WOBA_TRIPLE * int(
-                        hitter['Records']['三塁打']) + WOBA_HR * int(
+        numerator = WOBA_BB * (Decimal(hitter['Records']['四球']) - Decimal(
+            hitter['Records']['故意四球'])) + WOBA_HBP * Decimal(hitter['Records'][
+                '死球']) + WOBA_SINGLE * _single(hitter) + WOBA_DOUBLE * Decimal(
+                    hitter['Records']['二塁打']) + WOBA_TRIPLE * Decimal(
+                        hitter['Records']['三塁打']) + WOBA_HR * Decimal(
                             hitter['Records']['本塁打'])
         woba = numerator / denominator
     hitter['Records']['wOBA'] = str(woba)
 
 
 def woba_basic(hitter):
-    denominator = int(hitter['Records']['打席']) - int(
-        hitter['Records']['故意四球']) - int(hitter['Records']['犠打'])
+    denominator = Decimal(hitter['Records']['打席']) - Decimal(
+        hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
     if not denominator:
         woba_b = 0
     else:
         numerator = 0.7 * (
-            int(hitter['Records']['四球']) + int(hitter['Records']['死球']) -
-            int(hitter['Records']['故意四球'])) + 0.9 * _single(hitter) + 1.3 * (
-                int(hitter['Records']['二塁打']) + int(hitter['Records']['三塁打'])
-            ) + 2.0 * int(hitter['Records']['本塁打'])
+            Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -
+            Decimal(hitter['Records']['故意四球'])) + 0.9 * _single(hitter) + 1.3 * (
+                Decimal(hitter['Records']['二塁打']) + Decimal(hitter['Records']['三塁打'])
+            ) + 2.0 * Decimal(hitter['Records']['本塁打'])
         woba_b = numerator / denominator
     hitter['Records']['wOBA(Basic)'] = str(woba_b)
 
 
 def woba_speed(hitter):
-    denominator = int(hitter['Records']['打席']) - int(
-        hitter['Records']['故意四球']) - int(hitter['Records']['犠打'])
+    denominator = Decimal(hitter['Records']['打席']) - Decimal(
+        hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
     if not denominator:
         woba_b = 0
     else:
         numerator = 0.7 * (
-            int(hitter['Records']['四球']) + int(hitter['Records']['死球']) -
-            int(hitter['Records']['故意四球'])) + 0.9 * _single(
-                hitter) + 1.25 * int(hitter['Records']['二塁打']) + 1.6 * int(
-                    hitter['Records']['三塁打']) + 2.0 * int(
-                        hitter['Records']['本塁打']) + 0.25 * int(
-                            hitter['Records']['盗塁']) - 0.5 * int(
+            Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -
+            Decimal(hitter['Records']['故意四球'])) + 0.9 * _single(
+                hitter) + 1.25 * Decimal(hitter['Records']['二塁打']) + 1.6 * Decimal(
+                    hitter['Records']['三塁打']) + 2.0 * Decimal(
+                        hitter['Records']['本塁打']) + 0.25 * Decimal(
+                            hitter['Records']['盗塁']) - 0.5 * Decimal(
                                 hitter['Records']['盗塁死'])
         woba_s = numerator / denominator
     hitter['Records']['wOBA(Speed)'] = str(woba_s)
