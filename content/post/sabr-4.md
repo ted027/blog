@@ -4,7 +4,7 @@ date: 2019-05-06T14:38:38+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["打者", "Python", "セイバーメトリクス", "選球眼"]
+tags: ["打者指標", "Python", "セイバーメトリクス", "選球眼"]
 ---
 
 打者の選球眼を表すとされるBB/K, BB%, IsoDを追加。

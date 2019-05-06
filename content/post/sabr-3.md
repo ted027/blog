@@ -4,7 +4,7 @@ date: 2019-05-06T14:02:41+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["打者", "Python", "セイバーメトリクス", "長打力"]
+tags: ["打者指標", "Python", "セイバーメトリクス", "長打力"]
 ---
 
 打者の長打力を表すIsoPを算出し追加する。
