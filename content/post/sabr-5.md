@@ -11,12 +11,20 @@ tags: ["打者", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/a8/skyperfect>}}
+
+---
+
+{{< ad/con/wide/purosupi2019>}}
 
 ---
 
 ---
 
-{{< ad/ >}}
+{{< ad/con/wide/pawapuro2018>}}
+
+---
+
+{{< ad/a8/skyperfect>}}
 
 ---

@@ -28,9 +28,9 @@
 <body class="body">
 	<div class="container container--outer">
 		{{ partial "header" . }}
-		{{ partial "narrow_top_ad" . }}
 		<div class="wrapper flex">
 			<div class="primary">
+			{{ partial "toppage_ad" . }}
 			{{ block "main" . }}
 				{{ with .Content }}
 				<div class="content main__content clearfix">
