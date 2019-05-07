@@ -118,22 +118,22 @@ def rc_basic(hitter):
         hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) + Decimal(
             hitter['Records']['犠打']) + Decimal(hitter['Records']['犠飛'])
     if not opportunity:
-        rc = IGNORE_VALIE
+        rc = -1
     else:
         on_base = Decimal(hitter['Records']['安打']) + Decimal(
             hitter['Records']['四球']) + Decimal(
                 hitter['Records']['死球']) - Decimal(
                     hitter['Records']['盗塁死']) - Decimal(
                         hitter['Records']['併殺打'])
-        advance_base = Decimal(hitter['Records']['塁打']) + 0.26 * (
+        advance_base = Decimal(hitter['Records']['塁打']) + Decimal('0.26') * (
             Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球'])
-        ) + 0.53 * (Decimal(hitter['Records']['犠飛']) +
-                    Decimal(hitter['Records']['犠打'])) + 0.64 * Decimal(
-                        hitter['Records']['盗塁']) - 0.03 * Decimal(
+        ) + Decimal('0.53') * (Decimal(hitter['Records']['犠飛']) +
+                    Decimal(hitter['Records']['犠打'])) + Decimal('0.64' * Decimal(
+                        hitter['Records']['盗塁']) - Decimal('0.03') * Decimal(
                             hitter['Records']['三振'])
-        raw_rc = ((on_base + 2.4 * opportunity) *
-                  (advance_base + 3 * opportunity) /
-                  (9 * opportunity)) - 0.9 * opportunity
+        raw_rc = ((on_base + Decimal('2.4') * opportunity) *
+                  (advance_base + Decimal('3') * opportunity) /
+                  (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
         rc = _digits_under_one(raw_rc, 2)
     hitter['Records']['RC'] = str(rc)
 
@@ -144,7 +144,7 @@ def rc_27(hitter, raw_rc):
             hitter['Records']['犠飛']) + Decimal(
                 hitter['Records']['盗塁死']) + Decimal(hitter['Records']['併殺打'])
     if not total_out:
-        rc_27 = IGNORE_VALIE
+        rc_27 = -1
     else:
         raw_rc_27 = raw_rc * 27 / total_out
         rc_27 = _digits_under_one(raw_rc_27, 2)
@@ -178,7 +178,7 @@ def xr_27(hitter, raw_xr):
             hitter['Records']['犠飛']) + Decimal(
                 hitter['Records']['盗塁死']) + Decimal(hitter['Records']['併殺打'])
     if not total_out:
-        xr_27 = IGNORE_VALIE
+        xr_27 = -1
     else:
         raw_xr_27 = xr * 27 / total_out
         xr_27 = _digits_under_one(raw_xr_27, 2)

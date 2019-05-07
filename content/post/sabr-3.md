@@ -55,7 +55,7 @@ $(二塁打 + 三塁打 * 2 + 本塁打 * 3）/ 打数$
 def iso_p(hitter):
     atbat = Decimal(hitter['Records']['打数'])
     if not atbat:
-        iso_p = 0
+        iso_p = -1
     else:
         numerator = Decimal(hitter['Records']['二塁打']) + 2 * Decimal(
             hitter['Records']['三塁打']) + 3 * Decimal(hitter['Records']['本塁打'])

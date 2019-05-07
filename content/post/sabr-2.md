@@ -109,7 +109,7 @@ def woba(hitter):
         hitter['Records']['四球']) - Decimal(hitter['Records']['故意四球']) + Decimal(
             hitter['Records']['死球']) + Decimal(hitter['Records']['犠飛'])
     if not denominator:
-        woba = 0
+        woba = -1
     else:
         numerator = WOBA_BB * (Decimal(hitter['Records']['四球']) - Decimal(
             hitter['Records']['故意四球'])) + WOBA_HBP * Decimal(hitter['Records'][
@@ -125,7 +125,7 @@ def woba_basic(hitter):
     denominator = Decimal(hitter['Records']['打席']) - Decimal(
         hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
     if not denominator:
-        woba_b = 0
+        woba_b = -1
     else:
         numerator = 0.7 * (
             Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -
@@ -140,7 +140,7 @@ def woba_speed(hitter):
     denominator = Decimal(hitter['Records']['打席']) - Decimal(
         hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
     if not denominator:
-        woba_b = 0
+        woba_b = -1
     else:
         numerator = 0.7 * (
             Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -

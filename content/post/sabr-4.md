@@ -68,11 +68,11 @@ $出塁率 - 打率$
 
 ```py:sabr.py
 def bb_per_k(hitter):
-    k = hitter['Records']['三振']
-    if k == '0' or k == '-':
-        bb_per_k = '-'
+    k = Decimal(hitter['Records']['三振'])
+    if not k:
+        bb_per_k = -1
     else:
-        raw_bb_per_k = int(hitter['Records']['四球']) * 1.0 / int(k)
+        raw_bb_per_k = Decimal(hitter['Records']['四球']) * 1.0 / k
         bb_per_k = _digits_under_one(raw_bb_per_k, 2)
     hitter['Records']['BB/K'] = str(bb_per_k)
 
@@ -80,7 +80,7 @@ def bb_per_k(hitter):
 def bb_percent(hitter):
     apperance = Decimal(hitter['Records']['打席'])
     if not apperance:
-        bb_percent = 0
+        bb_percent = -1
     else:
         raw_bb_percent = Decimal(hitter['Records']['四球']) / apperance
         bb_percent = _digits_under_one(raw_bb_percent, 3)
