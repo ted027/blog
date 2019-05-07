@@ -195,7 +195,7 @@ def xr_27(hitter, raw_xr):
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/sabr_omata>}}
 
 ---
 

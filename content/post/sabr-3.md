@@ -76,7 +76,7 @@ def iso_p(hitter):
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/sabr>}}
 
 ---
 

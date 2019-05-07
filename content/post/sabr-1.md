@@ -158,7 +158,7 @@ def whip(pitcher):
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/sabr>}}
 
 ---
 

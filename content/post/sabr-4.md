@@ -17,7 +17,7 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "選球眼"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/pawapuro2018>}}
 
 ---
 
@@ -101,7 +101,7 @@ def iso_d(hitter):
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/sabr_omata>}}
 
 ---
 
