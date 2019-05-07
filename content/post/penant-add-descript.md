@@ -17,7 +17,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/pawapuro_switch>}}
 
 ---
 

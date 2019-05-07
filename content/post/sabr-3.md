@@ -17,7 +17,7 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "長打力"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/pawapuro_switch>}}
 
 ---
 
