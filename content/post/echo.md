@@ -259,14 +259,6 @@ AI(人工知能)を搭載し、対話に応答して音楽をかけたり、他�
 
 ---
 
-{{< ad/con/wide/echo_dot >}}
-
----
-
-{{< ad/con/wide/echo_spot >}}
-
----
-
 {{< ad/con/wide/smart_remocon >}}
 
 ---
