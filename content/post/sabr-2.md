@@ -100,58 +100,58 @@ WOBA_HR = 2.065
 
 
 def _single(hitter):
-    return (Decimal(hitter['Records']['安打']) - Decimal(hitter['Records']['二塁打']) -
-            Decimal(hitter['Records']['三塁打']) - Decimal(hitter['Records']['本塁打']))
+    return (Decimal(hitter['安打']) - Decimal(hitter['二塁打']) -
+            Decimal(hitter['三塁打']) - Decimal(hitter['本塁打']))
 
 
 def woba(hitter):
-    denominator = Decimal(hitter['Records']['打数']) + Decimal(
-        hitter['Records']['四球']) - Decimal(hitter['Records']['故意四球']) + Decimal(
-            hitter['Records']['死球']) + Decimal(hitter['Records']['犠飛'])
+    denominator = Decimal(hitter['打数']) + Decimal(
+        hitter['四球']) - Decimal(hitter['故意四球']) + Decimal(
+            hitter['死球']) + Decimal(hitter['犠飛'])
     if not denominator:
         woba = -1
     else:
-        numerator = WOBA_BB * (Decimal(hitter['Records']['四球']) - Decimal(
-            hitter['Records']['故意四球'])) + WOBA_HBP * Decimal(hitter['Records'][
+        numerator = WOBA_BB * (Decimal(hitter['四球']) - Decimal(
+            hitter['故意四球'])) + WOBA_HBP * Decimal(hitter[
                 '死球']) + WOBA_SINGLE * _single(hitter) + WOBA_DOUBLE * Decimal(
-                    hitter['Records']['二塁打']) + WOBA_TRIPLE * Decimal(
-                        hitter['Records']['三塁打']) + WOBA_HR * Decimal(
-                            hitter['Records']['本塁打'])
+                    hitter['二塁打']) + WOBA_TRIPLE * Decimal(
+                        hitter['三塁打']) + WOBA_HR * Decimal(
+                            hitter['本塁打'])
         woba = numerator / denominator
-    hitter['Records']['wOBA'] = str(woba)
+    hitter['wOBA'] = str(woba)
 
 
 def woba_basic(hitter):
-    denominator = Decimal(hitter['Records']['打席']) - Decimal(
-        hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
+    denominator = Decimal(hitter['打席']) - Decimal(
+        hitter['故意四球']) - Decimal(hitter['犠打'])
     if not denominator:
         woba_b = -1
     else:
         numerator = 0.7 * (
-            Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -
-            Decimal(hitter['Records']['故意四球'])) + 0.9 * _single(hitter) + 1.3 * (
-                Decimal(hitter['Records']['二塁打']) + Decimal(hitter['Records']['三塁打'])
-            ) + 2.0 * Decimal(hitter['Records']['本塁打'])
+            Decimal(hitter['四球']) + Decimal(hitter['死球']) -
+            Decimal(hitter['故意四球'])) + 0.9 * _single(hitter) + 1.3 * (
+                Decimal(hitter['二塁打']) + Decimal(hitter['三塁打'])
+            ) + 2.0 * Decimal(hitter['本塁打'])
         woba_b = numerator / denominator
-    hitter['Records']['wOBA(Basic)'] = str(woba_b)
+    hitter['wOBA(Basic)'] = str(woba_b)
 
 
 def woba_speed(hitter):
-    denominator = Decimal(hitter['Records']['打席']) - Decimal(
-        hitter['Records']['故意四球']) - Decimal(hitter['Records']['犠打'])
+    denominator = Decimal(hitter['打席']) - Decimal(
+        hitter['故意四球']) - Decimal(hitter['犠打'])
     if not denominator:
         woba_b = -1
     else:
         numerator = 0.7 * (
-            Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) -
-            Decimal(hitter['Records']['故意四球'])) + 0.9 * _single(
-                hitter) + 1.25 * Decimal(hitter['Records']['二塁打']) + 1.6 * Decimal(
-                    hitter['Records']['三塁打']) + 2.0 * Decimal(
-                        hitter['Records']['本塁打']) + 0.25 * Decimal(
-                            hitter['Records']['盗塁']) - 0.5 * Decimal(
-                                hitter['Records']['盗塁死'])
+            Decimal(hitter['四球']) + Decimal(hitter['死球']) -
+            Decimal(hitter['故意四球'])) + 0.9 * _single(
+                hitter) + 1.25 * Decimal(hitter['二塁打']) + 1.6 * Decimal(
+                    hitter['三塁打']) + 2.0 * Decimal(
+                        hitter['本塁打']) + 0.25 * Decimal(
+                            hitter['盗塁']) - 0.5 * Decimal(
+                                hitter['盗塁死'])
         woba_s = numerator / denominator
-    hitter['Records']['wOBA(Speed)'] = str(woba_s)
+    hitter['wOBA(Speed)'] = str(woba_s)
 ```
 
 ---

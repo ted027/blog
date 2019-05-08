@@ -114,75 +114,75 @@ XR_SAC_BUNT = Decimal('0.04')
 
 
 def rc_basic(hitter):
-    opportunity = Decimal(hitter['Records']['打数']) + Decimal(
-        hitter['Records']['四球']) + Decimal(hitter['Records']['死球']) + Decimal(
-            hitter['Records']['犠打']) + Decimal(hitter['Records']['犠飛'])
+    opportunity = Decimal(hitter['打数']) + Decimal(
+        hitter['四球']) + Decimal(hitter['死球']) + Decimal(
+            hitter['犠打']) + Decimal(hitter['犠飛'])
     if not opportunity:
         rc = -1
     else:
-        on_base = Decimal(hitter['Records']['安打']) + Decimal(
-            hitter['Records']['四球']) + Decimal(
-                hitter['Records']['死球']) - Decimal(
-                    hitter['Records']['盗塁死']) - Decimal(
-                        hitter['Records']['併殺打'])
-        advance_base = Decimal(hitter['Records']['塁打']) + Decimal('0.26') * (
-            Decimal(hitter['Records']['四球']) + Decimal(hitter['Records']['死球'])
-        ) + Decimal('0.53') * (Decimal(hitter['Records']['犠飛']) +
-                    Decimal(hitter['Records']['犠打'])) + Decimal('0.64' * Decimal(
-                        hitter['Records']['盗塁']) - Decimal('0.03') * Decimal(
-                            hitter['Records']['三振'])
+        on_base = Decimal(hitter['安打']) + Decimal(
+            hitter['四球']) + Decimal(
+                hitter['死球']) - Decimal(
+                    hitter['盗塁死']) - Decimal(
+                        hitter['併殺打'])
+        advance_base = Decimal(hitter['塁打']) + Decimal('0.26') * (
+            Decimal(hitter['四球']) + Decimal(hitter['死球'])
+        ) + Decimal('0.53') * (Decimal(hitter['犠飛']) +
+                    Decimal(hitter['犠打'])) + Decimal('0.64' * Decimal(
+                        hitter['盗塁']) - Decimal('0.03') * Decimal(
+                            hitter['三振'])
         raw_rc = ((on_base + Decimal('2.4') * opportunity) *
                   (advance_base + Decimal('3') * opportunity) /
                   (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
         rc = _digits_under_one(raw_rc, 2)
-    hitter['Records']['RC'] = str(rc)
+    hitter['RC'] = str(rc)
 
 
 def rc_27(hitter, raw_rc):
-    total_out = Decimal(hitter['Records']['打数']) - Decimal(
-        hitter['Records']['安打']) + Decimal(hitter['Records']['犠打']) + Decimal(
-            hitter['Records']['犠飛']) + Decimal(
-                hitter['Records']['盗塁死']) + Decimal(hitter['Records']['併殺打'])
+    total_out = Decimal(hitter['打数']) - Decimal(
+        hitter['安打']) + Decimal(hitter['犠打']) + Decimal(
+            hitter['犠飛']) + Decimal(
+                hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
         rc_27 = -1
     else:
         raw_rc_27 = raw_rc * 27 / total_out
         rc_27 = _digits_under_one(raw_rc_27, 2)
-    hitter['Records']['RC27'] = str(rc_27)
+    hitter['RC27'] = str(rc_27)
 
 
 def xr_basic(hitter):
     raw_xr = XR_SINGLE * _single(hitter) + XR_DOUBLE * Decimal(
-        hitter['Records']['二塁打']
-    ) + XR_TRIPLE * Decimal(hitter['Records']['三塁打']) + XR_HR * Decimal(
-        hitter['Records']['本塁打']) + XR_BB * (
-            Decimal(hitter['Records']['四球']) + Decimal(
-                hitter['Records']['死球']) - Decimal(hitter['Records']['故意四球'])
-        ) + XR_IBB * Decimal(hitter['Records']['故意四球']) + XR_STEAL * Decimal(
-            hitter['Records']['盗塁']
-        ) + XR_FAILED_STEAL * Decimal(hitter['Records']['盗塁死']) + XR_OUT * (
-            Decimal(hitter['Records']['打数'])
-            - Decimal(hitter['Records']['安打']) -
-            Decimal(hitter['Records']['三振'])) + XR_STRIKE_OUT * Decimal(
-                hitter['Records']['三振']) + XR_DOUBLE_PLAY * Decimal(
-                    hitter['Records']['併殺打']) + XR_SAC_FLY * Decimal(
-                        hitter['Records']['犠飛']) + XR_SAC_BUNT * Decimal(
-                            hitter['Records']['犠打'])
+        hitter['二塁打']
+    ) + XR_TRIPLE * Decimal(hitter['三塁打']) + XR_HR * Decimal(
+        hitter['本塁打']) + XR_BB * (
+            Decimal(hitter['四球']) + Decimal(
+                hitter['死球']) - Decimal(hitter['故意四球'])
+        ) + XR_IBB * Decimal(hitter['故意四球']) + XR_STEAL * Decimal(
+            hitter['盗塁']
+        ) + XR_FAILED_STEAL * Decimal(hitter['盗塁死']) + XR_OUT * (
+            Decimal(hitter['打数'])
+            - Decimal(hitter['安打']) -
+            Decimal(hitter['三振'])) + XR_STRIKE_OUT * Decimal(
+                hitter['三振']) + XR_DOUBLE_PLAY * Decimal(
+                    hitter['併殺打']) + XR_SAC_FLY * Decimal(
+                        hitter['犠飛']) + XR_SAC_BUNT * Decimal(
+                            hitter['犠打'])
     xr = _digits_under_one(raw_xr, 2)
-    hitter['Records']['XR'] = str(xr)
+    hitter['XR'] = str(xr)
 
 
 def xr_27(hitter, raw_xr):
-    total_out = Decimal(hitter['Records']['打数']) - Decimal(
-        hitter['Records']['安打']) + Decimal(hitter['Records']['犠打']) + Decimal(
-            hitter['Records']['犠飛']) + Decimal(
-                hitter['Records']['盗塁死']) + Decimal(hitter['Records']['併殺打'])
+    total_out = Decimal(hitter['打数']) - Decimal(
+        hitter['安打']) + Decimal(hitter['犠打']) + Decimal(
+            hitter['犠飛']) + Decimal(
+                hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
         xr_27 = -1
     else:
         raw_xr_27 = xr * 27 / total_out
         xr_27 = _digits_under_one(raw_xr_27, 2)
-    hitter['Records']['XR27'] = str(xr_27)
+    hitter['XR27'] = str(xr_27)
 ```
 
 ---

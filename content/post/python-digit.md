@@ -36,7 +36,7 @@ Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。
 ### 山本由伸のWHIP
 
 ```py
->>> whip = (int(pitcher['Records']['被安打']) + int(pitcher['Records']['与四球'])) / int(pitcher['Records']['投球回'])
+>>> whip = (int(pitcher['被安打']) + int(pitcher['与四球'])) / int(pitcher['投球回'])
 >>> whip
 0.6923076923076923
 ```
@@ -135,15 +135,15 @@ def _digits_under_one(value, digits):
 def whip(pitcher):
     ...
     else:
-        raw_whip = (int(pitcher['Records']['与四球']) + int(pitcher['Records']['被安打']) * 3 / outcounts
+        raw_whip = (int(pitcher['与四球']) + int(pitcher['被安打']) * 3 / outcounts
         whip = _digits_under_one(raw_whip, 2)
-    pitcher['Records']['WHIP'] = str(whip)
+    pitcher['WHIP'] = str(whip)
 ...
 def woba(hitter):
     ...
         raw_woba = numerator / denominator
         woba = _digits_under_one(raw_whip, 3)
-    hitter['Records']['wOBA'] = str(woba)
+    hitter['wOBA'] = str(woba)
 ```
 
 これで、データサイトでよく見る指標の桁数に合わせることができた。

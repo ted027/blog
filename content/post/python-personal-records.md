@@ -174,7 +174,7 @@ def append_team_pitcher_array(link_tail_list):
             records_rl = records_by_rl(rl_table, PITCHER_DUMP_VAL)
             records.update(records_rl)
 
-        personal_dict['Records'] = records
+        personal_dict.update(records)
 
         team_pitcher_list.append(personal_dict)
 
@@ -212,7 +212,7 @@ def append_team_hitter_array(link_tail_list):
             records_by_runner = records_by_count_or_runner(runner_table)
             records.update({'走者': records_by_runner})
 
-        personal_dict['Records'] = records
+        personal_dict.update(records)
 
         team_hitter_list.append(personal_dict)
 

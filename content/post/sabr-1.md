@@ -93,61 +93,61 @@ def _return_outcounts(innings):
 
 
 def qs_rate(pitcher):
-    start = Decimal(pitcher['Records']['先発'])
+    start = Decimal(pitcher['先発'])
     if not start:
         qsrate = -1
     else:
-        qsrate = Decimal(pitcher['Records']['QS']) * 100.0 / start
-    pitcher['Records']['QS率'] = str(qsrate)
+        qsrate = Decimal(pitcher['QS']) * 100.0 / start
+    pitcher['QS率'] = str(qsrate)
 
 
 def k_per_bb(pitcher):
-    bb = Decimal(pitcher['Records']['与四球'])
+    bb = Decimal(pitcher['与四球'])
     if not bb:
         k_per_bb = -1
     else:
-        k_per_bb = Decimal(pitcher['Records']['奪三振']) * 1.0 / bb
-    pitcher['Records']['K/BB'] = str(k_per_bb)
+        k_per_bb = Decimal(pitcher['奪三振']) * 1.0 / bb
+    pitcher['K/BB'] = str(k_per_bb)
 
 
 def k_per_nine(pitcher):
-    innings = Decimal(pitcher['Records']['投球回'])
+    innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
         k_per_n = -1
     else:
-        k_per_n = Decimal(pitcher['Records']['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
-    pitcher['Records']['K/9'] = str(k_per_n)
+        k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
+    pitcher['K/9'] = str(k_per_n)
 
 
 def bb_per_nine(pitcher):
-    innings = Decimal(pitcher['Records']['投球回'])
+    innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
         bb_per_n = -1
     else:
-        bb_per_n = Decimal(pitcher['Records']['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
-    pitcher['Records']['BB/9'] = str(bb_per_n)
+        bb_per_n = Decimal(pitcher['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
+    pitcher['BB/9'] = str(bb_per_n)
 
 
 def hr_per_nine(pitcher):
-    innings = Decimal(pitcher['Records']['投球回'])
+    innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
         hr_per_n = -1
     else:
-        hr_per_n = Decimal(pitcher['Records']['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
-    pitcher['Records']['HR/9'] = str(hr_per_n)
+        hr_per_n = Decimal(pitcher['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
+    pitcher['HR/9'] = str(hr_per_n)
 
 
 def whip(pitcher):
-    innings = Decimal(pitcher['Records']['投球回'])
+    innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
         whip = -1
     else:
-        whip = (Decimal(pitcher['Records']['与四球']) + Decimal(pitcher['Records']['被安打']) * 3 / outcounts
-    pitcher['Records']['WHIP'] = str(whip)
+        whip = (Decimal(pitcher['与四球']) + Decimal(pitcher['被安打']) * 3 / outcounts
+    pitcher['WHIP'] = str(whip)
 ```
 
 ---
