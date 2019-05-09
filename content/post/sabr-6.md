@@ -159,13 +159,12 @@ def write_league_records():
 打率や防御率のような割合指標は、当然足し合わせると意味不明な値になるので、後から計算して更新。
 
 ```py:league.py
-import json
-from decimal import Decimal
-from common import digit_under_one, return_outcounts, FULL_OUTCOUNTS, ZERO_VALIE, IGNORE_VALIE
+...
+from common import digits_under_one, return_outcounts, FULL_OUTCOUNTS, ZERO_VALUE, IGNORE_VALUE
 
 def fix_rate_common(dic, decimal_nume, decimal_deno):
     if not decimal_deno:
-        return ZERO_VALIE
+        return ZERO_VALUE
     return decimal_nume / decimal_deno
 
 
@@ -202,7 +201,7 @@ def _fip_efira(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = return_outcounts(innings)
     if not outcounts:
-        fip_efira = ZERO_VALIE
+        fip_efira = ZERO_VALUE
     else:
         fip_efira = (Decimal('13') * Decimal(pitcher['被本塁打']) + Decimal('3') *
                     (Decimal(pitcher['与四球']) + Decimal(pitcher['与死球']) -
