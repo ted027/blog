@@ -120,8 +120,12 @@ listを走査し、dictを走査し、同じ項目を足し合わせる。
 import json
 from decimal import Decimal
 
+PERSONAL_DATA_KEY = ['Name', 'Team', 'League']
+
 def sum_deep_dict(league_dic, player):
     for key, value in player.items():
+        if key in PERSONAL_DATA_KEY:
+            continue
         if isinstance(value, dict):
             league_dic[key] = league_dic.get(key, {})
             sum_deep_dict(league_dic[key], value)
