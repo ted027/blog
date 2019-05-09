@@ -175,7 +175,7 @@ def fix_rate_records(dic):
         elif key == '打率':
             fix_value = fix_rate_common(dic, Decimal(dic['安打']),
                                         Decimal(dic['打数']))
-            dic[key] = str(digit_under_one(fix_value, 3))
+            dic[key] = str(digits_under_one(fix_value, 3))
         ...
 
 def sum_league_records(player_list):
