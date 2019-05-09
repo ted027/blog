@@ -166,6 +166,6 @@ def whip(pitcher):
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn>}}
 
 ---

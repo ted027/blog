@@ -80,6 +80,6 @@ def iso_p(hitter):
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn>}}
 
 ---

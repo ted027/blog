@@ -30,14 +30,15 @@
 		{{ partial "header" . }}
 		<div class="wrapper flex">
 			<div class="primary">
-			{{ partial "toppage_ad" . }}
+			{{ partial "ad_toppage" . }}
 			{{ block "main" . }}
 				{{ with .Content }}
 				<div class="content main__content clearfix">
 					{{ . }}
 				</div>
 				{{ end }}
-			{{ end }}
+				{{ end }}
+			{{ partial "ad_bottompage" . }}
 			</div>
 			{{ partial "sidebar.html" . }}
 		</div>

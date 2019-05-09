@@ -104,6 +104,6 @@ def iso_d(hitter):
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn>}}
 
 ---

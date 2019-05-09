@@ -201,6 +201,6 @@ def xr_27(hitter, raw_xr):
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn>}}
 
 ---
