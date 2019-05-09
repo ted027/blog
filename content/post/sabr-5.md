@@ -98,6 +98,8 @@ $XR * \frac{27}{打数 - 安打 + 犠打 + 犠飛 + 盗塁死 + 併殺打}$
 ### 実装
 
 ```py:sabr.py
+FULL_OUTCOUNTS = Decimal('27')
+
 XR_SINGLE = Decimal('0.5')
 XR_DOUBLE = Decimal('0.72')
 XR_TRIPLE = Decimal('1.04')
@@ -118,7 +120,7 @@ def rc_basic(hitter):
         hitter['四球']) + Decimal(hitter['死球']) + Decimal(
             hitter['犠打']) + Decimal(hitter['犠飛'])
     if not opportunity:
-        rc = -1
+        rc = Decimal('0')
     else:
         on_base = Decimal(hitter['安打']) + Decimal(
             hitter['四球']) + Decimal(
@@ -144,9 +146,9 @@ def rc_27(hitter, raw_rc):
             hitter['犠飛']) + Decimal(
                 hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
-        rc_27 = -1
+        rc_27 = Decimal('0')
     else:
-        raw_rc_27 = raw_rc * 27 / total_out
+        raw_rc_27 = raw_rc * FULL_OUTCOUNTS / total_out
         rc_27 = _digits_under_one(raw_rc_27, 2)
     hitter['RC27'] = str(rc_27)
 
@@ -178,9 +180,9 @@ def xr_27(hitter, raw_xr):
             hitter['犠飛']) + Decimal(
                 hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
-        xr_27 = -1
+        xr_27 = Decimal('0')
     else:
-        raw_xr_27 = xr * 27 / total_out
+        raw_xr_27 = xr * FULL_OUTCOUNTS / total_out
         xr_27 = _digits_under_one(raw_xr_27, 2)
     hitter['XR27'] = str(xr_27)
 ```

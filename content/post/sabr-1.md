@@ -86,6 +86,8 @@ $\frac{与四球 + 被安打}{投球回}$
 ### 実装
 
 ```py:sabr.py
+FULL_OUTCOUNTS = Decimal('27')
+
 def _return_outcounts(innings):
     int_innings = int(innings)
     dec_innings = innings - int_innings
@@ -95,18 +97,18 @@ def _return_outcounts(innings):
 def qs_rate(pitcher):
     start = Decimal(pitcher['先発'])
     if not start:
-        qsrate = -1
+        qsrate = Decimal('0')
     else:
-        qsrate = Decimal(pitcher['QS']) * 100.0 / start
+        qsrate = Decimal(pitcher['QS']) * Decimal('100') / start
     pitcher['QS率'] = str(qsrate)
 
 
 def k_per_bb(pitcher):
     bb = Decimal(pitcher['与四球'])
     if not bb:
-        k_per_bb = -1
+        k_per_bb = Decimal('0')
     else:
-        k_per_bb = Decimal(pitcher['奪三振']) * 1.0 / bb
+        k_per_bb = Decimal(pitcher['奪三振']) / bb
     pitcher['K/BB'] = str(k_per_bb)
 
 
@@ -114,9 +116,9 @@ def k_per_nine(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        k_per_n = -1
+        k_per_n = Decimal('0')
     else:
-        k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS / outcounts
     pitcher['K/9'] = str(k_per_n)
 
 
@@ -124,9 +126,9 @@ def bb_per_nine(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        bb_per_n = -1
+        bb_per_n = Decimal('-1')
     else:
-        bb_per_n = Decimal(pitcher['与四球']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        bb_per_n = Decimal(pitcher['与四球']) * FULL_OUTCOUNTS / outcounts
     pitcher['BB/9'] = str(bb_per_n)
 
 
@@ -134,9 +136,9 @@ def hr_per_nine(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        hr_per_n = -1
+        hr_per_n = Decimal('-1')
     else:
-        hr_per_n = Decimal(pitcher['被本塁打']) * FULL_OUTCOUNTS * 1.0 / outcounts
+        hr_per_n = Decimal(pitcher['被本塁打']) * FULL_OUTCOUNTS / outcounts
     pitcher['HR/9'] = str(hr_per_n)
 
 
@@ -144,9 +146,9 @@ def whip(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = _return_outcounts(innings)
     if not outcounts:
-        whip = -1
+        whip = Decimal('-1')
     else:
-        whip = (Decimal(pitcher['与四球']) + Decimal(pitcher['被安打']) * 3 / outcounts
+        whip = (Decimal(pitcher['与四球']) + Decimal(pitcher['被安打']) * Decimal('3') / outcounts
     pitcher['WHIP'] = str(whip)
 ```
 

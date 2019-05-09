@@ -55,10 +55,10 @@ $(二塁打 + 三塁打 * 2 + 本塁打 * 3）/ 打数$
 def iso_p(hitter):
     atbat = Decimal(hitter['打数'])
     if not atbat:
-        iso_p = -1
+        iso_p = Decimal('0')
     else:
-        numerator = Decimal(hitter['二塁打']) + 2 * Decimal(
-            hitter['三塁打']) + 3 * Decimal(hitter['本塁打'])
+        numerator = Decimal(hitter['二塁打']) + Decimal('2') * Decimal(
+            hitter['三塁打']) + Decimal('3') * Decimal(hitter['本塁打'])
         raw_iso_p = numerator / atbat
         iso_p = _digits_under_one(raw_iso_p, 3)
     hitter['IsoP'] = str(iso_p)

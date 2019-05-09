@@ -70,9 +70,9 @@ $出塁率 - 打率$
 def bb_per_k(hitter):
     k = Decimal(hitter['三振'])
     if not k:
-        bb_per_k = -1
+        bb_per_k = Decimal('0')
     else:
-        raw_bb_per_k = Decimal(hitter['四球']) * 1.0 / k
+        raw_bb_per_k = Decimal(hitter['四球']) / k
         bb_per_k = _digits_under_one(raw_bb_per_k, 2)
     hitter['BB/K'] = str(bb_per_k)
 
@@ -80,7 +80,7 @@ def bb_per_k(hitter):
 def bb_percent(hitter):
     apperance = Decimal(hitter['打席'])
     if not apperance:
-        bb_percent = -1
+        bb_percent = Decimal('0')
     else:
         raw_bb_percent = Decimal(hitter['四球']) / apperance
         bb_percent = _digits_under_one(raw_bb_percent, 3)
@@ -90,7 +90,6 @@ def bb_percent(hitter):
 def iso_d(hitter):
     iso_d = Decimal(hitter['出塁率']) - Decimal(hitter['打率'])
     hitter['IsoD'] = str(iso_d)
-    return hitter
 ```
 
 ---
