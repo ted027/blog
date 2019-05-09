@@ -13,7 +13,7 @@ tags: ["Shell", "Git"]
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/geekjob>}}
 
 ---
 

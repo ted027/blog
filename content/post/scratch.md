@@ -13,6 +13,10 @@ tags: ["Scratch", "プログラミング教育"]
 
 ---
 
+{{< ad/a8/prog_omocha >}}
+
+---
+
 {{< ad/con/wide/oyako_programming >}}
 
 ---
@@ -142,5 +146,9 @@ tags: ["Scratch", "プログラミング教育"]
 ---
 
 {{< ad/con/wide/scratch >}}
+
+---
+
+{{< ad/a8/zkai >}}
 
 ---
