@@ -13,7 +13,7 @@ Jenkins PipelineジョブのDocker仕様で便利〜と思って使ってたら�
 
 ---
 
-{{< ad/a8/jeekjob>}}
+{{< ad/a8/geekjob>}}
 
 ---
 
