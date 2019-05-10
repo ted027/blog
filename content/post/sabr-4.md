@@ -57,7 +57,7 @@ $\frac{四球}{打数}$
 
 - 打席自制心
 - 四死球だけでどの程度出塁したか
-- 考え方としては[`IsoP`(長打力)](https://www.ted027.com/post/sabr-3)と同じ
+- 考え方としては[`IsoP`(長打力)](https://www.ted027.com/post/sabr-3#isop-iso-isolated-power)と同じ
 - 選球眼の評価指標としては、`BB%`のほうが主流らしい
 
 $出塁率 - 打率$
