@@ -150,7 +150,7 @@ def woba_speed(hitter):
 
 ### おわり
 
-成績をかき集める際にリーグ全体成績も取得するようにすると、`wRAA`, `wRC`も算出できるようになる。
+成績をかき集める際にリーグ全体成績も取得するようにすると、[`wRAA`](https://www.ted027.com/post/sabr-7#wraa-weighted-runs-above-average), [`wRC`](https://www.ted027.com/post/sabr-7#wrc-weighted-runs-created)も算出できるようになる。
 
 ---
 
@@ -159,6 +159,8 @@ def woba_speed(hitter):
 - [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
 
 - [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
+
+- [[参考記事]【wRAA, wRC】NPB(2019)セイバーメトリクス野手指標の算出⑤](https://www.ted027.com/post/sabr-7)
 
 ---
 

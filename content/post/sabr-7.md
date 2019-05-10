@@ -80,7 +80,9 @@ def wrc(hitter, league):
 
 ### おわり
 
-セリーグの平均成績は、投手の打撃成績を覗いて考えることもあるそうです。
+セリーグの平均成績は、投手の打撃成績を除いて考えることが多い模様。
+
+[`wRAA`](#wraa-weighted-runs-above-average)や[`wRC`](#wrc-weighted-runs-created)は総合指標`WAR`の計算にも用いられるなど重用されています。
 
 ---
 

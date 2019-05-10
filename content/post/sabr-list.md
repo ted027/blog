@@ -34,12 +34,12 @@ tags: ["指標", "セイバーメトリクス"]
   - 四死球、単打〜本塁打に各々の得点価値をかけて足し合わせ、打席で割る
     - 厳密には、故意四球・犠打・打撃妨害は除くため打席ではない
 
-- wRAA (Weighted Runs Above Average)
+- [wRAA (Weighted Runs Above Average)](https://www.ted027.com/post/sabr-7#wraa-weighted-runs-above-average)
   - 打者の得点貢献突出度
   - リーグ平均の打者が同じ打席数立った場合と比べて、何点多く貢献したか
-  - [`wOBA`](#woba-weighted-on-base-average)ベースの平均との差に打席数をかける
+  - [`wOBA`](#woba-weighted-on-base-average)ベースで、リーグ平均との得点差に打席数をかける
 
-- wRC (Weighted Runs Created)
+- [wRC (Weighted Runs Created)](https://www.ted027.com/post/sabr-7#wrc-weighted-runs-created)
   - 打者の得点貢献度
   - リーグ平均得点力をベースに、[`wRAA`](#wraa-weighted-runs-above-average)と合わせて何点分貢献したか
 
@@ -131,6 +131,16 @@ tags: ["指標", "セイバーメトリクス"]
   - 長期的に見れば.300程度に収束するとされ、大きく乖離する場合「運が良い/悪い」といえる
   - もちろん運だけではなく、投手能力が低い場合、フィールド内に安打性の打球を打たれる機会が増え、`BABIP`が高くなる
   - 打者の場合、俊足であれば`BABIP`が高くなりがちであったり、打球傾向が偏る場合、シフトによって`BABIP`を低く抑えることができるなど、投手ほど収束しないとされる
+
+---
+
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
+
+- [[参考記事]【wRAA, wRC】NPB(2019)セイバーメトリクス野手指標の算出⑤](https://www.ted027.com/post/sabr-7)
 
 ---
 
