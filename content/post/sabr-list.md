@@ -1,7 +1,7 @@
 ---
 title: "セイバーメトリクス 指標一覧"
 date: 2019-05-10T20:44:40+09:00
-draft: true
+draft: false
 comments: true
 categories: ["野球"]
 tags: ["指標", "セイバーメトリクス"]
@@ -33,6 +33,19 @@ tags: ["指標", "セイバーメトリクス"]
   - 打者の得点貢献度、出塁率と同スケールに換算
   - 四死球、単打〜本塁打に各々の得点価値をかけて足し合わせ、打席で割る
     - 厳密には、故意四球・犠打・打撃妨害は除くため打席ではない
+
+- wRAA (Weighted Runs Above Average)
+  - 打者の得点貢献突出度
+  - リーグ平均の打者が同じ打席数立った場合と比べて、何点多く貢献したか
+  - [`wOBA`](#woba-weighted-on-base-average)ベースの平均との差に打席数をかける
+
+- wRC (Weighted Runs Created)
+  - 打者の得点貢献度
+  - リーグ平均得点力をベースに、[`wRAA`](#wraa-weighted-runs-above-average)と合わせて何点分貢献したか
+
+- wRC+ (Weighted Runs Created Plus)
+  - 打者が打席あたりの得点傑出度
+  - 打席あたりの[`wRC`](#wrc-weighted-runs-created)にパークファクター補正を加え、リーグ平均と比較し、パーセンテージの値で算出する
 
 - [RC (Runs Created)](https://www.ted027.com/post/sabr-5#rc-runs-created)
   - 打者の得点貢献度、何点分貢献したかの積み上げ式
@@ -96,10 +109,20 @@ tags: ["指標", "セイバーメトリクス"]
 - [QS率](https://www.ted027.com/post/sabr-1#qs率)
   - 先発登板のうちQS（6回以上3失点以内）に抑えた割合
 
-- [FIP](https://www.ted027.com/post/sabr-6#fip-fielding-independent-pitching)
+- [FIP (Fielding Independent Pitching)](https://www.ted027.com/post/sabr-6#fip-fielding-independent-pitching)
   - 被本塁打、与四死球、奪三振だけを評価した擬似的な防御率
-  - リーグ平均防御率のうち、被本塁打、与四死球、奪三振で構成される(と思われる)部分だけ個人の数値に置き換える
+  - リーグ平均防御率のうち、上記三部門で構成される(と思われる)部分だけ個人の数値に置き換える
   - 長期（例えば通算）でみれば防御率と近い値になるといわれている
+
+- xFIP
+  - [FIP](#fip-fielding-independent-pitching)で被本塁打と換算していた部分を、フライボール数 * フライボールが本塁打になる確率、で置き換える
+  - 投球回が増えれば、フライボールあたりの本塁打はほぼ収束する、という考えに基づく
+
+- BABIP
+  - フェアゾーン内に飛んだ打球が安打になる確率
+  - 長期的に見れば.300程度に収束するとされ、大きく乖離する場合「運が良い/悪い」といえる
+  - もちろん運だけではなく、投手能力が低い場合、フィールド内に安打性の打球を打たれる機会が増え、`BABIP`が高くなる
+  - 打者の場合、俊足であれば`BABIP`が高くなりがちであったり、打球傾向が偏る場合、シフトによって`BABIP`を低く抑えることができるなど、投手ほど収束しないとされる
 
 ---
 
