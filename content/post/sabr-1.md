@@ -21,14 +21,6 @@ tags: ["投手指標", "Python", "セイバーメトリクス"]
 
 ---
 
-- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
-
-- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
-
-- [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-6)
-
----
-
 今回追加するのはごくごく簡単な指標6つ。
 
 というか3つは既に取れているので実施3つ
@@ -159,6 +151,14 @@ def whip(pitcher):
 ### おわり
 
 特筆すべきこともない実装ですが、今後ぽつぽつと指標は追加していきたい。
+
+---
+
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+
+- [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-6)
 
 ---
 

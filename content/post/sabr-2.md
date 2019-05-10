@@ -21,14 +21,6 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
-
-- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
-
-- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
-
----
-
 ### 追加する指標
 
 #### wOBA (weighted On-Base Average)
@@ -159,6 +151,14 @@ def woba_speed(hitter):
 ### おわり
 
 成績をかき集める際にリーグ全体成績も取得するようにすると、`wRAA`, `wRC`も算出できるようになる。
+
+---
+
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
+
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
 
 ---
 

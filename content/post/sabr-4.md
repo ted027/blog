@@ -21,14 +21,6 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "選球眼"]
 
 ---
 
-- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
-
-- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
-
-- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
-
----
-
 ### 追加する指標
 
 `四球を選ぶ能力はプレート・ディシプリン（plate discipline：打席自制心）」「三振数と四球数のバランスを保つ能力はストライクゾーン管理能力」であると見なしており...`
@@ -97,6 +89,14 @@ def iso_d(hitter):
 ### おわり
 
 本当はゾーンスイング率、ボールスイング率、`P/PA`(打席あたり投球数)なんかも出せるといいんですが、データを取るのが大変。
+
+---
+
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
+
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
 
 ---
 
