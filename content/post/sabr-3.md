@@ -1,10 +1,10 @@
 ---
-title: "【長打力:IsoP】NPB個人成績からセイバーメトリクス打者指標を算出する②"
+title: "【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②"
 date: 2019-05-06T14:02:41+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["打者指標", "Python", "セイバーメトリクス", "長打力"]
+tags: ["野手指標", "Python", "セイバーメトリクス", "長打力"]
 ---
 
 打者の長打力を表すIsoPを算出し追加する。
@@ -23,9 +23,9 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "長打力"]
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【打者総合指標-1】プロ野球個人成績からセイバーメトリクス打者指標を算出する①](https://www.ted027.com/post/sabr-2)
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
 
-- [[参考記事]【選球眼】プロ野球個人成績からセイバーメトリクス打者指標を算出する](https://www.ted027.com/post/sabr-4)
+- [[参考記事]【BB/K, BB%, IsoD】NPB(2019)セイバーメトリクス野手指標の算出③](https://www.ted027.com/post/sabr-4)
 
 ---
 

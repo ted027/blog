@@ -1,5 +1,5 @@
 ---
-title: "【投手指標:WHIP,K/BB他】NPB個人成績からセイバーメトリクス投手指標を算出する①"
+title: "【WHIP, K/BB他】NPB(2019)セイバーメトリクス投手指標の算出①"
 date: 2019-05-04T00:08:02+09:00
 draft: false
 comments: true
@@ -23,7 +23,9 @@ tags: ["投手指標", "Python", "セイバーメトリクス"]
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【打者総合指標-1】プロ野球個人成績からセイバーメトリクス打者指標を算出する①](https://www.ted027.com/post/sabr-2)
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+
+- [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-6)
 
 ---
 

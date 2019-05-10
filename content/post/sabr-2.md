@@ -1,10 +1,10 @@
 ---
-title: "【打者総合指標:wOBA】NPB個人成績からセイバーメトリクス打者指標を算出する①"
+title: "【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①"
 date: 2019-05-04T22:25:17+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["打者指標", "Python", "セイバーメトリクス", "得点能力"]
+tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 ---
 
 打者の得点への貢献度を表すwOBAを算出し追加する。
@@ -23,9 +23,9 @@ tags: ["打者指標", "Python", "セイバーメトリクス", "得点能力"]
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【長打力】プロ野球個人成績からセイバーメトリクス打者指標を算出する②](https://www.ted027.com/post/sabr-3)
+- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
 
-- [[参考記事]【打者総合指標-2】プロ野球個人成績からセイバーメトリクス打者指標を算出する④](https://www.ted027.com/post/sabr-5)
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
 
 ---
 
