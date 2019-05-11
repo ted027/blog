@@ -110,7 +110,7 @@ def woba(hitter):
                         hitter['三塁打']) + WOBA_HR * Decimal(
                             hitter['本塁打'])
         woba = numerator / denominator
-    hitter['wOBA'] = str(woba)
+    return str(woba)
 
 
 def woba_basic(hitter):
@@ -125,7 +125,7 @@ def woba_basic(hitter):
                 Decimal(hitter['二塁打']) + Decimal(hitter['三塁打'])
             ) + Decimal('2.0') * Decimal(hitter['本塁打'])
         woba_b = numerator / denominator
-    hitter['wOBA(Basic)'] = str(woba_b)
+    return str(woba_b)
 
 
 def woba_speed(hitter):
@@ -143,7 +143,7 @@ def woba_speed(hitter):
                             hitter['盗塁']) - Decimal('0.5') * Decimal(
                                 hitter['盗塁死'])
         woba_s = numerator / denominator
-    hitter['wOBA(Speed)'] = str(woba_s)
+    return str(woba_s)
 ```
 
 ---

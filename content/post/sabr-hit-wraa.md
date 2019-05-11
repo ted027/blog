@@ -61,13 +61,13 @@ WOBA_SCALE = Decimal('1.24')
 def wraa(hitter, league):
     raw_wraa = (Decimal(hitter['wOBA']) - Decimal(league['wOBA'])) / WOBA_SCALE * Decimal(hitter['打席'])
     wraa = digits_under_one(raw_wraa, 3)
-    hitter['wRAA'] = str(wraa)
+    return str(wraa)
 
 
 def wrc(hitter, league):
     raw_wrc = Decimal(hitter['wRAA']) + (Decimal(league['得点']) / Decimal(league['打席'])) * Decimal(hitter['打席'])
     wrc = digits_under_one(raw_wrc, 3)
-    hitter['wRC'] = str(wrc)
+    return str(wrc)
 ```
 
 ---

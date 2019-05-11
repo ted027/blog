@@ -58,6 +58,13 @@ tags: ["指標", "セイバーメトリクス"]
     - 正確には、打者が27アウト取られる間に[`RC`](#rc-runs-created)をどれだけ稼ぐか
   - ただしマイナスになることがあり、この指標の欠点ともいわれている
 
+- [RCAA/RC+ (Runs Created Above Average)](https://www.ted027.com/post/sabr-hit-rcaa#rcaa-rc+-runs-created-above-average)
+  - リーグの平均的打者と比較してどれだけ多く[`RC`](#rc-runs-created)を稼いだか
+
+- [RCWIN](https://www.ted027.com/post/sabr-hit-rcaa#rcwin)
+  - リーグの平均的打者と比較して何勝多く貢献したか
+  - [`RCAA`](#rcaa-rc+-runs-created-above-average)を`RPW`(Runs Per Win)で割ったもの
+
 - [XR (eXtrapolated Runs)](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs)
   - 累積で何点取ったか（何点分貢献したか）
   - [`RC`](#rc-runs-created)の改良版、計算式が異なるが、ほぼ同じ意味合いの指標
@@ -66,6 +73,13 @@ tags: ["指標", "セイバーメトリクス"]
   - この打者だけで一試合した時に何点取れるか
     - 正確には、打者が27アウト取られる間に[`XR`](#xr-extrapolated-runs)をどれだけ稼ぐか
   - ただしマイナスになることがあり、この指標の欠点ともいわれている
+
+- [XR+ (eXtrapolated Runs Plus)](https://www.ted027.com/post/sabr-hit-rcaa#rcaa-rc+-runs-created-above-average)
+  - リーグの平均的打者と比較してどれだけ多く[`XR`](#xr-extrapolated-runs)を稼いだか
+
+- [XRWIN](https://www.ted027.com/post/sabr-hit-rcaa#xrwin)
+  - リーグの平均的打者と比較して何勝多く貢献したか
+  - [`XR+`](#xr+-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
 
 #### 長打力
 

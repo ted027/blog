@@ -94,7 +94,7 @@ def qs_rate(pitcher):
         qsrate = Decimal('0')
     else:
         qsrate = Decimal(pitcher['QS']) * Decimal('100') / start
-    pitcher['QS率'] = str(qsrate)
+    return str(qsrate)
 
 
 def k_per_bb(pitcher):
@@ -103,7 +103,7 @@ def k_per_bb(pitcher):
         k_per_bb = Decimal('0')
     else:
         k_per_bb = Decimal(pitcher['奪三振']) / bb
-    pitcher['K/BB'] = str(k_per_bb)
+    return str(k_per_bb)
 
 
 def k_per_nine(pitcher):
@@ -113,7 +113,7 @@ def k_per_nine(pitcher):
         k_per_n = Decimal('0')
     else:
         k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS / outcounts
-    pitcher['K/9'] = str(k_per_n)
+    return str(k_per_n)
 
 
 def bb_per_nine(pitcher):
@@ -123,7 +123,7 @@ def bb_per_nine(pitcher):
         bb_per_n = Decimal('-1')
     else:
         bb_per_n = Decimal(pitcher['与四球']) * FULL_OUTCOUNTS / outcounts
-    pitcher['BB/9'] = str(bb_per_n)
+    return str(bb_per_n)
 
 
 def hr_per_nine(pitcher):
@@ -133,7 +133,7 @@ def hr_per_nine(pitcher):
         hr_per_n = Decimal('-1')
     else:
         hr_per_n = Decimal(pitcher['被本塁打']) * FULL_OUTCOUNTS / outcounts
-    pitcher['HR/9'] = str(hr_per_n)
+    return str(hr_per_n)
 
 
 def whip(pitcher):
@@ -143,7 +143,7 @@ def whip(pitcher):
         whip = Decimal('-1')
     else:
         whip = (Decimal(pitcher['与四球']) + Decimal(pitcher['被安打']) * Decimal('3') / outcounts
-    pitcher['WHIP'] = str(whip)
+    return str(whip)
 ```
 
 ---
@@ -162,10 +162,10 @@ def whip(pitcher):
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/python_analytics>}}
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/techacademy2>}}
 
 ---

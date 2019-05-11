@@ -66,7 +66,7 @@ def bb_per_k(hitter):
     else:
         raw_bb_per_k = Decimal(hitter['四球']) / k
         bb_per_k = _digits_under_one(raw_bb_per_k, 2)
-    hitter['BB/K'] = str(bb_per_k)
+    return str(bb_per_k)
 
 
 def bb_percent(hitter):
@@ -76,12 +76,12 @@ def bb_percent(hitter):
     else:
         raw_bb_percent = Decimal(hitter['四球']) / apperance
         bb_percent = _digits_under_one(raw_bb_percent, 3)
-    hitter['BB%'] = str(bb_percent)
+    return str(bb_percent)
 
 
 def iso_d(hitter):
     iso_d = Decimal(hitter['出塁率']) - Decimal(hitter['打率'])
-    hitter['IsoD'] = str(iso_d)
+    return str(iso_d)
 ```
 
 ---

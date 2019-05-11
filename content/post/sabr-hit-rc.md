@@ -129,20 +129,7 @@ def rc_basic(hitter):
                   (advance_base + Decimal('3') * opportunity) /
                   (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
         rc = _digits_under_one(raw_rc, 2)
-    hitter['RC'] = str(rc)
-
-
-def rc_27(hitter, raw_rc):
-    total_out = Decimal(hitter['打数']) - Decimal(
-        hitter['安打']) + Decimal(hitter['犠打']) + Decimal(
-            hitter['犠飛']) + Decimal(
-                hitter['盗塁死']) + Decimal(hitter['併殺打'])
-    if not total_out:
-        rc_27 = Decimal('0')
-    else:
-        raw_rc_27 = raw_rc * FULL_OUTCOUNTS / total_out
-        rc_27 = _digits_under_one(raw_rc_27, 2)
-    hitter['RC27'] = str(rc_27)
+    return str(rc)
 
 
 def xr_basic(hitter):
@@ -163,20 +150,20 @@ def xr_basic(hitter):
                         hitter['犠飛']) + XR_SAC_BUNT * Decimal(
                             hitter['犠打'])
     xr = _digits_under_one(raw_xr, 2)
-    hitter['XR'] = str(xr)
+    return str(xr)
 
 
-def xr_27(hitter, raw_xr):
+def rc_xr_27(hitter, rc_xr):
     total_out = Decimal(hitter['打数']) - Decimal(
         hitter['安打']) + Decimal(hitter['犠打']) + Decimal(
             hitter['犠飛']) + Decimal(
                 hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
-        xr_27 = Decimal('0')
+        rc_xr_27 = Decimal('0')
     else:
-        raw_xr_27 = xr * FULL_OUTCOUNTS / total_out
-        xr_27 = _digits_under_one(raw_xr_27, 2)
-    hitter['XR27'] = str(xr_27)
+        raw_rc_xr_27 = rc_xr * FULL_OUTCOUNTS / total_out
+        rc_xr_27 = _digits_under_one(raw_rc_xr_27, 2)
+    return str(rc_xr_27)
 ```
 
 ---
@@ -189,13 +176,14 @@ def xr_27(hitter, raw_xr):
 
 こちらもリーグ平均と比較しての応用指標があるので、それはまた今度。
 
+- [[参考記事]【【RCWIN, XRWIN】NPB(2019)セイバーメトリクス野手指標の算出⑥](https://www.ted027.com/post/sabr-hit-rcaa)
+
+
 ---
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
 - [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
-
-- [[参考記事]【BB/K, BB%, IsoD】NPB(2019)セイバーメトリクス野手指標の算出③](https://www.ted027.com/post/sabr-hit-bb-k)
 
 ---
 

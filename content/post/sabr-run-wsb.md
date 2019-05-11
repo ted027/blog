@@ -60,7 +60,7 @@ def wsb(hitter, league):
     else:
         raw_wsb = steal_score - league_steal_score * steal_chance / league_steal_chance
         wsb = digits_under_one(raw_wsb, 2)
-    hitter['wSB'] = str(wsb)
+    return str(wsb)
 ```
 
 ---
