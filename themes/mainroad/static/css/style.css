@@ -15,6 +15,11 @@
 	display: none;
 }
 
+.highlight {
+	font-size: 13px;
+	font-size: .8125rem;
+}
+
 @media screen and (min-width: 767px) {
 	.narrow__area {
 		display: none !important;
@@ -282,11 +287,7 @@ figcaption h4 {
 }
 
 pre,
-code {
-	font-size: 13px;
-	font-size: .8125rem;
-}
-
+code,
 kbd,
 samp {
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
