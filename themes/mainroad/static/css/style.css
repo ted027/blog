@@ -282,7 +282,11 @@ figcaption h4 {
 }
 
 pre,
-code,
+code {
+	font-size: 13px;
+	font-size: .8125rem;
+}
+
 kbd,
 samp {
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
