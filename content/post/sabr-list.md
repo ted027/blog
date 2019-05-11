@@ -27,7 +27,7 @@ tags: ["指標", "セイバーメトリクス"]
 
 ### 野手指標
 
-#### 得点能力
+#### 打撃総合
 
 - [wOBA (weighted On-Base Average)](https://www.ted027.com/post/sabr-hit-woba#woba-weighted-on-base-average)
   - 1打席あたり得点力
@@ -46,6 +46,8 @@ tags: ["指標", "セイバーメトリクス"]
   - 1打席あたり得点力の傑出度（パーセント）
   - 平均的打者が100
   - 打席あたりの[`wRC`](#wrc-weighted-runs-created)にパークファクター補正を加え、リーグ平均と比較する
+
+#### 攻撃総合
 
 - [RC (Runs Created)](https://www.ted027.com/post/sabr-hit-rc#rc-runs-created)
   - 累積で何点取ったか（何点分貢献したか）
@@ -92,6 +94,10 @@ tags: ["指標", "セイバーメトリクス"]
   - リーグ平均の走者と比べて、盗塁によって何点多く取ったか
   - 盗塁および盗塁死に対して得点価値をかけ、リーグ合計の盗塁および盗塁死との差を出す
 
+- UBR (Ultimate Base Run)
+  - リーグ平均の走者と比べて、盗塁以外の走塁によって何点多く取ったか
+  - 走者時の安打やゴロでの進塁、併殺回避などを評価
+
 #### 守備力
 
 - UZR (Ultimate Zone Rating)
@@ -100,11 +106,17 @@ tags: ["指標", "セイバーメトリクス"]
   - 試合数に応じて積み上がるため、出場試合数の異なる選手同士の比較には不適
     - そうした場合は`UZR/1000`や`UZR/150`を用いる
 
+#### 野手総合
+
+- WAR (Wins Above Replacement)
+  - 代替選手と比べ、何勝多く上積みしたか
+    - 代替選手は、二軍からの昇格やトレードにより簡単に獲得できるレベルの選手
+  - 算出方法は複数存在するが、基本的に打撃指標`wRAA`, 走塁指標`wSB`, `UBR`, 守備指標'UZR'に、パークファクターや守備位置補正を加味して算出される
 ---
 
 ### 投手指標
 
-- [WHIP](https://www.ted027.com/post/sabr-pitch-whip#whip)
+- [WHIP (Walks plus Hits per Inning Pitched)](https://www.ted027.com/post/sabr-pitch-whip#whip)
   - 1イニングあたり何人（安打と四球の）走者を出すか
 
 - [K/BB](https://www.ted027.com/post/sabr-pitch-whip#k-bb)
@@ -132,11 +144,16 @@ tags: ["指標", "セイバーメトリクス"]
   - [FIP](#fip-fielding-independent-pitching)で被本塁打と換算していた部分を、フライボール数 * フライボールが本塁打になる確率、で置き換える
   - 投球回が増えれば、フライボールあたりの本塁打はほぼ収束する、という考えに基づく
 
-- BABIP
+- BABIP (Batting Average on Balls In Play)
   - フェアゾーン内に飛んだ打球が安打になる確率
   - 長期的に見れば.300程度に収束するとされ、大きく乖離する場合「運が良い/悪い」といえる
   - もちろん運だけではなく、投手能力が低い場合、フィールド内に安打性の打球を打たれる機会が増え、`BABIP`が高くなる
   - 打者の場合、俊足であれば`BABIP`が高くなりがちであったり、打球傾向が偏る場合、シフトによって`BABIP`を低く抑えることができるなど、投手ほど収束しないとされる
+
+- WAR (Wins Above Replacement)
+  - 代替選手と比べ、何勝多く上積みしたか
+    - 代替選手は、二軍からの昇格やトレードにより簡単に獲得できるレベルの選手
+  - 算出方法は複数存在するが、[`FIP`](#fip-fielding-independent-pitching)や、チームの守備指標を加味した`失点率`、パークファクターなどから算出される
 
 ---
 
