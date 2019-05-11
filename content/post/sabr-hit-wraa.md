@@ -23,7 +23,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ### 追加する指標
 
-いずれも[`wOBA`](https://www.ted027.com/post/sabr-2#woba-weighted-on-base-average)の応用指標。
+いずれも[`wOBA`](https://www.ted027.com/post/sabr-hit-woba#woba-weighted-on-base-average)の応用指標。
 
 #### wRAA (Weighted Runs Above Average)
 
@@ -80,17 +80,17 @@ def wrc(hitter, league):
 
 ### おわり
 
-セリーグの平均成績は、投手の打撃成績を除いて考えることが多い模様。
+セリーグの場合、リーグ平均成績には、投手の打撃成績を含まないことが多い模様。指標の意味を考えれば納得ですね。
 
-[`wRAA`](#wraa-weighted-runs-above-average)や[`wRC`](#wrc-weighted-runs-created)は総合指標`WAR`の計算にも用いられるなど重用されています。
+[`wRAA`](#wraa-weighted-runs-above-average)や[`wRC`](#wrc-weighted-runs-created)は総合指標`WAR`の計算にも用いられるなど重用されている。
 
 ---
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
 
-- [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-6)
+- [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-pitch-fip)
 
 ---
 

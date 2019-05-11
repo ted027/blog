@@ -49,7 +49,7 @@ $\frac{四球}{打席}$
 
 - 打席自制心
 - 四死球だけでどの程度出塁したか
-- 考え方としては[`IsoP`(長打力)](https://www.ted027.com/post/sabr-3#isop-iso-isolated-power)と同じ
+- 考え方としては[`IsoP`(長打力)](https://www.ted027.com/post/sabr-hit-isop#isop-iso-isolated-power)と同じ
 - 故意四球や死球も含むため、`BB%`の下位互換との声も
 
 $出塁率 - 打率$
@@ -94,9 +94,9 @@ def iso_d(hitter):
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-3)
+- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-hit-isop)
 
-- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-5)
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-hit-rc)
 
 ---
 

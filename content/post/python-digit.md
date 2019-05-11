@@ -23,9 +23,9 @@ Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。
 
 以前記事で`K/BB`やら`wOBA`やらを算出するスクリプトを書いた。
 
-- [[参考記事]【WHIP, K/BB他】NPB(2019)セイバーメトリクス投手指標の算出①](https://www.ted027.com/post/sabr-1)
+- [[参考記事]【WHIP, K/BB他】NPB(2019)セイバーメトリクス投手指標の算出①](https://www.ted027.com/post/sabr-pitch-whip)
 
-- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
 
 この際、有効数字や小数点以下の桁数を気にせず計算結果を格納している。
 

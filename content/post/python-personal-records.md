@@ -321,9 +321,9 @@ MLBはオープンデータがある程度提供されているが、日本だ�
 
 Webサイトのちょっとした仕様変更とかで動かなくなりそうなので、定期的に取るならメンテナンスが大変。
 
-[[参考記事]【WHIP, K/BB他】NPB(2019)セイバーメトリクス投手指標の算出①](https://www.ted027.com/post/sabr-1)
+[[参考記事]【WHIP, K/BB他】NPB(2019)セイバーメトリクス投手指標の算出①](https://www.ted027.com/post/sabr-pitch-whip)
 
-[[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-2)
+[[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
 
 [[参考記事]Pythonでプロ野球スコア速報を取得する](https://www.ted027.com/post/python-score)
 
