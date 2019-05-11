@@ -32,7 +32,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ##### 計算式
 
-$(wOBA - リーグwOBA) / wOBAscale * 打席$
+$(wOBA - リーグwOBA) \div wOBAscale \times 打席$
 
 $wOBAscale = 1.15(MLB)$
 $wOBAscale = 1.24(NPB)$
@@ -48,7 +48,7 @@ $wOBAscale = 1.24(NPB)$
 
 ##### 計算式
 
-$wRAA + (リーグ得点 / リーグ打席 * 打席)$
+$wRAA + (リーグ得点 \div リーグ打席 \times 打席)$
 
 ---
 
