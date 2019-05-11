@@ -79,7 +79,7 @@ tags: ["指標", "セイバーメトリクス"]
 
 - [XRWIN](https://www.ted027.com/post/sabr-hit-rcaa#xrwin)
   - リーグの平均的打者と比較して何勝多く貢献したか
-  - [`XR+`](#xr+-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
+  - [`XR+`](#xr-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
 
 #### 長打力
 

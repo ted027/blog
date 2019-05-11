@@ -63,7 +63,7 @@ $XR - リーグXR \times \frac{打席}{リーグ打席}$
 #### XRWIN
 
 - リーグの平均的打者と比較して何勝多く貢献したか
-- [`XR+`](#xr+-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
+- [`XR+`](#xr-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
 
 ##### 計算式
 
