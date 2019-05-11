@@ -48,6 +48,45 @@ $RPW = 10 \times \sqrt{\frac{リーグ得点 + リーグ失点}{リーグ投球�
 
 ---
 
+#### XR+ (eXtrapolated Runs Plus)
+
+- リーグの平均的打者と比較してどれだけ多く[`XR`](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs)を稼いだか
+
+※ 関係ないですが、XRAA (eXtrapolated Runs Above Average) という呼び方はしないんですかね？そう呼んでるのを見たことないです。
+
+##### 計算式
+
+$XR - リーグXR \times \frac{打席}{リーグ打席}$
+
+---
+
+#### XRWIN
+
+- リーグの平均的打者と比較して何勝多く貢献したか
+- [`XR+`](#xr+-extrapolated-runs-plus)を`RPW`(Runs Per Win)で割ったもの
+
+##### 計算式
+
+$\frac{XR+}{RPW}$
+
+$RPW = 10 \times \sqrt{\frac{リーグ得点 + リーグ失点}{リーグ投球回}}$
+
+---
+
+### 実装
+
+```py :sabr.py
+
+```
+
+---
+
+### おわり
+
+
+
+---
+
 {{< ad/con/wide/sabr>}}
 
 ---
