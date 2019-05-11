@@ -25,7 +25,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 いずれも[`wOBA`](https://www.ted027.com/post/sabr-hit-woba#woba-weighted-on-base-average)の応用指標。
 
-#### wRAA (Weighted Runs Above Average)
+#### wRAA (weighted Runs Above Average)
 
 - 打者の得点貢献度
 - リーグ平均の打者が同じ打席数立った場合と比べて、何点多く貢献したか
@@ -41,7 +41,7 @@ $wOBAscale = 1.24(NPB)$
 
 ---
 
-#### wRC (Weighted Runs Created)
+#### wRC (weighted Runs Created)
 
   - 打者の得点貢献度
   - リーグ平均得点力をベースに、[`wRAA`](#wraa-weighted-runs-above-average)と合わせて何点分貢献したか
@@ -59,18 +59,12 @@ WOBA_SCALE = Decimal('1.24')
 
 
 def wraa(hitter, league):
-    """
-    wRAA = (対象打者のwOBA - リーグwOBA) ÷ wOBAscale × 打席数
-    """
     raw_wraa = (Decimal(hitter['wOBA']) - Decimal(league['wOBA'])) / WOBA_SCALE * Decimal(hitter['打席'])
     wraa = digits_under_one(raw_wraa, 3)
     hitter['wRAA'] = str(wraa)
 
 
 def wrc(hitter, league):
-    """
-    wRC = wRAA + (リーグ総得点数 / リーグ総打席数) × 打席数
-    """
     raw_wrc = Decimal(hitter['wRAA']) + (Decimal(league['得点']) / Decimal(league['打席'])) * Decimal(hitter['打席'])
     wrc = digits_under_one(raw_wrc, 3)
     hitter['wRC'] = str(wrc)
