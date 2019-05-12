@@ -7,7 +7,7 @@ categories: ["野球"]
 tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 ---
 
-得点力指標RC, XRに、リーグ平均と比較する観点を加味した、RCAA, RCWIN, XRAA, XRWINを算出する。
+得点力指標RC, XRに、リーグ平均と比較する観点を加味した、RCAA, RCWIN, XR+, XRWINを算出する。
 
 <!--more-->
 
