@@ -722,7 +722,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .content li {
 	margin-bottom: 5px;
-	line-height: 150%;
+	line-height: 200%;
 }
 
 .tags {
