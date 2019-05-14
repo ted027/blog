@@ -11,12 +11,20 @@ tags: ["Python", "セイバーメトリクス", "BABIP"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/a8/skyperfect>}}
+
+---
+
+{{< ad/con/wide/pawapuro2018>}}
 
 ---
 
 ---
 
-{{< ad/ >}}
+{{< ad/con/wide/sabr_omata>}}
+
+---
+
+{{< ad/afb/codecamp>}}
 
 ---
