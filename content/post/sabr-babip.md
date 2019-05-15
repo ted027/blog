@@ -71,6 +71,8 @@ $\frac{安打 - 本塁打}{打数 - 奪三振 - 本塁打 + 犠飛}$
 
 例によって、以下の記事で取得した個人成績から算出する。
 
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
 ただし、投手の被犠飛数が取得できなかったため、今回は無視して算出している。
 
 ```py:sabr.py
@@ -107,6 +109,14 @@ def babip(hitter):
 フェアグラウンド内に飛んだらあとは運（が絡むから無視）、という考え方が`BABIP`や[`DIPS`](https://www.ted027.com/post/sabr-pitch-fip#dipsという概念)に通じている。
 
 自分がプレイヤーだったら複雑だろうけど、統計学的に見たらそうなんだろうな、とも思う。
+
+---
+
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-hit-rc)
+
+- [[参考記事]【RCWIN, XRWIN】NPB(2019)セイバーメトリクス野手指標の算出⑥](https://www.ted027.com/post/sabr-hit-rcaa)
 
 ---
 
