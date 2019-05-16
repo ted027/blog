@@ -21,12 +21,6 @@ tags: ["AWS", "PlantUML", "構成図"]
 
 ---
 
-- [[参考記事]PlantUML + Visual Studio Codeを導入する（Windows環境）](https://www.ted027.com/post/puml-win)
-
-- [[参考記事]PlantUML + Visual Studio Codeを導入する（Ubuntu環境）](https://www.ted027.com/post/puml-ubu)
-
----
-
 AWSを使ったクラウドサービスを開発している人は、一度はPowerPointやVisioで構成図を作って説明したことがあるはず。
 
 これも簡単なものならPlantUMLでさらっと書ける。
@@ -121,6 +115,14 @@ table .[hidden]. web_bucket
 あまり複雑なシステムになると、PlantUMLで綺麗に書くのは難しい。
 
 そういう時はおとなしくVisioとかで書きましょう。
+
+---
+
+- [[参考記事]PlantUMLでいろんなアイコンを使ったシステム構成図を作る](https://www.ted027.com/post/puml-various)
+
+- [[参考記事]PlantUML + Visual Studio Codeを導入する（Windows環境）](https://www.ted027.com/post/puml-win)
+
+- [[参考記事]PlantUML + Visual Studio Codeを導入する（Ubuntu環境）](https://www.ted027.com/post/puml-ubu)
 
 ---
 
