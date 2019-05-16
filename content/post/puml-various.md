@@ -97,6 +97,8 @@ fb .[hidden]r. amazon
 
 どこかで見たことあるアイコン。
 
+---
+
 ```plantuml
 @startuml
 
@@ -126,6 +128,8 @@ FA5_USER(user) #White {
 ```
 
 {{< img src="/img/puml-various-2.png" >}}
+
+`jedi_order`がある…！
 
 ---
 
