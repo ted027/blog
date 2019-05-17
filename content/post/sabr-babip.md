@@ -74,7 +74,7 @@ $\frac{安打 - 本塁打}{打数 - 奪三振 - 本塁打 + 犠飛}$
 ただし、投手の被犠飛数が取得できなかったため、今回は無視して算出している。
 
 ```py:sabr.py
-def babip(pitcher):
+def babip_p(pitcher):
     # denominator = Decimal(pitcher['被打数']) - Decimal(pitcher['奪三振']) - Decimal(
     #     pitcher['被本塁打']) + Decimal(pitcher['犠飛'])
     denominator = Decimal(pitcher['被打数']) - Decimal(pitcher['奪三振']) - Decimal(
@@ -88,7 +88,7 @@ def babip(pitcher):
     return str(babip)
 
 
-def babip(hitter):
+def babip_h(hitter):
     denominator = Decimal(hitter['打数']) - Decimal(hitter['三振']) - Decimal(
         hitter['本塁打']) + Decimal(hitter['犠飛'])
     if not denominator:
