@@ -1,6 +1,6 @@
 ---
 title: "pip install時の「“python setup.py egg_info” failed ...」エラー"
-date: 2019-05-18T16:05:36+09:00
+date: 2019-05-18T22:05:36+09:00
 draft: false
 comments: true
 categories: ["Python"]
