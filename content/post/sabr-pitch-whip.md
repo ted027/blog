@@ -27,6 +27,10 @@ tags: ["投手指標", "Python", "セイバーメトリクス"]
 
 ---
 
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+---
+
 ### 追加する指標
 
 #### QS率
