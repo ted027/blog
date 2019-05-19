@@ -83,6 +83,14 @@ def update_pitcher_y_records(pitcher_list, team_list):
 
 ---
 
+- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
+
+- [[参考記事]【RCWIN, XRWIN】NPB(2019)セイバーメトリクス野手指標の算出⑥](https://www.ted027.com/post/sabr-hit-rcaa)
+
+- [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
+
+---
+
 {{< ad/con/wide/sabr>}}
 
 ---
