@@ -25,7 +25,7 @@ tags: ["Python", "規定打席", "規定投球回"]
 
 ---
 
-いちいち使う場面にロジックを入れるのは面倒なので、計算して成績表に書き込んでおく。
+いちいち使う場面にロジックを入れるのは面倒なので、計算して成績表に書き込んでおくことに。
 
 ### 規定打席, 規定投球回
 
@@ -87,6 +87,6 @@ def update_pitcher_y_records(pitcher_list, team_list):
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/moshimo/samurai>}}
 
 ---

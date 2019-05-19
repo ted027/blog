@@ -138,6 +138,6 @@ stage ('stage') {
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/moshimo/samurai>}}
 
 ---
