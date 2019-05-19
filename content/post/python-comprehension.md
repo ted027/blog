@@ -17,7 +17,7 @@ Pythonの内包表記で作れるもの、条件文との組み合わせ。
 
 ---
 
-{{< ad/con/wide/python_snslytics >}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 
