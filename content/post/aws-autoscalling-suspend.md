@@ -29,7 +29,7 @@ AutoScallingGroupのスタック削除で少々詰まったので備忘録。
 aws cloudformation create-stack --stack-name MyStackName --template-body file://mytemplate.yml
 ```
 
-```yml:mytemplate.yml
+```yml
 ...
 Resources:
   AutoScalingGroupJmeter:
@@ -66,7 +66,11 @@ AutoscalingGroup deletion cannot be performed because the Terminate process has 
 
 suspend-processesを実行する際、特にプロセスを指定しなかったので、全てのプロセスがsuspendされた。
 
+---
+
 {{< img src="/img/autoscalling-suspend.png" >}}
+
+---
 
 このためTerminateもsuspendされてしまい、削除に失敗。
 
