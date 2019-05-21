@@ -112,23 +112,22 @@ def rc_basic(hitter):
         hitter['四球']) + Decimal(hitter['死球']) + Decimal(
             hitter['犠打']) + Decimal(hitter['犠飛'])
     if not opportunity:
-        rc = Decimal('0')
-    else:
-        on_base = Decimal(hitter['安打']) + Decimal(
-            hitter['四球']) + Decimal(
-                hitter['死球']) - Decimal(
-                    hitter['盗塁死']) - Decimal(
-                        hitter['併殺打'])
-        advance_base = Decimal(hitter['塁打']) + Decimal('0.26') * (
-            Decimal(hitter['四球']) + Decimal(hitter['死球'])
-        ) + Decimal('0.53') * (Decimal(hitter['犠飛']) +
-                    Decimal(hitter['犠打'])) + Decimal('0.64' * Decimal(
-                        hitter['盗塁']) - Decimal('0.03') * Decimal(
-                            hitter['三振'])
-        raw_rc = ((on_base + Decimal('2.4') * opportunity) *
-                  (advance_base + Decimal('3') * opportunity) /
-                  (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
-        rc = _digits_under_one(raw_rc, 2)
+        return '0'
+    on_base = Decimal(hitter['安打']) + Decimal(
+        hitter['四球']) + Decimal(
+            hitter['死球']) - Decimal(
+                hitter['盗塁死']) - Decimal(
+                    hitter['併殺打'])
+    advance_base = Decimal(hitter['塁打']) + Decimal('0.26') * (
+        Decimal(hitter['四球']) + Decimal(hitter['死球'])
+    ) + Decimal('0.53') * (Decimal(hitter['犠飛']) +
+                Decimal(hitter['犠打'])) + Decimal('0.64' * Decimal(
+                    hitter['盗塁']) - Decimal('0.03') * Decimal(
+                        hitter['三振'])
+    raw_rc = ((on_base + Decimal('2.4') * opportunity) *
+                (advance_base + Decimal('3') * opportunity) /
+                (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
+    rc = _digits_under_one(raw_rc, 2)
     return str(rc)
 
 
@@ -159,10 +158,9 @@ def rc_xr_27(hitter, rc_xr):
             hitter['犠飛']) + Decimal(
                 hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
-        rc_xr_27 = Decimal('0')
-    else:
-        raw_rc_xr_27 = rc_xr * FULL_OUTCOUNTS / total_out
-        rc_xr_27 = _digits_under_one(raw_rc_xr_27, 2)
+        return '0'
+    raw_rc_xr_27 = rc_xr * FULL_OUTCOUNTS / total_out
+    rc_xr_27 = _digits_under_one(raw_rc_xr_27, 2)
     return str(rc_xr_27)
 ```
 

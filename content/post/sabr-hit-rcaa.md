@@ -100,10 +100,9 @@ def rc_xr_plus(hitter, league, rc_xr, league_rc_xr):
     on_base = Decimal(hitter['打席'])
     league_on_base = Decimal(league['打席'])
     if not league_on_base:
-        rc_xr_plus = raw_rc_xr_plus = Decimal('0')
-    else:
-        raw_rc_xr_plus = rc_xr - league_rc_xr / league_on_base * on_base
-        rc_xr_plus = digits_under_one(raw_rc_xr_plus, 2)
+        return 0, Decimal('0')
+    raw_rc_xr_plus = rc_xr - league_rc_xr / league_on_base * on_base
+    rc_xr_plus = digits_under_one(raw_rc_xr_plus, 2)
     return str(rc_xr_plus), raw_rc_xr_plus
 
 
@@ -112,13 +111,12 @@ def rc_xr_win(hitter, full_league, rc_xr_plus):
     league_hitter = full_league['Hitter'][hitter['League']]
     outcounts = return_outcounts(Decimal(league_pitcher['投球回']))
     if not outcounts:
-        rc_xr_win = Decimal('0')
-    else:
-        runs_per_inning = Decimal('3') * (Decimal(
-            league_hitter['得点']) + Decimal(league_pitcher['失点'])) / outcounts
-        runs_per_win = Decimal('10') * math.sqrt(runs_per_inning)
-        raw_rc_xr_win = rc_xr_plus / runs_per_win
-        rc_xr_win = digits_under_one(raw_rc_xr_win, 2)
+        return '0'
+    runs_per_inning = Decimal('3') * (Decimal(
+        league_hitter['得点']) + Decimal(league_pitcher['失点'])) / outcounts
+    runs_per_win = Decimal('10') * math.sqrt(runs_per_inning)
+    raw_rc_xr_win = rc_xr_plus / runs_per_win
+    rc_xr_win = digits_under_one(raw_rc_xr_win, 2)
     return str(rc_xr_win)
 ```
 

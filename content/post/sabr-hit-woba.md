@@ -76,7 +76,7 @@ $(0.7 \times (四球 + 死球 - 故意四球) + 0.9 \times 単打\\\\\\ + 1.25 \
 
 `失策出塁に関してはデータの入手が難しいため、手に入らない場合は無視してもよいとしている。`(Wikipedia)
 
-この記述に甘え、今回は失策出塁を無視させていただく。
+この記述に甘え、失策出塁を無視させていただくことに。
 
 ---
 
@@ -101,15 +101,14 @@ def woba(hitter):
         hitter['四球']) - Decimal(hitter['故意四球']) + Decimal(
             hitter['死球']) + Decimal(hitter['犠飛'])
     if not denominator:
-        woba = Decimal('0')
-    else:
-        numerator = WOBA_BB * (Decimal(hitter['四球']) - Decimal(
-            hitter['故意四球'])) + WOBA_HBP * Decimal(hitter[
-                '死球']) + WOBA_SINGLE * _single(hitter) + WOBA_DOUBLE * Decimal(
-                    hitter['二塁打']) + WOBA_TRIPLE * Decimal(
-                        hitter['三塁打']) + WOBA_HR * Decimal(
-                            hitter['本塁打'])
-        woba = numerator / denominator
+        return '0'
+    numerator = WOBA_BB * (Decimal(hitter['四球']) - Decimal(
+        hitter['故意四球'])) + WOBA_HBP * Decimal(hitter[
+            '死球']) + WOBA_SINGLE * _single(hitter) + WOBA_DOUBLE * Decimal(
+                hitter['二塁打']) + WOBA_TRIPLE * Decimal(
+                    hitter['三塁打']) + WOBA_HR * Decimal(
+                        hitter['本塁打'])
+    woba = numerator / denominator
     return str(woba)
 
 
@@ -117,14 +116,13 @@ def woba_basic(hitter):
     denominator = Decimal(hitter['打席']) - Decimal(
         hitter['故意四球']) - Decimal(hitter['犠打'])
     if not denominator:
-        woba_b = Decimal('0')
-    else:
-        numerator = Decimal('0.7') * (
-            Decimal(hitter['四球']) + Decimal(hitter['死球']) -
-            Decimal(hitter['故意四球'])) + Decimal('0.9') * _single(hitter) + Decimal('1.3') * (
-                Decimal(hitter['二塁打']) + Decimal(hitter['三塁打'])
-            ) + Decimal('2.0') * Decimal(hitter['本塁打'])
-        woba_b = numerator / denominator
+        return '0'
+    numerator = Decimal('0.7') * (
+        Decimal(hitter['四球']) + Decimal(hitter['死球']) -
+        Decimal(hitter['故意四球'])) + Decimal('0.9') * _single(hitter) + Decimal('1.3') * (
+            Decimal(hitter['二塁打']) + Decimal(hitter['三塁打'])
+        ) + Decimal('2.0') * Decimal(hitter['本塁打'])
+    woba_b = numerator / denominator
     return str(woba_b)
 
 
@@ -132,17 +130,16 @@ def woba_speed(hitter):
     denominator = Decimal(hitter['打席']) - Decimal(
         hitter['故意四球']) - Decimal(hitter['犠打'])
     if not denominator:
-        woba_b = Decimal('0')
-    else:
-        numerator = Decimal('0.7') * (
-            Decimal(hitter['四球']) + Decimal(hitter['死球']) -
-            Decimal(hitter['故意四球'])) + Decimal('0.9') * _single(
-                hitter) + Decimal('1.25') * Decimal(hitter['二塁打']) + Decimal('1.6') * Decimal(
-                    hitter['三塁打']) + Decimal('2.0') * Decimal(
-                        hitter['本塁打']) + Decimal('0.25') * Decimal(
-                            hitter['盗塁']) - Decimal('0.5') * Decimal(
-                                hitter['盗塁死'])
-        woba_s = numerator / denominator
+        return '0'
+    numerator = Decimal('0.7') * (
+        Decimal(hitter['四球']) + Decimal(hitter['死球']) -
+        Decimal(hitter['故意四球'])) + Decimal('0.9') * _single(
+            hitter) + Decimal('1.25') * Decimal(hitter['二塁打']) + Decimal('1.6') * Decimal(
+                hitter['三塁打']) + Decimal('2.0') * Decimal(
+                    hitter['本塁打']) + Decimal('0.25') * Decimal(
+                        hitter['盗塁']) - Decimal('0.5') * Decimal(
+                            hitter['盗塁死'])
+    woba_s = numerator / denominator
     return str(woba_s)
 ```
 

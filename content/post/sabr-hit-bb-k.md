@@ -39,9 +39,19 @@ $\frac{四球}{三振}$
 
 - 打席自制心
 - 選球眼が良い選手が高くなる傾向
+- 早打ちの選手は低くなる傾向
 - 長打力も関係するため、必ずしも選球眼と比例するわけではない
 
 $\frac{四球}{打席}$
+
+---
+
+#### K% (K rate)
+
+- ミート力 + 選球眼
+- 早打ちの選手は低くなる傾向
+
+$\frac{三振}{打席}$
 
 ---
 
@@ -60,23 +70,33 @@ $出塁率 - 打率$
 
 ```py:sabr.py
 def bb_per_k(hitter):
+    bb = Decimal(hitter['四球'])
     k = Decimal(hitter['三振'])
-    if not k:
-        bb_per_k = Decimal('0')
-    else:
-        raw_bb_per_k = Decimal(hitter['四球']) / k
-        bb_per_k = _digits_under_one(raw_bb_per_k, 2)
+    if not bb:
+        return '0'
+    elif not k:
+        return '99.99'
+    raw_bb_per_k = bb / k
+    bb_per_k = digits_under_one(raw_bb_per_k, 2)
     return str(bb_per_k)
 
 
 def bb_percent(hitter):
     apperance = Decimal(hitter['打席'])
     if not apperance:
-        bb_percent = Decimal('0')
-    else:
-        raw_bb_percent = Decimal(hitter['四球']) / apperance
-        bb_percent = _digits_under_one(raw_bb_percent, 3)
+        return '0'
+    raw_bb_percent = Decimal(hitter['四球']) / apperance
+    bb_percent = digits_under_one(raw_bb_percent, 3)
     return str(bb_percent)
+
+
+def k_percent(hitter):
+    apperance = Decimal(hitter['打席'])
+    if not apperance:
+        return '0'
+    raw_k_percent = Decimal(hitter['三振']) / apperance
+    k_percent = digits_under_one(raw_k_percent, 3)
+    return str(k_percent)
 
 
 def iso_d(hitter):

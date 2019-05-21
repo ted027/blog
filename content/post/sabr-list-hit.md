@@ -94,8 +94,13 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
   - 四球 / 三振
 
 - [BB%](https://www.ted027.com/post/sabr-hit-bb-k#bb%-walk-rate)
-  - 四球率、打席自制心
+  - 四球率
+  - 選球眼、打席自制心
   - 長打力も関係するため、必ずしも選球眼と比例するわけではない
+
+- [K%](https://www.ted027.com/post/sabr-hit-bb-k#k%-k-rate)
+  - 三振率
+  - ミート力、選球眼
 
 - [IsoD (Isolated Discipline)](https://www.ted027.com/post/sabr-hit-bb-k#bb%-walk-rate)
   - 打席自制心

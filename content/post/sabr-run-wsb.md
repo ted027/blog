@@ -56,10 +56,9 @@ def wsb(hitter, league):
     steal_score, steal_chance = _wsb_part(hitter)
     league_steal_score, league_steal_chance = _wsb_part(league)
     if not league_steal_chance:
-        wsb = IGNORE_VALUE
-    else:
-        raw_wsb = steal_score - league_steal_score * steal_chance / league_steal_chance
-        wsb = digits_under_one(raw_wsb, 2)
+        return '0'
+    raw_wsb = steal_score - league_steal_score * steal_chance / league_steal_chance
+    wsb = digits_under_one(raw_wsb, 2)
     return str(wsb)
 ```
 

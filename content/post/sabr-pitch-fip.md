@@ -197,12 +197,11 @@ def _fip_efira(pitcher):
     innings = Decimal(pitcher['投球回'])
     outcounts = return_outcounts(innings)
     if not outcounts:
-        fip_efira = ZERO_VALUE
-    else:
-        fip_efira = (Decimal('13') * Decimal(pitcher['被本塁打']) + Decimal('3') *
-                    (Decimal(pitcher['与四球']) + Decimal(pitcher['与死球']) -
-                     Decimal(pitcher['故意四球'])) -
-                    Decimal('2') * Decimal(pitcher['奪三振'])) * 3 / outcounts
+        return Decimal('0')
+    fip_efira = (Decimal('13') * Decimal(pitcher['被本塁打']) + Decimal('3') *
+                (Decimal(pitcher['与四球']) + Decimal(pitcher['与死球']) -
+                    Decimal(pitcher['故意四球'])) -
+                Decimal('2') * Decimal(pitcher['奪三振'])) * 3 / outcounts
     return fip_efira
 
 

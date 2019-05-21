@@ -80,11 +80,10 @@ def babip_p(pitcher):
     denominator = Decimal(pitcher['被打数']) - Decimal(pitcher['奪三振']) - Decimal(
         pitcher['被本塁打'])
     if not denominator:
-        babip = Decimal('0')
-    else:
-        numerator = Decimal(pitcher['被安打']) - Decimal(pitcher['被本塁打'])
-        raw_babip = numerator / denominator
-        babip = digits_under_one(raw_babip, 3)
+        return '0'
+    numerator = Decimal(pitcher['被安打']) - Decimal(pitcher['被本塁打'])
+    raw_babip = numerator / denominator
+    babip = digits_under_one(raw_babip, 3)
     return str(babip)
 
 
@@ -92,11 +91,10 @@ def babip_h(hitter):
     denominator = Decimal(hitter['打数']) - Decimal(hitter['三振']) - Decimal(
         hitter['本塁打']) + Decimal(hitter['犠飛'])
     if not denominator:
-        babip = Decimal('0')
-    else:
-        numerator = Decimal(hitter['安打']) - Decimal(hitter['本塁打'])
-        raw_babip = numerator / denominator
-        babip = digits_under_one(raw_babip, 3)
+        return '0'
+    numerator = Decimal(hitter['安打']) - Decimal(hitter['本塁打'])
+    raw_babip = numerator / denominator
+    babip = digits_under_one(raw_babip, 3)
     return str(babip)
 ```
 
@@ -106,7 +104,7 @@ def babip_h(hitter):
 
 フェアグラウンド内に飛んだらあとは運（が絡むから無視）、という考え方が`BABIP`や[`DIPS`](https://www.ted027.com/post/sabr-pitch-fip#dipsという概念)に通じている。
 
-自分がプレイヤーだったら複雑だろうけど、統計学的に見たらそうなんだろうな、とも思う。
+自分がプレイヤーだったら複雑だろうけど、統計学的に見たらそうなんだろうなぁとも思う。
 
 ---
 
