@@ -13,7 +13,7 @@ tags: ["Scratch", "プログラミング教育"]
 
 ---
 
-{{< ad/a8/prog_omocha >}}
+{{< ad/a8/zkai >}}
 
 ---
 
@@ -149,6 +149,6 @@ tags: ["Scratch", "プログラミング教育"]
 
 ---
 
-{{< ad/a8/zkai >}}
+{{< ad/moshimo/kodomo_challenge >}}
 
 ---
