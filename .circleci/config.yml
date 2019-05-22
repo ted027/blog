@@ -17,6 +17,13 @@ jobs:
             go install
       - checkout
       - run:
+          name: run analytics api
+          command: |
+            pip install falcon analytics
+            cd analytics
+            python googleanalytics.py
+            cd -
+      - run:
           name: build
           command: |
             rm -rf public
