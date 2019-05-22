@@ -13,7 +13,7 @@ tags: ["こどもちゃれんじ", "しまじろう"]
 
 ---
 
-{{< ad/a8/prog_omocha >}}
+{{< ad/moshimo/kodomo_challenge >}}
 
 ---
 
@@ -123,6 +123,6 @@ tags: ["こどもちゃれんじ", "しまじろう"]
 
 ---
 
-{{< ad/a8/zkai >}}
+{{< ad/moshimo/kodomo_challenge >}}
 
 ---
