@@ -20,7 +20,7 @@ jobs:
           name: run analytics api
           command: |
             sudo apt-get install python3 python3-pip
-            pip3 install falcon analytics
+            pip3 install falcon google-api-python-client pyopenssl
             cd analytics
             python3 googleanalytics.py
             cd -
