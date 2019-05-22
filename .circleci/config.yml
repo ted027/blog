@@ -19,6 +19,7 @@ jobs:
       - run:
           name: run analytics api
           command: |
+            sudo apt-get install python-pip
             pip install falcon analytics
             cd analytics
             python googleanalytics.py
