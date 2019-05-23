@@ -25,7 +25,7 @@ pygmentsStyle = "mainroad"
   share = true
   mathjax = true
   post_navigation = true
-  post_meta = ["popular", "date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
+  post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
   #postSections = ["blog", "news"]
   dateformat = "2006-01-02"
@@ -36,7 +36,7 @@ pygmentsStyle = "mainroad"
   list = "right"
   single = "right"
   # Enable widgets in given order
-  widgets = ["ad_top", "search", "ad_second", "recent", "categories", "social", "ad_bottom"]
+  widgets = ["ad_top", "search", "recent", "categories", "social", "ad_bottom"]
 
 [Params.widgets]
   recent_num = 5
