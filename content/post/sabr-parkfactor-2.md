@@ -23,7 +23,7 @@ tags: ["Python", "セイバーメトリクス", "パークファクター"]
 
 ### 前半
 
-[【前半】パークファクターの算出で大いに躓く①](https://www.ted027.com/post/sabr-hit-parkfactor-1)
+[【前半】パークファクターの算出で大いに躓く①](https://www.ted027.com/post/sabr-parkfactor-1)
 
 ---
 

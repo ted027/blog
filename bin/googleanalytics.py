@@ -75,6 +75,7 @@ def get_results(service, profile_id):
         end_date='today',
         metrics='ga:pageviews',
         dimensions='ga:pagePath',
+        filters='ga:pagePath=~^/\d+\/',
         sort='-ga:pageviews').execute()
 
 
@@ -86,7 +87,8 @@ def export_results(results):
             output_json["pageviews"].append(r[0][1:][:len(r[0]) - 2])
     else:
         print('No results found')
-    print(json.dumps(output_json, ensure_ascii=False).encode("utf-8"))
+    with open(f'../data/popular.json', 'w') as f:
+        json.dump(output_json, f, ensure_ascii=False)
 
 
 def main():

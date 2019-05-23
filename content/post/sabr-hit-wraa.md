@@ -80,9 +80,9 @@ def wrc(hitter, league):
 
 ---
 
-- [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
-
 - [[参考記事]【wOBA】NPB(2019)セイバーメトリクス野手指標の算出①](https://www.ted027.com/post/sabr-hit-woba)
+
+- [[参考記事]【wRC+】NPB(2019)セイバーメトリクス野手指標の算出⑦](https://www.ted027.com/post/sabr-hit-wrc-plus)
 
 - [[参考記事]【FIP】NPB(2019)セイバーメトリクス投手指標の算出②](https://www.ted027.com/post/sabr-pitch-fip)
 

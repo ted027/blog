@@ -156,7 +156,7 @@ def update_team_park_records():
 あとは…せめてもの慰めとして、チーム一出場している選手の試合数とチーム試合数が異なる場合に
 Warningを出すくらいの処理は入れようかと思う。いつか。
 
-[【後半】パークファクターの算出で大いに躓く②](https://www.ted027.com/post/sabr-hit-parkfactor-2)へ続く。
+[【後半】パークファクターの算出で大いに躓く②](https://www.ted027.com/post/sabr-parkfactor-2)へ続く。
 
 ---
 

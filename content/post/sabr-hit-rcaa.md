@@ -124,7 +124,7 @@ def rc_xr_win(hitter, full_league, rc_xr_plus):
 
 ### おわり
 
-[`RC`](https://www.ted027.com/post/sabr-hit-rc#rc-runs-created)系の指標と[`XR`](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs)系の指標って並べて書いておく必要あるんですかね？どっちかだけでいいような。
+[`RC`](https://www.ted027.com/post/sabr-hit-rc#rc-runs-created)系の指標と[`XR`](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs)系の指標って並べて使う必要あるんですかね？改良というなら[`XR`](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs)系だけでいいような。
 
 ---
 

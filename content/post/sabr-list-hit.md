@@ -28,15 +28,15 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
   - `出塁率`と同スケール（平均.320程度）に換算された値
   - 四死球、単打〜本塁打に各々の得点価値をかけて足し合わせ、打席(ほぼ)で割る
 
-- [wRAA (Weighted Runs Above Average)](https://www.ted027.com/post/sabr-hit-wraa#wraa-weighted-runs-above-average)
+- [wRAA (weighted Runs Above Average)](https://www.ted027.com/post/sabr-hit-wraa#wraa-weighted-runs-above-average)
   - リーグ平均の打者が同じ打席数立った場合と比べて、何点多く取ったか
   - `wOBA`ベースで、リーグ平均との得点差に打席数をかける
 
-- [wRC (Weighted Runs Created)](https://www.ted027.com/post/sabr-hit-wraa#wrc-weighted-runs-created)
+- [wRC (weighted Runs Created)](https://www.ted027.com/post/sabr-hit-wraa#wrc-weighted-runs-created)
   - 累積で何点取ったか（何点分貢献したか）
   - リーグ平均攻撃力をベースに、`wRAA`と合計し貢献得点数を算出
 
-- wRC+ (Weighted Runs Created Plus)
+- [wRC (weighted Runs Created Plus)](https://www.ted027.com/post/sabr-hit-wrc-plus#wrc+-weighted-runs-created-plus)
   - 1打席あたり得点力の傑出度（パーセント）
   - 平均的打者が100
   - 打席あたりの`wRC`にパークファクター補正を加え、リーグ平均と比較する

@@ -153,8 +153,6 @@ def woba_speed(hitter):
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 
-- [[参考記事]【IsoP】NPB(2019)セイバーメトリクス野手指標の算出②](https://www.ted027.com/post/sabr-hit-isop)
-
 - [[参考記事]【RC, RC27, XR, XR27】NPB(2019)セイバーメトリクス野手指標の算出④](https://www.ted027.com/post/sabr-hit-rc)
 
 - [[参考記事]【wRAA, wRC】NPB(2019)セイバーメトリクス野手指標の算出⑤](https://www.ted027.com/post/sabr-hit-wraa)
