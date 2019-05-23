@@ -40,7 +40,8 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 $\frac{PF込みwRC \div 打席}{リーグ得点 \div リーグ打席}$
 
-$PF込みwRC = \sum wRC \div x球場PF \times \frac{x球場試合数}{試合数}$
+$PF込みwRC$
+$= \sum wRC \div x球場PF \times \frac{x球場試合数}{試合数}$
 
 ※PF: 得点パークファクター
 

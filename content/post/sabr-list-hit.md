@@ -36,7 +36,7 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
   - 累積で何点取ったか（何点分貢献したか）
   - リーグ平均攻撃力をベースに、`wRAA`と合計し貢献得点数を算出
 
-- [wRC (weighted Runs Created Plus)](https://www.ted027.com/post/sabr-hit-wrc-plus#wrc+-weighted-runs-created-plus)
+- [wRC+ (weighted Runs Created Plus)](https://www.ted027.com/post/sabr-hit-wrc-plus#wrc-weighted-runs-created-plus)
   - 1打席あたり得点力の傑出度（パーセント）
   - 平均的打者が100
   - 打席あたりの`wRC`にパークファクター補正を加え、リーグ平均と比較する
@@ -54,7 +54,7 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
     - 正確には、打者が27アウト取られる間に`RC`をどれだけ稼ぐか
   - ただしマイナスになることがあり、この指標の欠点ともいわれている
 
-- [RCAA/RC+ (Runs Created Above Average)](https://www.ted027.com/post/sabr-hit-rcaa#rcaa-rc+-runs-created-above-average)
+- [RCAA/RC+ (Runs Created Above Average)](https://www.ted027.com/post/sabr-hit-rcaa#rcaa-rc-runs-created-above-average)
   - リーグの平均的打者と比較してどれだけ多く`RC`を稼いだか
 
 - [RCWIN](https://www.ted027.com/post/sabr-hit-rcaa#rcwin)
@@ -65,12 +65,12 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
   - 累積で何点取ったか（何点分貢献したか）
   - `RC`の改良版、計算式が異なるが、ほぼ同じ意味合いの指標
 
-- [XR27 (eXtrapolated Runs per 27 outs)](https://www.ted027.com/post/sabr-hit-rc#xr-extrapolated-runs-per-27-outs)
+- [XR27 (eXtrapolated Runs per 27 outs)](https://www.ted027.com/post/sabr-hit-rc#xr27-extrapolated-runs-per-27-outs)
   - この打者だけで一試合した時に何点取れるか
     - 正確には、打者が27アウト取られる間に`XR`をどれだけ稼ぐか
   - ただしマイナスになることがあり、この指標の欠点ともいわれている
 
-- [XR+ (eXtrapolated Runs Plus)](https://www.ted027.com/post/sabr-hit-rcaa#rcaa-rc+-runs-created-above-average)
+- [XR+ (eXtrapolated Runs Plus)](https://www.ted027.com/post/sabr-hit-rcaa#xr-extrapolated-runs-plus)
   - リーグの平均的打者と比較してどれだけ多く`XR`を稼いだか
 
 - [XRWIN](https://www.ted027.com/post/sabr-hit-rcaa#xrwin)
@@ -93,16 +93,16 @@ tags: ["指標", "セイバーメトリクス", "野手指標"]
   - 打者のストライクゾーン管理能力
   - 四球 / 三振
 
-- [BB%](https://www.ted027.com/post/sabr-hit-bb-k#bb%-walk-rate)
+- [BB%](https://www.ted027.com/post/sabr-hit-bb-k#bb-walk-rate)
   - 四球率
   - 選球眼、打席自制心
   - 長打力も関係するため、必ずしも選球眼と比例するわけではない
 
-- [K%](https://www.ted027.com/post/sabr-hit-bb-k#k%-k-rate)
+- [K%](https://www.ted027.com/post/sabr-hit-bb-k#k-k-rate)
   - 三振率
   - ミート力、選球眼
 
-- [IsoD (Isolated Discipline)](https://www.ted027.com/post/sabr-hit-bb-k#bb%-walk-rate)
+- [IsoD (Isolated Discipline)](https://www.ted027.com/post/sabr-hit-bb-k#isod-isolated-discipline)
   - 打席自制心
   - 出塁率から打率を引き、四死球で出塁した割合を求める
   - 故意四球や死球も含むため、`BB%`の下位互換との声も

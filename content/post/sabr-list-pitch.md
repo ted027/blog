@@ -37,11 +37,11 @@ tags: ["指標", "セイバーメトリクス", "投手指標"]
 - [HR/9](https://www.ted027.com/post/sabr-pitch-whip#hr-9)
   - 9イニングあたり何本塁打打たれるか
 
-- [K%](https://www.ted027.com/post/sabr-pitch-whip#k%)
+- [K%](https://www.ted027.com/post/sabr-pitch-whip#k)
   - 打者と対戦し奪三振を取る確率
   - 味方守備力の影響を受けない、投手の純粋な奪三振能力
 
-- [BB%](https://www.ted027.com/post/sabr-pitch-whip#bb%)
+- [BB%](https://www.ted027.com/post/sabr-pitch-whip#bb)
   - 打者と対戦し四球を与える確率
   - 味方守備力の影響を受けない、投手の純粋な四球回避能力
 
