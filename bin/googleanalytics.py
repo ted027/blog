@@ -91,7 +91,7 @@ def export_results(results):
             output_json["pageviews"].append({'link': link, 'title': title})
     else:
         print('No results found')
-    with open(f'../data/populars.json', 'w') as f:
+    with open('../data/populars.json', 'w') as f:
         json.dump(output_json, f, ensure_ascii=False)
 
 
@@ -102,7 +102,7 @@ def main():
     # Use the developer console and replace the values with your
     # service account email and relative location of your key file.
     service_account_email = 'analytics@lively-fold-241407.iam.gserviceaccount.com'
-    key_file_location = './analytics.p12'
+    key_file_location = './analytics_cert.pem'
 
     # Authenticate and construct service.
     service = get_service('analytics', 'v3', scope, key_file_location,
