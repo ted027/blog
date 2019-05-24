@@ -86,8 +86,6 @@ def export_results(results):
         for r in results.get('rows'):
             link = r[0][0:-1]
             title = r[1][0:].replace(' - 行けたら行く', '')
-            # print(link)
-            # print(title)
             output_json["pageviews"].append({'link': link, 'title': title})
     else:
         print('No results found')
