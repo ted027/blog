@@ -1,0 +1,33 @@
+{{- if .Param "authorbox" }}
+<div class="wide__area">
+	<div class="widget-author widget">
+		<h4 class="widget__title">{{ T "author_title" }}</h4>
+		{{- if and (not .Site.Author.avatar) (not .Site.Author.name) (not .Site.Author.bio) }}
+		<p class="authorbox__warning"><strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.</p>
+		{{- end }}
+		{{- with .Site.Author.avatar }}
+		<p>
+			<div class="widget__content">
+				<figure class="authorbox__avatar">
+					<img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" class="avatar" height="80" width="80">
+				</figure>
+			</div>
+		</p>
+		{{- end }}
+		{{- with .Site.Author.name }}
+		<p>
+			<div class="widget__content">
+				<span class="authorbox__name">{{ T "author_name" . }}</span>
+			</div>
+		</p>
+		{{- end }}
+		{{- with .Site.Author.bio }}
+		<p>
+			<div class="widget__content">
+				{{ . }}
+			</div>
+		</p>
+		{{- end }}
+	</div>
+</div>
+{{- end }}

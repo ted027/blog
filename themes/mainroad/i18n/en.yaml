@@ -37,7 +37,13 @@
 - id: sidebar_recommendation
   translation: Please activate at least one sidebar widget.
 
-# Search widget
+# Author widget
+- id: author_title
+  translation: Author
+
+- id: author_name
+  translation: '{{ .Count }}'
+
 - id: search_placeholder
   translation: SEARCH...
 
