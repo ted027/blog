@@ -1067,6 +1067,10 @@ textarea {
 	padding-top: 0;
 }
 
+.widget-author__description {
+	font-size: 10px;
+}
+
 /* Search widget */
 .widget-search__form {
 	display: block;

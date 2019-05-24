@@ -6,27 +6,19 @@
 		<p class="authorbox__warning"><strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.</p>
 		{{- end }}
 		{{- with .Site.Author.avatar }}
-		<p>
-			<div class="widget__content">
-				<figure class="authorbox__avatar">
-					<img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" class="avatar" height="80" width="80">
-				</figure>
-			</div>
-		</p>
+		<figure class="authorbox__avatar">
+			<img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" class="avatar" height="80" width="80">
+		</figure>
 		{{- end }}
 		{{- with .Site.Author.name }}
-		<p>
-			<div class="widget__content">
-				<span class="authorbox__name">{{ T "author_name" . }}</span>
-			</div>
-		</p>
+		<div class="authorbox__header">
+			<span class="authorbox__name">{{ T "author_name" . }}</span>
+		</div>
 		{{- end }}
 		{{- with .Site.Author.bio }}
-		<p>
-			<div class="widget__content">
-				{{ . }}
-			</div>
-		</p>
+		<div class="widget-author__description">
+			{{ . }}
+		</div>
 		{{- end }}
 	</div>
 </div>
