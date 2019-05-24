@@ -2,7 +2,7 @@ baseURL = "https://www.ted027.com"
 languageCode = "ja"
 title = "行けたら行く"
 theme = "mainroad"
-paginate = "10"
+paginate = "15"
 
 disqusShortname = "ted027-com"
 googleAnalytics = "UA-138367212-1"
@@ -36,9 +36,10 @@ pygmentsStyle = "mainroad"
   list = "right"
   single = "right"
   # Enable widgets in given order
-  widgets = ["ad_top", "search", "recent", "categories", "social", "ad_bottom"]
+  widgets = ["ad_top", "search", "populars", "recent", "categories", "social", "ad_bottom"]
 
 [Params.widgets]
+  popular_num = 7
   recent_num = 5
   tags_counter = false
 

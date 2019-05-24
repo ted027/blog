@@ -51,7 +51,15 @@
 
 # Recent Posts widget
 - id: recent_title
-  translation: Recent Posts
+  translation: 最新記事
+
+# Popular Posts widget
+- id: populars_title
+  translation: 人気記事
+
+# Advertisement widget
+- id: ad_title
+  translation: 広告
 
 # Social widget
 - id: social_title

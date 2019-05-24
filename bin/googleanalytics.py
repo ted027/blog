@@ -74,8 +74,8 @@ def get_results(service, profile_id):
         start_date='7daysAgo',
         end_date='today',
         metrics='ga:pageviews',
-        dimensions='ga:pagePath',
-        filters='ga:pagePath=~^/\d+\/',
+        dimensions='ga:pagePath, ga:pageTitle',
+        filters='ga:pagePath=~^.*post.*',
         sort='-ga:pageviews').execute()
 
 
@@ -84,10 +84,14 @@ def export_results(results):
     output_json = {"pageviews": []}
     if results:
         for r in results.get('rows'):
-            output_json["pageviews"].append(r[0][1:][:len(r[0]) - 2])
+            link = r[0][0:-1]
+            title = r[1][0:].replace(' - 行けたら行く', '')
+            # print(link)
+            # print(title)
+            output_json["pageviews"].append({'link': link, 'title': title})
     else:
         print('No results found')
-    with open(f'../data/popular.json', 'w') as f:
+    with open(f'../data/populars.json', 'w') as f:
         json.dump(output_json, f, ensure_ascii=False)
 
 
@@ -98,7 +102,7 @@ def main():
     # Use the developer console and replace the values with your
     # service account email and relative location of your key file.
     service_account_email = 'analytics@lively-fold-241407.iam.gserviceaccount.com'
-    key_file_location = './secret.p12'
+    key_file_location = './analytics.p12'
 
     # Authenticate and construct service.
     service = get_service('analytics', 'v3', scope, key_file_location,
