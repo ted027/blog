@@ -10,6 +10,8 @@
 			<img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" class="avatar" height="80" width="80">
 		</figure>
 		{{- end }}
+	</div>
+	<div class="widget-author widget">
 		{{- with .Site.Author.name }}
 		<div class="authorbox__header">
 			<span class="authorbox__name">{{ T "author_name" . }}</span>

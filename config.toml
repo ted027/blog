@@ -10,6 +10,8 @@ googleAnalytics = "UA-138367212-1"
 pygmentsCodefences = true
 pygmentsStyle = "mainroad"
 
+menu = ["main", "side", "footer"]
+
 [Author]
   name = "imait"
   bio = "横浜あたりでクラウドサービスをせこせこ開発しているエンジニァーです。"
@@ -27,7 +29,7 @@ pygmentsStyle = "mainroad"
   post_navigation = true
   post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
-  #postSections = ["blog", "news"]
+  msinSections = ["post", "blog", "news"]
   dateformat = "2006-01-02"
   customCSS = ["css/custom.css"]
 
@@ -41,7 +43,7 @@ pygmentsStyle = "mainroad"
 [Params.widgets]
   popular_num = 7
   recent_num = 5
-  tags_counter = false
+  tags_counter = true
 
 [Params.widgets.social]
   twitter = "imaitt"

@@ -41,3 +41,19 @@ jobs:
             msg="rebuilding site `date`"
             git commit -m "$msg"
             git push origin master
+
+workflows:
+  version: 2
+  normal_build:
+    jobs:
+      - build
+  nightly_build:
+    triggers:
+      - schedule:
+          cron: "50 14 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
