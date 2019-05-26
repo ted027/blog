@@ -50,7 +50,7 @@ workflows:
   nightly_build:
     triggers:
       - schedule:
-          cron: "50 14 * * *"
+          cron: "10 15 * * *"
           filters:
             branches:
               only:

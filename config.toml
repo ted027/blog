@@ -42,7 +42,7 @@ menu = ["main", "side", "footer"]
 
 [Params.widgets]
   popular_num = 7
-  recent_num = 5
+  recent_num = 7
   tags_counter = true
 
 [Params.widgets.social]

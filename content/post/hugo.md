@@ -179,7 +179,7 @@ $ hugo server --buildDrafts --watch
 
 ---
 
-## おわりに
+### おわり
 
 自動化とか諸々はまたの機会に。
 
