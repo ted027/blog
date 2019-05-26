@@ -29,7 +29,7 @@ menu = ["main", "side", "footer"]
   post_navigation = true
   post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
-  msinSections = ["post", "blog", "news"]
+  mainSections = ["post", "blog", "news"]
   dateformat = "2006-01-02"
   customCSS = ["css/custom.css"]
 
