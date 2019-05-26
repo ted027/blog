@@ -5,7 +5,7 @@
 	<div class="widget__content">
 		<ul class="widget__list">
             {{ range $index, $element := first $popular_num $dataJ.pageviews }}
-			<li class="widget__item"><a class="widget__link" href="{{ .link }}">【{{(add $index 1)}}】{{ .title }}</a></li>
+			<li class="widget__item"><a class="widget__link" href="{{ .link }}">{{(add $index 1)}}. {{ .title }}</a></li>
 			{{ end }}
 		</ul>
 	</div>
