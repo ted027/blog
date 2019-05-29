@@ -3,9 +3,9 @@ title: "リュックの邪魔な紐をまとめるやつ"
 date: 2019-04-18T20:52:52+09:00
 draft: false
 comments: true
+toc: false
 categories: ["生活"]
 tags: ["鞄", "紐", "整理"]
-toc: false
 ---
 
 ビジネス用のリュックを購入したけど、ピロピロした紐が邪魔だったので、まとめるやつを買った。

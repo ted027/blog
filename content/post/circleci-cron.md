@@ -3,9 +3,9 @@ title: "CircleCIで定期実行"
 date: 2019-05-26T14:27:01+09:00
 draft: false
 comments: true
+toc: false
 categories: ["CI"]
 tags: ["CircleCI", "cron", "定期実行"]
-toc: false
 ---
 
 CircleCIでジョブをcron設定し定期実行する。

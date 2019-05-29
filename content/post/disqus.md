@@ -3,9 +3,9 @@ title: "HugoブログにDisqusでコメント欄をつけた"
 date: 2019-04-16T08:23:08+09:00
 draft: false
 comments: true
+toc: false
 categories: ["Blog"]
 tags: ["Disqus", "コメント欄", "Hugo"]
-toc: false
 ---
 
 ブログなのでコメント欄くらいはほしい。
