@@ -17,15 +17,6 @@ jobs:
             go install
       - checkout
       - run:
-          name: analytics
-          command: |
-            cd bin
-            ls -al
-            sudo apt-get install python3 python3-pip
-            pip3 install -r requirements.txt
-            python3 googleanalytics.py
-            cd -
-      - run:
           name: build
           command: |
             rm -rf public
@@ -39,6 +30,32 @@ jobs:
             git config --global user.email "circleci@example.com"
             git add --all
             msg="rebuilding site `date`"
+            git commit -m "$msg"
+            git push origin master
+  analytics:
+    docker:
+      - image: circleci/python:3.6
+    working_directory: ~/work
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "e5:f7:07:ca:a4:5c:76:22:db:ba:db:23:1c:ae:b8:95"
+      - run:
+          name: analytics
+          command: |
+            git clone git@github.com:ted027/blog
+            cd blog/bin
+            pip install -r requirements.txt
+            python googleanalytics.py
+            cd -
+      - run:
+          name: push
+          command: |
+            cd blog
+            git config --global user.name "CircleCI"
+            git config --global user.email "circleci@example.com"
+            git add --all
+            msg="update populat posts `date`"
             git commit -m "$msg"
             git push origin master
 
@@ -56,4 +73,4 @@ workflows:
               only:
                 - master
     jobs:
-      - build
+      - analytics
