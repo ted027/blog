@@ -43,6 +43,7 @@ jobs:
       - run:
           name: analytics
           command: |
+            echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
             git clone git@github.com:ted027/blog
             cd blog/bin
             pip install -r requirements.txt
@@ -67,7 +68,7 @@ workflows:
   nightly_build:
     triggers:
       - schedule:
-          cron: "10 15 * * *"
+          cron: "25 0 * * *"
           filters:
             branches:
               only:
