@@ -555,32 +555,32 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	transition: visibility .15s ease, transform .15s ease, -webkit-transform .15s ease;
 }
 
-@media screen and (min-width: 767px) {
-	.menu {
-		border-bottom: 5px solid #e22d30;
-	}
-
-	.menu__btn {
-		display: none;
-	}
-
-	.menu__list,
-	.js .menu__list {
-		position: relative;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-wrap: wrap;
-		flex-wrap: wrap;
-		visibility: visible;
-		border: 0;
-		-webkit-transform: none;
-		transform: none;
-	}
-
-	.menu__item {
-		border-left: 1px solid rgba(255, 255, 255, .1);
-	}
+/* @media screen and (min-width: 767px) { */
+.menu {
+	border-bottom: 5px solid #e22d30;
 }
+
+.menu__btn {
+	display: none;
+}
+
+.menu__list,
+.js .menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	visibility: visible;
+	border: 0;
+	-webkit-transform: none;
+	transform: none;
+}
+
+.menu__item {
+	border-left: 1px solid rgba(255, 255, 255, .1);
+}
+/* } */
 
 /* Posts/Pages */
 .post__header,
