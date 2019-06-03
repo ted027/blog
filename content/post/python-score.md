@@ -4,7 +4,7 @@ date: 2019-05-01T14:14:13+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["プロ野球", "Python", "スコア速報"]
+tags: ["プロ野球", "Python"]
 ---
 
 昨年書いた、Pythonでプロ野球のスコア速報を取得するスクリプト。
