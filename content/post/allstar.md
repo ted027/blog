@@ -12,7 +12,11 @@ tags: ["オールスター", "ファン投票"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/a8/skyperfect>}}
+
+---
+
+{{< ad/con/wide/pawapuro_switch>}}
 
 ---
 
@@ -28,6 +32,10 @@ tags: ["オールスター", "ファン投票"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/con/wide/pawapuro2018>}}
+
+---
+
+{{< ad/a8/dazn>}}
 
 ---
