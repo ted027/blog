@@ -4,7 +4,7 @@ date: 2019-05-13T22:45:10+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["リスト内包表記", "タプル", "ジェネレータ"]
+tags: [内包表記", "条件付き内包表記"]
 ---
 
 Pythonの内包表記で作れるもの、条件文との組み合わせ。

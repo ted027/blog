@@ -4,7 +4,7 @@ date: 2019-05-18T22:05:36+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["psycopg2", "pip"]
+tags: ["エラー", "pip"]
 ---
 
 Pythonでpip installしようとした時、表題のエラーで躓くことがあった。

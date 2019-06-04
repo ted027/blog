@@ -4,7 +4,7 @@ date: 2019-05-21T16:52:42+09:00
 draft: false
 comments: true
 categories: ["AWS"]
-tags: ["AutoScalling", "suspend"]
+tags: ["AutoScalling", "エラー"]
 ---
 
 AutoScallingGroupのスタック削除で少々詰まったので備忘録。

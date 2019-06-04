@@ -5,7 +5,7 @@ draft: false
 comments: true
 toc: false
 categories: ["Docker"]
-tags: ["Linux", "Docker", "apt"]
+tags: ["Linux", "エラー", "apt"]
 ---
 
 <!--more-->

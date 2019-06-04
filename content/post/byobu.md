@@ -4,7 +4,7 @@ date: 2019-04-19T12:41:06+09:00
 draft: false
 comments: true
 categories: ["Shell"]
-tags: ["Shell", "Byobu", "仮想端末", "画面分割"]
+tags: ["Shell", "Byobu", "仮想端末"]
 ---
 
 仮想端末ソフトByobuの導入やよく使うコマンドについてのメモ。

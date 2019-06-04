@@ -4,7 +4,7 @@ date: 2019-04-25T09:33:57+09:00
 draft: false
 comments: true
 categories: ["PlantUML"]
-tags: ["PlantUML", "Visual Studio Code", "Ubuntu"]
+tags: ["Visual Studio Code", "Ubuntu"]
 ---
 
 <!--more-->

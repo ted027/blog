@@ -4,7 +4,7 @@ date: 2019-04-28T21:43:13+09:00
 draft: false
 comments: true
 categories: ["Blog"]
-tags: ["ドメイン", "GitHub Pages", "Hugo"]
+tags: ["ドメイン", "GitHub Pages"]
 ---
 
 GitHub Pagesに独自ドメインを設定した。

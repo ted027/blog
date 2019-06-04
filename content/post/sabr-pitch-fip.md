@@ -4,7 +4,7 @@ date: 2019-05-09T10:19:58+09:00
 draft: false
 comments: true
 categories: ["野球"]
-tags: ["投手指標", "Python", "セイバーメトリクス", "リーグ合計成績"]
+tags: ["投手指標", "Python", "セイバーメトリクス"]
 ---
 
 リーグ合計成績を算出して、投手指標FIPを算出してみる。

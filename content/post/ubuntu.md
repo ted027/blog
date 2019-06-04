@@ -4,7 +4,7 @@ date: 2019-04-21T22:52:31+09:00
 draft: false
 comments: true
 categories: ["Ubuntu"]
-tags: ["Ubuntu", "OS", "Linux"]
+tags: ["インストール", "OS", "Linux"]
 ---
 
 新しいノートPC購入を機に、OSをUbuntu 18.04 LTSにした際の備忘録。

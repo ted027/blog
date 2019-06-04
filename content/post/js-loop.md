@@ -4,7 +4,7 @@ date: 2019-06-01T01:28:45+09:00
 draft: false
 comments: true
 categories: ["JavaScript"]
-tags: ["JavaScript", "連想配列", "ループ"]
+tags: ["連想配列", "ループ"]
 ---
 
 JavaScriptで配列を二つ見ながらループしたかった。

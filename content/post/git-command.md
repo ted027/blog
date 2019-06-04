@@ -4,7 +4,7 @@ date: 2019-05-04T13:18:18+09:00
 draft: false
 comments: true
 categories: ["Git"]
-tags: ["Shell", "Git"]
+tags: ["Shell", "GitHub"]
 ---
 
 コマンドでのgit管理で基本的なもの、よく使うものをまとめた。

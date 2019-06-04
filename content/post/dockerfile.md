@@ -4,7 +4,7 @@ date: 2019-04-24T17:35:18+09:00
 draft: false
 comments: true
 categories: ["Docker"]
-tags: ["Docker", "Dockerfile", "CMD", "ENTRYPOINT"]
+tags: ["Dockerfile"]
 ---
 
 Dockerfileを書く時に気にしていること、よくわからなくて調べたことなど。

@@ -4,7 +4,7 @@ date: 2019-04-15T11:20:46+09:00
 draft: false
 comment: true
 categories: ["Blog"]
-tags: ["GitHub Pages", "Hugo", "Ubuntu"]
+tags: ["GitHub Pages", "Hugo", "インストール"]
 ---
 
 Hugo + GitHub Pagesを使ってブログを作った。

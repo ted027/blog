@@ -4,7 +4,7 @@ date: 2019-05-15T22:06:08+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["dict", "コピー", "階層", "参照渡し"]
+tags: ["dict", "階層"]
 ---
 
 Pythonでdictをコピーして使うときの諸々。

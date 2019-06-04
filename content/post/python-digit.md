@@ -4,7 +4,7 @@ date: 2019-05-05T11:47:48+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["有効数字", "decimal", "round"]
+tags: ["有効数字", "decimal", "数値"]
 ---
 
 Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。

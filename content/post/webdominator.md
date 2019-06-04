@@ -5,7 +5,7 @@ draft: false
 comments: true
 toc: false
 categories: ["生活"]
-tags: ["鞄", "紐", "整理"]
+tags: ["整理"]
 ---
 
 ビジネス用のリュックを購入したけど、ピロピロした紐が邪魔だったので、まとめるやつを買った。

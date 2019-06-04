@@ -4,7 +4,7 @@ date: 2019-05-16T23:08:58+09:00
 draft: false
 comments: true
 categories: ["PlantUML"]
-tags: ["plantuml-icon-font-sprites", "PlantUML"]
+tags: ["アイコン", "構成図"]
 ---
 
 PlantUMLで図を作るとき、各種サービスやその他色々なアイコンを入れ込むことができる。

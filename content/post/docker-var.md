@@ -4,7 +4,7 @@ date: 2019-04-24T08:10:53+09:00
 draft: false
 comments: true
 categories: ["Docker"]
-tags: ["Docker", "Dockerfile"]
+tags: ["Dockerfile"]
 ---
 
 Dockerfileではコマンド実行結果を変数に入れられない。それでも入れたい時の回避策。

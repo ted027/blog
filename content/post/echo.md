@@ -4,7 +4,7 @@ date: 2019-05-07T08:06:02+09:00
 draft: false
 comments: true
 categories: ["育児"]
-tags: ["Alexa", "Amazon Echo", "スマートスピーカー"]
+tags: ["Amazon Echo", "スマートスピーカー"]
 ---
 
 おもちゃを買う感覚でAmazon Echoを購入したら、意外と育児に役立った話。

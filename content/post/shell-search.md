@@ -4,7 +4,7 @@ date: 2019-04-26T14:23:28+09:00
 draft: false
 comments: true
 categories: ["Shell"]
-tags: ["Linux", "検索", "find", "grep"]
+tags: ["Linux", "検索"]
 ---
 
 特定ディレクトリや配下ディレクトリのファイル名/ファイルの中身を検索する。

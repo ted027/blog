@@ -5,7 +5,7 @@ draft: false
 comments: true
 toc: false
 categories: ["Blog"]
-tags: ["Disqus", "コメント欄", "Hugo"]
+tags: ["Disqus", "Hugo"]
 ---
 
 ブログなのでコメント欄くらいはほしい。

@@ -4,7 +4,7 @@ date: 2019-04-25T17:02:54+09:00
 draft: false
 comments: true
 categories: ["PlantUML"]
-tags: ["AWS", "PlantUML", "構成図"]
+tags: ["AWS", "構成図"]
 ---
 
 公開されているAWS Simple Iconsのpumlファイルをincludeすることで、PlantUMLで簡単に図に導入できる。

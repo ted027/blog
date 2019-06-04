@@ -4,7 +4,7 @@ date: 2019-04-30T22:39:20+09:00
 draft: false
 comments: true
 categories: ["Python"]
-tags: ["Python", "ライブラリ", "pip", "モジュール"]
+tags: ["ライブラリ", "pip", "モジュール"]
 ---
 
 <!--more-->

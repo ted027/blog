@@ -4,7 +4,7 @@ date: 2019-05-03T14:08:37+09:00
 draft: false
 comments: true
 categories: ["Docker"]
-tags: ["Docker", "Wondows", "Docker for Windows"]
+tags: ["Wondows", "インストール"]
 ---
 
 <!--more-->
