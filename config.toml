@@ -13,8 +13,8 @@ pygmentsStyle = "mainroad"
 menu = ["main", "side", "footer"]
 
 [Author]
-  name = "imait"
-  bio = "横浜あたりでクラウドサービスをせこせこ開発しているエンジニァーです。"
+  name = "まいつ"
+  bio = "子供がふたりいるやきう好きのエンジニァーです。"
   avatar = "/img/avatar.png"
 
 [Params]
