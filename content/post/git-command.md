@@ -211,6 +211,7 @@ $ git diff {branch_name1} {branch_name2}
 
 ```sh
 $ git branch -d {branch_name}
+$ git branch -D {branch_name}
 ```
 
 ---
