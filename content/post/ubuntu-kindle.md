@@ -3,8 +3,8 @@ title: "Ubuntu 18.04にKindleをインストールした"
 date: 2019-04-16T22:34:09+09:00
 draft: false
 comments: true
-categories: ["Ubuntu"]
-tags: ["インストール", "Kindle", "Wine", "Linux"]
+categories: ["Linux"]
+tags: ["Ubuntu", "インストール", "Kindle", "Wine"]
 ---
 
 UbuntuにKindleをインストールしようとして苦労したのでメモ。

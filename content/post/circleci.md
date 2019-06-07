@@ -3,8 +3,8 @@ title: "CircleCIでHugoのビルドを自動化した話"
 date: 2019-04-19T22:53:43+09:00
 draft: false
 comments: true
-categories: ["Blog"]
-tags: ["CI", "CircleCI", "Hugo"]
+categories: ["CI", "Blog"]
+tags: ["CircleCI", "Hugo"]
 ---
 
 Hugoのビルドとブログの更新を自動で行うようにした。

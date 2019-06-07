@@ -3,8 +3,8 @@ title: "PlantUML + Visual Studio Codeを導入する（Ubuntu環境）"
 date: 2019-04-25T09:33:57+09:00
 draft: false
 comments: true
-categories: ["PlantUML"]
-tags: ["Visual Studio Code", "Ubuntu"]
+categories: ["UML"]
+tags: ["PlantUML", "Visual Studio Code", "Ubuntu"]
 ---
 
 <!--more-->
