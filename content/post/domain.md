@@ -43,7 +43,7 @@ GitHub Pages上で普通に静的ファイルを配置すると、
     - TYPEは「CNAME」を選択
     - ホスト名で適当なサブドメインを入力。定番は「www」など
     - VALUEに「[github_user].github.io」を設定
-    {{< img src="/img/domain-set1.png">}}
+    {{< img src="/img/domain-set1.png" >}}
 5. 「確認画面へ進む」→「設定する」
 
 これで、
