@@ -112,10 +112,10 @@ export const theme = createMuiTheme({
 
 ---
 
-{{< ad/con/wide/unix >}}
+{{< ad/con/wide/javascript >}}
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/a8/techacademy_ui >}}
 
 ---
