@@ -26,13 +26,13 @@ Material-UIは、material designを踏襲したReactのUIライブラリ。
 
 Material-UIでは、コンテンツに`primary`, `secondary`といったテーマカラーを使うことができる。
 
-デフォルトだと`primary`,が`indigo`(紫)、`secondary`が`pink`。
+デフォルトだと`primary`が`indigo`(紫)、`secondary`が`pink`。
 
 {{< img src="/img/mui-theme1.png" >}}
 
 ---
 
-### CMaterial-UIのテーマカラーを変える
+### Material-UIのテーマカラーを変える
 
 `createMuiTheme`と`MuiThemeProvider`を使って変える。
 
@@ -75,7 +75,7 @@ function App() {
 export default App;
 ```
 
-すると、`theme`が反映される。
+`theme`が反映される。
 
 {{< img src="/img/mui-theme2.png" >}}
 
@@ -85,7 +85,7 @@ export default App;
 
 詳細に色を指定してテーマを変えることもできる。
 
-ちなみに、色を選ぶ際は以下のColor Toolを使うとよいです。
+色を選ぶ際は以下のColor Toolを使うとよいかと思います。
 
 - [Color Tool - Material Design](https://material.io/tools/color/)
 
