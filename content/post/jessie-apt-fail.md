@@ -12,7 +12,7 @@ tags: ["Linux", "エラー", "apt"]
 
 ---
 
-{{< ad/afb/codecamp >}}
+{{< ad/a8/techacademy2>}}
 
 ---
 

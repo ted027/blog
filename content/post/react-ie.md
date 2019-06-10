@@ -26,7 +26,7 @@ Reactで作ったページがIEで表示できなかった。
 
 InternetExplorer11が、JavascriptのES2015(ES6)記法に対応していないため。
 
-マイクロソフトも使わないでくれと言うようなレガシーブラウザですが、今なお結構なシェアを誇っているため、対応せざるを得ないケースも多いかと思います。
+マイクロソフトも使わないでくれと言うようなレガシーブラウザですが、今なお結構なシェアを誇っているため、対応せざるを得ないケースも多いかと。
 
 ---
 
@@ -34,7 +34,7 @@ InternetExplorer11が、JavascriptのES2015(ES6)記法に対応していない�
 
 `polyfill`を使います。
 
-`polyfill`は、「隙間を埋める」ような意味の言葉で、「存在しないメソッドを、既存メソッドで擬似的に再現する」ようなものらしいです。
+`polyfill`は、「隙間を埋める」ような意味の言葉で、「存在しないメソッドを、既存メソッドで擬似的に再現する」ようなもの。
 
 IEが対応していないES6のメソッドも、ES6以前のメソッドを用いて再現してくれます。
 
@@ -44,9 +44,9 @@ IEが対応していないES6のメソッドも、ES6以前のメソッドを用
 
 `react-app-polyfill`と、`@babel/polyfill`を使います。
 
-（僕の場合、前者だけだと表示されませんでした。）
+（僕の場合、前者だけだと表示されず。）
 
-まず`package-json`のあるディレクトリで{polyfill`をインストール。
+まず`package-json`のあるディレクトリで`polyfill`をインストール。
 
 ```sh
 $ npm install react-app-polyfill --save
@@ -65,7 +65,9 @@ import ReactDOM from "react-dom";
 ...
 ```
 
-`import "react-app-polyfill/ie11"`とするとIE11に、`import "react-app-polyfill/ie9"`とするとIE9〜11に対応してくれるそうです。
+`import "react-app-polyfill/ie11"`とするとIE11に、
+
+`import "react-app-polyfill/ie9"`とするとIE9〜11に対応してくれる。
 
 再度ビルドすると、無事IEから見ることが出来ました。
 
@@ -73,7 +75,7 @@ import ReactDOM from "react-dom";
 
 ### おわり
 
-弊社の標準ブラウザもInternet Explorer！！！！
+弊社の標準ブラウザもInternet Explorer！！！()
 
 ---
 
