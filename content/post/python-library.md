@@ -90,6 +90,6 @@ soup = bs4.BeautifulSoup(res.content, "html.parser")
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

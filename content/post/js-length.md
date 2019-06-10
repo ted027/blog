@@ -38,6 +38,10 @@ for (var i = 0; i < Object.keys(array).length i++) {
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/con/wide/javascript >}}
+
+---
+
+{{< ad/a8/techacademy_nodejs >}}
 
 ---

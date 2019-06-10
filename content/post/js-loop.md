@@ -109,10 +109,10 @@ for (k in series) {
 
 ---
 
-{{< ad/con/wide/github >}}
+{{< ad/con/wide/javascript >}}
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy_nodejs >}}
 
 ---

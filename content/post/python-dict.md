@@ -13,7 +13,7 @@ Pythonでdictをコピーして使うときの諸々。
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/afb/codecamp >}}
 
 ---
 
@@ -126,6 +126,6 @@ Pythonでdictをコピーして使うときの諸々。
 
 ---
 
-{{< ad/afb/codecamp>}}
+{{< ad/a8/techacademy_python >}}
 
 ---

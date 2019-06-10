@@ -14,11 +14,11 @@ Reactで作ったページがIEで表示できなかった。
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 
-{{< ad/con/wide/unix >}}
+{{< ad/con/wide/devops >}}
 
 ---
 
@@ -79,10 +79,10 @@ import ReactDOM from "react-dom";
 
 ---
 
-{{< ad/con/wide/devops >}}
+{{< ad/con/wide/javascript >}}
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy_nodejs >}}
 
 ---
