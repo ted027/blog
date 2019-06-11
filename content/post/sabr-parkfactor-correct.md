@@ -82,7 +82,7 @@ $球場1PF \times \frac{球場1試合数}{試合数} + \\\\\\ 球場2PF \times \
 
 [baseball-reference](https://www.baseball-reference.com/about/war_explained_wraa.shtml)には、WARを算出するための、PF補正込み`wRAA`の計算式が掲載されている。
 
-$wRAA_pf = wRAA - (BPF/100 - 1) \\\\\\ \times PA \times lgR/PA \times (BPF/100)$
+$wRAA\\_pf = wRAA - (BPF/100 - 1) \\\\\\ \times PA \times lgR/PA \times (BPF/100)$
 
 `BPF/100`が補正係数を表す。
 
