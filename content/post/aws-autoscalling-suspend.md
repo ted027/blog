@@ -90,6 +90,6 @@ aws autoscaling resume-processes --auto-scaling-group-name MyAsgName --scaling-p
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---

@@ -86,8 +86,7 @@ def babip_p(pitcher):
     if not denominator:
         return '0'
     numerator = Decimal(pitcher['被安打']) - Decimal(pitcher['被本塁打'])
-    raw_babip = numerator / denominator
-    babip = digits_under_one(raw_babip, 3)
+    babip = numerator / denominator
     return str(babip)
 
 
@@ -97,8 +96,7 @@ def babip_h(hitter):
     if not denominator:
         return '0'
     numerator = Decimal(hitter['安打']) - Decimal(hitter['本塁打'])
-    raw_babip = numerator / denominator
-    babip = digits_under_one(raw_babip, 3)
+    babip = numerator / denominator
     return str(babip)
 ```
 

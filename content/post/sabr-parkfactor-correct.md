@@ -82,7 +82,7 @@ $球場1PF \times \frac{球場1試合数}{試合数} + \\\\\\ 球場2PF \times \
 
 [baseball-reference](https://www.baseball-reference.com/about/war_explained_wraa.shtml)には、WARを算出するための、PF補正込み`wRAA`の計算式が掲載されている。
 
-$wRAA\\_pf = wRAA - (BPF/100 - 1) \\\\\\ \times PA \times lgR/PA \times (BPF/100)$
+$wRAA\\_pf = wRAA - (BPF/100 - 1) \\\\\\ \times PA \times lgR/PA \div (BPF/100)$
 
 `BPF/100`が補正係数を表す。
 
@@ -124,8 +124,7 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
     numerator = correct_wrc / Decimal(hitter['打席'])
     denominator = Decimal(league['得点']) / Decimal(league['打席'])
 
-    raw_wrc_plus = numerator / denominator * Decimal('100')
-    wrc_plus = digits_under_one(raw_wrc_plus, 0)
+    wrc_plus = numerator / denominator * Decimal('100')
     return str(wrc_plus)
 ```
 

@@ -27,8 +27,6 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 - [[参考記事]【後半】パークファクターの算出で大いに躓く②](https://www.ted027.com/post/sabr-parkfactor-2)
 
-とはいえ、上の記事にあるようにパークファクターが参考値なので、`wRC+`も参考値。
-
 ---
 
 ### 追加する指標
@@ -40,41 +38,41 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 ##### 計算式
 
-$\frac{PF込みwRC \div 打席}{リーグ得点 \div リーグ打席}$
+$\frac{wRC\\_pf \div 打席}{リーグ得点 \div リーグ打席}$
 
-$PF込みwRC$
-$= \sum wRC \div x球場PF \times \frac{x球場試合数}{試合数}$
+$wRC_pf = wRC + (1 - 補正係数) \\\\\\ \times 打席 \times \frac{リーグ得点}{リーグ打席} \div 補正係数$
 
-※PF: 得点パークファクター
+
+※補正係数の算出は以下の記事に記載
+
+- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
 
 ---
 
 ### 実装
 
 ```py
-def _pf_wrc(hitter, pf_list, raw_wrc):
-    pf_wrc = Decimal('0')
+def correct_pf(hitter, pf_list):
+    correct_pf = Decimal('0')
     for key, value in hitter.get('球場', {}).items():
         pf = pick_dick(pf_list, '球場', key).get('得点PF', '1')
-        pf_wrc += raw_wrc * Decimal(value['試合']) / Decimal(hitter['試合']) / Decimal(pf)
-    return pf_wrc
+        correct_pf += Decimal(pf) * Decimal(value['試合']) / Decimal(
+            hitter['試合'])
+    return correct_pf
 
 
 def wrc_plus(hitter, league, pf_list, raw_wrc):
     if not Decimal(hitter['打席']) * Decimal(league['打席']):
         return '0'
-    pf_wrc = _pf_wrc(hitter, pf_list, raw_wrc)
-    numerator = pf_wrc / Decimal(hitter['打席'])
+    cor_pf = correct_pf(hitter, pf_list)
+    correct_wrc = raw_wrc + (Decimal('1') - cor_pf) * Decimal(
+        league['得点']) / Decimal(league['打席']) * Decimal(hitter['打席']) / cor_pf
+    numerator = correct_wrc / Decimal(hitter['打席'])
     denominator = Decimal(league['得点']) / Decimal(league['打席'])
 
-    raw_wrc_plus = numerator / denominator * Decimal('100')
-    wrc_plus = digits_under_one(raw_wrc_plus, 0)
+    wrc_plus = numerator / denominator * Decimal('100')
     return str(wrc_plus)
 ```
-
-→パークファクター補正のかけ方を修正しました。詳細は以下の記事に。
-
-- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
 
 最新の成績は以下から閲覧できます。
 
@@ -82,9 +80,13 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
 
 ---
 
+{{< img src="/img/sabr-wrc-plus.png" >}}
+
+---
+
 ### おわり
 
-本拠地球場以外の得点パークファクターは1として計算しました。
+自分一人で計算できるレベルの指標は、単独ではこれが一番だと思っている。
 
 ---
 

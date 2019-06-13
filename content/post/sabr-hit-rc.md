@@ -124,15 +124,14 @@ def rc_basic(hitter):
                 Decimal(hitter['犠打'])) + Decimal('0.64' * Decimal(
                     hitter['盗塁']) - Decimal('0.03') * Decimal(
                         hitter['三振'])
-    raw_rc = ((on_base + Decimal('2.4') * opportunity) *
+    rc = ((on_base + Decimal('2.4') * opportunity) *
                 (advance_base + Decimal('3') * opportunity) /
                 (Decimal('9') * opportunity)) - Decimal('0.9') * opportunity
-    rc = _digits_under_one(raw_rc, 2)
     return str(rc)
 
 
 def xr_basic(hitter):
-    raw_xr = XR_SINGLE * _single(hitter) + XR_DOUBLE * Decimal(
+    xr = XR_SINGLE * _single(hitter) + XR_DOUBLE * Decimal(
         hitter['二塁打']
     ) + XR_TRIPLE * Decimal(hitter['三塁打']) + XR_HR * Decimal(
         hitter['本塁打']) + XR_BB * (
@@ -148,7 +147,6 @@ def xr_basic(hitter):
                     hitter['併殺打']) + XR_SAC_FLY * Decimal(
                         hitter['犠飛']) + XR_SAC_BUNT * Decimal(
                             hitter['犠打'])
-    xr = _digits_under_one(raw_xr, 2)
     return str(xr)
 
 
@@ -159,8 +157,7 @@ def rc_xr_27(hitter, rc_xr):
                 hitter['盗塁死']) + Decimal(hitter['併殺打'])
     if not total_out:
         return '0'
-    raw_rc_xr_27 = rc_xr * FULL_OUTCOUNTS / total_out
-    rc_xr_27 = _digits_under_one(raw_rc_xr_27, 2)
+    rc_xr_27 = rc_xr * FULL_OUTCOUNTS / total_out
     return str(rc_xr_27)
 ```
 

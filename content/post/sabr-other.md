@@ -62,17 +62,15 @@ $打点 \times 5000 -\\\\\\ (打数 - 安打 + 盗塁死 + 併殺) \div 3 \times
 
 ```py
 def one_outs_p(pitcher):
-    raw_oo = Decimal(pitcher['アウト']) * Decimal('500') - Decimal(pitcher['失点']) * Decimal('5000')
-    oo = digits_under_one(raw_oo, 0)
+    oo = Decimal(pitcher['アウト']) * Decimal('500') - Decimal(pitcher['失点']) * Decimal('5000')
     return str(oo)
 
 def one_outs_h(hitter):
     outs = Decimal(hitter['打数']) - Decimal(hitter['安打']) + Decimal(
         hitter['盗塁死']) + Decimal(hitter['併殺打'])
     outs_per_3 = int(outs / 3)
-    raw_oo = Decimal(
+    oo = Decimal(
         hitter['打点']) * Decimal('5000') - Decimal(outs_per_3) * Decimal('5000')
-    oo = digits_under_one(raw_oo, 0)
     return str(oo)
 ```
 
@@ -102,8 +100,7 @@ $KD = 投球回 \times 3 +\\\\\\ (勝利 + ホールド + セーブ) \times 10\\
 def komatsu(pitcher):
     kd_point = Decimal(pitcher['アウト']) + (Decimal(pitcher['勝利']) + Decimal(
         pitcher['ホールド']) + Decimal(pitcher['セーブ'])) * Decimal('10')
-    raw_kd = kd_point * Decimal('1000')
-    kd = digits_under_one(raw_kd, 0)
+    kd = kd_point * Decimal('1000')
     return str(kd)
 ```
 
@@ -129,10 +126,9 @@ $(三振 + 四球 + 本塁打) \div 打席$
 def dan_percent(hitter):
     if not Decimal(hitter['打席']):
         return '0.0'
-    raw_dan_percent = (Decimal(hitter['本塁打']) + Decimal(hitter['三振']) +
+    dan_percent = (Decimal(hitter['本塁打']) + Decimal(hitter['三振']) +
                        Decimal(hitter['四球'])) / Decimal(
                            hitter['打席']) * Decimal('100')
-    dan_percent = digits_under_one(raw_dan_percent, 1)
     return str(dan_percent)
 ```
 

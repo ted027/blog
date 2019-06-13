@@ -76,8 +76,7 @@ def bb_per_k(hitter):
         return '0'
     elif not k:
         return '99.99'
-    raw_bb_per_k = bb / k
-    bb_per_k = digits_under_one(raw_bb_per_k, 2)
+    bb_per_k = bb / k
     return str(bb_per_k)
 
 
@@ -85,8 +84,7 @@ def bb_percent(hitter):
     apperance = Decimal(hitter['打席'])
     if not apperance:
         return '0'
-    raw_bb_percent = Decimal(hitter['四球']) / apperance
-    bb_percent = digits_under_one(raw_bb_percent, 3)
+    bb_percent = Decimal(hitter['四球']) / apperance
     return str(bb_percent)
 
 
@@ -94,8 +92,7 @@ def k_percent(hitter):
     apperance = Decimal(hitter['打席'])
     if not apperance:
         return '0'
-    raw_k_percent = Decimal(hitter['三振']) / apperance
-    k_percent = digits_under_one(raw_k_percent, 3)
+    k_percent = Decimal(hitter['三振']) / apperance
     return str(k_percent)
 
 

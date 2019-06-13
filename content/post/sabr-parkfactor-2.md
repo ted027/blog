@@ -85,8 +85,7 @@ def park_factor(team_dic, hit_str, pit_str):
         return '0'
     home = (Decimal(team_dic['本拠地'][hit_str]) + Decimal(
         team_dic['本拠地'][pit_str])) / home_denominator
-    raw_pf = home / visitor
-    park_factor = digits_under_one(raw_pf, 2)
+    pf = home / visitor
     return str(park_factor)
 
 ...
@@ -148,6 +147,8 @@ def update_team_park_records():
 次はこれを使って`wRC+`を算出したい。やはり参考値にはなってしまうけど。
 
 ---
+
+- [[参考記事]「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
 
 - [[参考記事]Pythonでプロ野球の個人成績一覧をJSONにして取得する](https://www.ted027.com/post/python-personal-records)
 

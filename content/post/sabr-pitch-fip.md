@@ -156,11 +156,11 @@ def write_league_records():
 
 ```py:league.py
 ...
-from common import digits_under_one, return_outcounts, FULL_OUTCOUNTS, ZERO_VALUE, IGNORE_VALUE
+from common import return_outcounts, FULL_OUTCOUNTS
 
 def fix_rate_common(dic, decimal_nume, decimal_deno):
     if not decimal_deno:
-        return ZERO_VALUE
+        return Decimal('0')
     return decimal_nume / decimal_deno
 
 
@@ -169,9 +169,8 @@ def fix_rate_records(dic):
         if isinstance(value, dict):
             fix_rate_records(value)
         elif key == '打率':
-            fix_value = fix_rate_common(dic, Decimal(dic['安打']),
-                                        Decimal(dic['打数']))
-            dic[key] = str(digits_under_one(fix_value, 3))
+            dic[key] = str(fix_rate_common(dic, Decimal(dic['安打']),
+                                        Decimal(dic['打数'])))
         ...
 
 def sum_league_records(player_list):
@@ -208,8 +207,7 @@ def _fip_efira(pitcher):
 def fip(pitcher, league):
     pit_fip = _fip_efira(pitcher)
     lg_fip = _fip_efira(league)
-    raw_fip = pit_fip + Decimal(league['防御率']) - lg_fip
-    fip = digits_under_one(raw_fip, 2)
+    fip = pit_fip + Decimal(league['防御率']) - lg_fip
     return str(fip)
 ```
 

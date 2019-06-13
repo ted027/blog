@@ -50,8 +50,7 @@ def iso_p(hitter):
         return '0'
     numerator = Decimal(hitter['二塁打']) + 2 * Decimal(
         hitter['三塁打']) + 3 * Decimal(hitter['本塁打'])
-    raw_iso_p = numerator / atbat
-    iso_p = digits_under_one(raw_iso_p, 3)
+    iso_p = numerator / atbat
     return str(iso_p)
 ```
 

@@ -115,8 +115,7 @@ def qs_rate(pitcher):
     start = Decimal(pitcher['先発'])
     if not start:
         return '0'
-    raw_qsrate = Decimal(pitcher['QS']) * 100 / start
-    qsrate = digits_under_one(raw_qsrate, 2)
+    qsrate = Decimal(pitcher['QS']) * 100 / start
     return str(qsrate)
 
 
@@ -127,8 +126,7 @@ def k_per_bb(pitcher):
         return '0'
     elif not bb:
         return '99.99'
-    raw_k_per_bb = k / bb
-    k_per_bb = digits_under_one(raw_k_per_bb, 2)
+    k_per_bb = k / bb
     return  str(k_per_bb)
 
 
@@ -137,8 +135,7 @@ def k_per_nine(pitcher):
     outcounts = return_outcounts(innings)
     if not outcounts:
         return '0'
-    raw_k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS / outcounts
-    k_per_n = digits_under_one(raw_k_per_n, 2)
+    k_per_n = Decimal(pitcher['奪三振']) * FULL_OUTCOUNTS / outcounts
     return str(k_per_n)
 
 
@@ -150,8 +147,7 @@ def bb_per_nine(pitcher):
         return '0'
     elif not outcounts:
         return '99.99'
-    raw_bb_per_n = bb * FULL_OUTCOUNTS / outcounts
-    bb_per_n = digits_under_one(raw_bb_per_n, 2)
+    bb_per_n = bb * FULL_OUTCOUNTS / outcounts
     return str(bb_per_n)
 
 
@@ -163,8 +159,7 @@ def hr_per_nine(pitcher):
         return '0'
     elif not outcounts:
         return '99.99'
-    raw_hr_per_n = hr * FULL_OUTCOUNTS / outcounts
-    hr_per_n = digits_under_one(raw_hr_per_n, 2)
+    hr_per_n = hr * FULL_OUTCOUNTS / outcounts
     return str(hr_per_n)
 
 
@@ -176,8 +171,7 @@ def whip(pitcher):
         return '0'
     elif not outcounts:
         return '99.99'
-    raw_whip = runner * 3 / outcounts
-    whip = digits_under_one(raw_whip, 2)
+    whip = runner * 3 / outcounts
     return str(whip)
 ```
 
