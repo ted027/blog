@@ -12,7 +12,11 @@ tags: ["Javascript", "NodeJS", "Material-UI"]
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
+
+---
+
+{{< ad/con/wide/nodejs >}}
 
 ---
 
@@ -112,7 +116,7 @@ export const theme = createMuiTheme({
 
 ---
 
-{{< ad/con/wide/javascript >}}
+{{< ad/con/wide/react >}}
 
 ---
 

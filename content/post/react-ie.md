@@ -18,7 +18,7 @@ Reactで作ったページがIEで表示できなかった。
 
 ---
 
-{{< ad/con/wide/devops >}}
+{{< ad/con/wide/javascript >}}
 
 ---
 
@@ -79,7 +79,7 @@ import ReactDOM from "react-dom";
 
 ---
 
-{{< ad/con/wide/javascript >}}
+{{< ad/con/wide/react >}}
 
 ---
 

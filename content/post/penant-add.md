@@ -496,6 +496,6 @@ Pythonのwebスクレイピングと手書き（）のJSONファイルを使っ�
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/techacademy_python >}}
 
 ---

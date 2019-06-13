@@ -17,6 +17,10 @@ JavaScriptで配列を二つ見ながらループしたかった。
 
 ---
 
+{{< ad/con/wide/nodejs >}}
+
+---
+
 ### Pythonだとzip
 
 Pythonだと、zip関数を使って書ける。
