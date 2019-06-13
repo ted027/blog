@@ -13,7 +13,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "選球眼"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/skyperfect >}}
 
 ---
 

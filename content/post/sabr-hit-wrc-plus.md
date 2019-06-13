@@ -13,7 +13,7 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 
@@ -40,12 +40,12 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 $\frac{wRC\\_pf \div 打席}{リーグ得点 \div リーグ打席}$
 
-$wRC_pf = wRC + (1 - 補正係数) \\\\\\ \times 打席 \times \frac{リーグ得点}{リーグ打席} \div 補正係数$
+$wRC\\_pf = wRC + (1 - 補正係数) \\\\\\ \times 打席 \times \frac{リーグ得点}{リーグ打席} \div 補正係数$
 
 
 ※補正係数の算出は以下の記事に記載
 
-- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
+- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/sabr-parkfactor-correct)
 
 ---
 

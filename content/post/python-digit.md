@@ -154,6 +154,6 @@ def woba(hitter):
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/techacademy_python >}}
 
 ---

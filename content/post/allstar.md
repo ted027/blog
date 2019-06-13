@@ -12,7 +12,7 @@ tags: ["オールスター", "ファン投票"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/skyperfect >}}
 
 ---
 

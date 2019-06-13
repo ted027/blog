@@ -11,7 +11,7 @@ tags: ["Python", "セイバーメトリクス", "BABIP"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 

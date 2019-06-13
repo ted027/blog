@@ -42,7 +42,7 @@ $A = \frac{出塁率}{リーグ出塁率} + \frac{長打率}{リーグ長打率}
 
 補正係数の算出は以下の記事に記載。
 
-- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
+- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/sabr-parkfactor-correct)
 
 ---
 

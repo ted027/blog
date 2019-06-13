@@ -13,7 +13,7 @@ tags: ["投手指標", "Python", "セイバーメトリクス"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 

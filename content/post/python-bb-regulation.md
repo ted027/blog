@@ -13,7 +13,7 @@ tags: ["Python", "規定打席", "規定投球回"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 

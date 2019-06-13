@@ -13,7 +13,7 @@ tags: ["プロ野球", "Python"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 

@@ -14,7 +14,7 @@ tags: ["Python", "セイバーメトリクス", "パークファクター"]
 
 ---
 
-{{< ad/a8/skyperfect>}}
+{{< ad/a8/dazn >}}
 
 ---
 
