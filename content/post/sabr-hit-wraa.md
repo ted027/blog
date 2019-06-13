@@ -92,7 +92,7 @@ def wrc(hitter, league):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_taikutsu >}}
 
 ---
 

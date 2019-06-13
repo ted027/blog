@@ -124,7 +124,7 @@ def babip_h(hitter):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_dokugaku >}}
 
 ---
 

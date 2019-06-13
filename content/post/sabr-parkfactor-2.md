@@ -155,7 +155,7 @@ def update_team_park_records():
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 

@@ -185,7 +185,7 @@ def rc_xr_27(hitter, rc_xr):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_taikutsu >}}
 
 ---
 

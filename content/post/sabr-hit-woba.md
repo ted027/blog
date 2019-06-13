@@ -163,7 +163,7 @@ def woba_speed(hitter):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_dokugaku >}}
 
 ---
 

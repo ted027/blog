@@ -96,7 +96,7 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 

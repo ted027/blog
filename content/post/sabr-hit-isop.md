@@ -79,7 +79,7 @@ def iso_p(hitter):
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 

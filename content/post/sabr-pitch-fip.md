@@ -233,7 +233,7 @@ def fip(pitcher, league):
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/python_dokugaku >}}
 
 ---
 

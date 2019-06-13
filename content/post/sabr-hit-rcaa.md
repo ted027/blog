@@ -128,7 +128,7 @@ def rc_xr_win(hitter, full_league, rc_xr_plus):
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 
