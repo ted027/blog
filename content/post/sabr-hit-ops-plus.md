@@ -1,7 +1,7 @@
 ---
 title: "【OPS+】NPB(2019)セイバーメトリクス野手指標の算出⑧"
 date: 2019-06-13T18:15:39+09:00
-draft: true
+draft: false
 comments: true
 toc: true
 categories: ["野球"]
