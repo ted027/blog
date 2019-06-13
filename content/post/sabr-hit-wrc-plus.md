@@ -72,6 +72,14 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
     return str(wrc_plus)
 ```
 
+→パークファクター補正のかけ方を修正しました。詳細は以下の記事に。
+
+- [「パークファクター補正をかけた○○」の算出](https://www.ted027.com/post/ssabr-parkfactor-correct)
+
+最新の成績は以下から閲覧できます。
+
+- [プロ野球成績表 - 行けたら行く](https://www.ted027.com/records/)
+
 ---
 
 ### おわり

@@ -62,6 +62,10 @@ def wsb(hitter, league):
     return str(wsb)
 ```
 
+最新の成績は以下から閲覧できます。
+
+- [プロ野球成績表 - 行けたら行く](https://www.ted027.com/records/)
+
 ---
 
 ### おわり
