@@ -1,5 +1,5 @@
 ---
-title: "Reactでレスポンシブ対応"
+title: "Reactでのレスポンシブ対応"
 date: 2019-06-15T15:42:54+09:00
 draft: false
 comments: true
