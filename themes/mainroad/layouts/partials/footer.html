@@ -2,7 +2,8 @@
 	<div class="container footer__container flex">
 		{{ partial "footer_links.html" . }}
 		<div class="footer__copyright">
-			&copy; {{ now.Format "2006" }} <a href="https://www.ted027.com" target="_blank">{{  .Site.Params.copyright | default .Site.Title  }}</a>.
+			&copy; {{ now.Format "2006" }} <a href="/" target="_blank">{{  .Site.Params.copyright | default .Site.Title  }}</a>|
+			<a href="/contact/form/" target="_blank">お問い合わせ</a>
 		</div>
 	</div>
 </footer>

@@ -48,7 +48,7 @@ menu = ["main", "side", "footer"]
 [Params.widgets.social]
   twitter = "imaitt"
   github = "ted027"
-  email = "imaitt0207@gmail.com"
+  # email = "address"
   #facebook = "username"
   #instagram = "username"
   #linkedin = "username"
