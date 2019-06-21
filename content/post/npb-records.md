@@ -83,10 +83,10 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/react >}}
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/techacademy_nodejs >}}
 
 ---
