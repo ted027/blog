@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "選球眼"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/pawapuro2018 >}}
 
 ---
 
@@ -117,10 +117,10 @@ def iso_d(hitter):
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/sabr_omata >}}
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "プロ野球成績表にチーム/選手名検索機能を追加"
-date: 2019-06-21T16:29:07+09:00
+date: 2019-06-22T00:01:07+09:00
 draft: true
 comments: true
 toc: true
@@ -28,7 +28,7 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-{{< img src="/img/npb-records-search1.png"  >}}
+{{< img src="/img/npb-records_link.png" >}}
 
 ---
 
@@ -40,11 +40,15 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-{{< img src="/img/npb-records-search2.png"  >}}
+{{< img src="/img/npb-records-search1.png"  >}}
 
 ---
 
-検索ボタンからチームを選択したり、施主名を入力して`Search`を押すと、該当の選手の成績のみ表示します。
+検索ボタンからチームを選択したり、選手名を入力して`検索`を押すと、条件に合う選手の成績のみ表示します。
+
+---
+
+{{< img src="/img/npb-records-search2.png"  >}}
 
 ---
 
@@ -56,7 +60,7 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-`Reset`を押すと消えます。
+`リセット`を押すと元に戻ります。
 
 ---
 
@@ -68,7 +72,7 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/sabr_omata >}}
 
 ---
 

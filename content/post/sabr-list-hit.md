@@ -17,7 +17,7 @@ tags: ["セイバーメトリクス", "野手指標"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/purosupi2019 >}}
 
 ---
 
@@ -172,10 +172,10 @@ tags: ["セイバーメトリクス", "野手指標"]
 
 ---
 
-{{< ad/con/wide/sabr_omata>}}
+{{< ad/con/wide/sabr_omata >}}
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---
