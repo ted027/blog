@@ -1,7 +1,7 @@
 ---
 title: "プロ野球成績表にチーム/選手名検索機能を追加"
-date: 2019-06-22T00:01:07+09:00
-draft: true
+date: 2019-06-22T00:02:07+09:00
+draft: false
 comments: true
 toc: true
 categories: ["野球"]
