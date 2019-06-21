@@ -1,5 +1,5 @@
 ---
-title: "Reactで親コンポーネントのstateを修正する、参照する"
+title: "Reactで親コンポーネントのstateを変更/参照する"
 date: 2019-06-21T12:38:54+09:00
 draft: false
 comments: true
@@ -28,7 +28,7 @@ Reactで他のコンポーネントのstateを変更したかった。
 
 ---
 
-### 親コンポーネントのstateを参照する
+### 親のstateを参照する
 
 普通にstateをpropとして子コンポーネントに渡せばよい。
 
@@ -69,7 +69,7 @@ Child.propTypes = {
 
 ---
 
-### 親コンポーネントのstateを変更する
+### 親のstateを変更する
 
 親コンポーネント側でstateを変更する関数を用意し、子コンポーネントに渡す。
 
