@@ -18,10 +18,6 @@ tags: ["セイバーメトリクス", "プロ野球"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
-
----
-
 ### リンク
 
 - [プロ野球成績表](https://www.ted027.com/records)

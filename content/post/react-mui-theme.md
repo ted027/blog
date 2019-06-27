@@ -16,10 +16,6 @@ tags: ["Javascript", "NodeJS", "Material-UI"]
 
 ---
 
-{{< ad/con/wide/nodejs >}}
-
----
-
 ### Material-UI
 
 Material-UIは、material designを踏襲したReactのUIライブラリ。
