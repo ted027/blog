@@ -54,7 +54,7 @@ export const VisibleMainAppBar = connect(
 
 ---
 
-{{< img src="/img/redux-dispathc-error.png" >}}
+{{< img src="/img/redux-dispatch-error.png" >}}
 
 ---
 
