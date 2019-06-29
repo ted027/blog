@@ -75,7 +75,7 @@ const mapDispatchToProps = (dispatch) => {
 
 // 追加
 const mapStateToProps = () => {
-    return
+    return {}
 }
 
 export const VisibleMainAppBar = connect(
