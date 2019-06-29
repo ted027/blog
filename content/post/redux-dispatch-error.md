@@ -28,11 +28,11 @@ react-reduxの、actionをcomponentにdispatchするcontainerのところで
 
 ---
 
-{< img src="/img/redux.jpg" >}
+{{< img src="/img/redux.jpg" >}}
 
 ---
 
-※ 画像: https://staltz.com/unidirectional-user-interface-architectures.html
+※ 画像: [UNIDIRECTIONAL USER INTERFACE ARCHITECTURES](https://staltz.com/unidirectional-user-interface-architectures.html)
 
 ---
 
@@ -54,7 +54,7 @@ export const VisibleMainAppBar = connect(
 
 ---
 
-{< img src="/img/redux-dispathc-error.png" >}
+{{< img src="/img/redux-dispathc-error.png" >}}
 
 ---
 
