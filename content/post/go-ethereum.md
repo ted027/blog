@@ -1,7 +1,7 @@
 ---
 title: "ローカルでイーサリウムのネットワークを構築してみる"
-date: 2019-07-01T22:50:12+09:00
-draft: true
+date: 2019-07-02T07:50:12+09:00
+draft: false
 comments: true
 toc: true
 categories: ["ブロックチェーン"]
@@ -14,7 +14,7 @@ tags: ["Ethereum", "Golang", "Geth"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/con/wide/unix >}}
 
 ---
 
@@ -114,14 +114,26 @@ $ geth --networkid 10 --datadir ~/geth/ console 2>> ~/geth/error.log
 
 ---
 
+#### 作成したブロックを確認
+
+`eth.getBlock([Block Number])`で確認できる。
+
+```sh
+> eth.getBlock(0)
+```
+
 ---
 
-https://github.com/ethereum/go-ethereum/wiki/Private-network
-
-https://enomotodev.hatenablog.com/entry/2018/02/18/182032
+構築したネットワークで遊ぶのは次回。
 
 ---
 
-{{< ad/ >}}
+- 参考
+  - https://github.com/ethereum/go-ethereum/wiki/Private-network
+  - https://enomotodev.hatenablog.com/entry/2018/02/18/182032
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---
