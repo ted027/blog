@@ -25,6 +25,7 @@ tags: ["Ethereum", "Golang", "Geth"]
 {{< img src="/img/ethereum.jpg" >}}
 
 [Ethereum](https://www.ethereum.org)
+
 - github
   - https://github.com/ethereum
 
@@ -92,7 +93,7 @@ $ mkdir ~/geth
 
 `difficulty`はマイニングの難易度。
 
-`alloc`は空`{}`でもいいが、アカウントと残高を初期設定できる。
+`alloc`でアカウントと残高の初期設定ができる。空`{}`でもいい。
 
 ---
 
