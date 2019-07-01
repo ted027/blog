@@ -13,7 +13,7 @@ Pythonでdictをコピーして使うときの諸々。
 
 ---
 
-{{< ad/afb/codecamp >}}
+{{< ad/a8/geekjob>}}
 
 ---
 

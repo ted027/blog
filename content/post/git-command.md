@@ -220,6 +220,6 @@ $ git branch -D {branch_name}
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
 
 ---
