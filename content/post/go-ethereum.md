@@ -37,6 +37,16 @@ tags: ["Ethereum", "Golang", "Geth"]
 
 `geth`をインストールする。
 
+aptでインストールする場合は以下。
+
+```sh
+$ add-apt-repository -y ppa:ethereum/ethereum
+$ apt-get update
+$ apt-get install ethereum
+```
+
+もしくはgithubからバージョンを指定して直接取得する。
+
 ```sh
 $ git clone -b release/1.8 https://github.com/ethereum/go-ethereum
 $ cd go-ethereum/
@@ -89,11 +99,11 @@ $ mkdir ~/geth
 }
 ```
 
-`nonce`はセキュリティ担保のため？適当なランダム値を推奨されている。
+`chainid`は、1はメインネットを表すので、1以外の適当な値を指定。
 
 `difficulty`はマイニングの難易度。
 
-`alloc`でアカウントと残高の初期設定ができる。空`{}`でもいい。
+`alloc`でウォレットと残高の初期設定ができる。空`{}`でもいい。
 
 ---
 
@@ -125,7 +135,7 @@ $ geth --networkid 10 --datadir ~/geth/ console 2>> ~/geth/error.log
 
 ---
 
-構築したネットワークで遊ぶのは次回。
+構築したネットワークで遊ぶのは今度。
 
 ---
 
