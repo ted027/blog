@@ -128,7 +128,13 @@ $ geth --networkid 10 --datadir ~/geth/ console 2>> ~/geth/error.log
 
 #### 作成したブロックを確認
 
-`eth.getBlock([Block Number])`で確認できる。
+`eth`で各種情報を確認できる。
+
+```sh
+> eth
+```
+
+ブロックの情報は、`eth.getBlock([Block Number])`で確認できる。
 
 ```sh
 > eth.getBlock(0)
