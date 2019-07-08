@@ -1,5 +1,5 @@
 ---
-title: "ローカルでイーサリアムのネットワークを構築してみる"
+title: "【ブロックチェーンお勉強】イーサリアムのローカルネットワークを構築"
 date: 2019-07-02T07:50:12+09:00
 draft: false
 comments: true
@@ -164,7 +164,17 @@ $ geth --networkid 10 --datadir ~/geth/ console 2>> ~/geth/error.log
 
 ---
 
-構築したネットワークで遊ぶのは今度。
+### おわり
+
+コンソールは`exit`で終了。
+
+```sh
+> exit
+```
+
+構築したネットワークで遊ぶのは次回。
+
+- [【ブロックチェーンお勉強】イーサリアムのローカルネットワークでマイニング、送金](https://www.ted027.com/post/go-ethereum-send)
 
 ---
 
