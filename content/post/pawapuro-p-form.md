@@ -16,7 +16,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro_switch >}}
 
 ---
 
