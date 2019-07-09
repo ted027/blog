@@ -498,6 +498,8 @@ Pythonのwebスクレイピングと手書き（）のJSONファイルを使っ�
 
 [[参考記事]パワプロ2018 打撃フォーム一覧（固有フォロースルーあり）](https://www.ted027.com/post/pawapuro-b-form)
 
+[[参考記事]パワプロ2018 投球フォーム一覧](https://www.ted027.com/post/pawapuro-p-form)
+
 ---
 
 {{< ad/con/wide/mlbtheshow19 >}}
