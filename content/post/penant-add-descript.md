@@ -17,11 +17,11 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/pawapuro_switch>}}
+{{< ad/con/wide/pawapuro_switch >}}
 
 ---
 
-2019年4月現在の計算結果は以下。
+2019年4月現在の結果は以下。
 
 [[参考記事]パワプロ ペナントの補強思考設定（2019年4月時点）](https://www.ted027.com/post/penant-add)
 
@@ -199,10 +199,14 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+[[参考記事]パワプロ2018 打撃フォーム一覧（固有フォロースルーあり）](https://www.ted027.com/post/pawapuro-b-form)
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/con/wide/pawapuro2018 >}}
+
+---
+
+{{< ad/a8/dazn >}}
 
 ---

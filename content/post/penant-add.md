@@ -266,6 +266,10 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 ---
 
+{{< ad/con/wide/pawapuro2018>}}
+
+---
+
 #### 西武
 - トレード
     - 頻度
@@ -492,7 +496,11 @@ Pythonのwebスクレイピングと手書き（）のJSONファイルを使っ�
 
 ---
 
-{{< ad/con/wide/mlbtheshow19>}}
+[[参考記事]パワプロ2018 打撃フォーム一覧（固有フォロースルーあり）](https://www.ted027.com/post/pawapuro-b-form)
+
+---
+
+{{< ad/con/wide/mlbtheshow19 >}}
 
 ---
 
