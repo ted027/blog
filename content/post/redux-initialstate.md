@@ -1,5 +1,5 @@
 ---
-title: "Reduxで複数のreducersを使う際のstate初期値設定"
+title: "Reduxで複数のReducerを扱う際のState初期値設定"
 date: 2019-07-15T01:13:59+09:00
 draft: fakse
 comments: true
@@ -38,6 +38,8 @@ store.dispatch(action)
 {{< img src="/img/redux.jpg" >}}
 
 ※ 画像: [UNIDIRECTIONAL USER INTERFACE ARCHITECTURES](https://staltz.com/unidirectional-user-interface-architectures.html)
+
+---
 
 なので、stateの初期値はcreateStoreの部分で設定していた。
 
@@ -102,6 +104,8 @@ ReactDOM.render(
 );
 serviceWorker.register();
 ```
+
+---
 
 {{< img src="/img/initialstate.png" >}}
 
