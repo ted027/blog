@@ -1,7 +1,7 @@
 ---
 title: "Reduxで複数のReducerを扱う際のState初期値設定"
 date: 2019-07-15T01:13:59+09:00
-draft: fakse
+draft: false
 comments: true
 toc: true
 categories: [”React”]
