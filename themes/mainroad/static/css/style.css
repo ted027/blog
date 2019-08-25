@@ -216,11 +216,13 @@ h4 {
 h5 {
 	font-size: 16px;
 	font-size: 1rem;
+	text-decoration: underline;
 }
 
 h6 {
 	font-size: 16px;
 	font-size: 1rem;
+	text-decoration: underline;
 }
 
 a {
