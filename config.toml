@@ -46,9 +46,9 @@ menu = ["main", "side", "footer"]
   tags_counter = true
 
 [Params.widgets.social]
-  twitter = "imaitt"
+  twitter = "bb_ted027"
   github = "ted027"
-  # email = "address"
+  #email = "address"
   #facebook = "username"
   #instagram = "username"
   #linkedin = "username"
