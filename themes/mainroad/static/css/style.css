@@ -72,7 +72,7 @@ body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 2.0;
+	line-height: 2.25;
 	word-wrap: break-word;
 	background: #f7f7f7;
 	-webkit-font-smoothing: antialiased;
@@ -204,11 +204,13 @@ h2 {
 h3 {
 	font-size: 20px;
 	font-size: 1.25rem;
+	text-decoration: underline;
 }
 
 h4 {
 	font-size: 18px;
 	font-size: 1.125rem;
+	text-decoration: underline;
 }
 
 h5 {
@@ -633,6 +635,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .post__title {
 	margin: 0;
+	text-decoration: none;
 }
 
 .post__meta {
