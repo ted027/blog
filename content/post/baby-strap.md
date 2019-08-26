@@ -24,12 +24,14 @@ tags: ["抱っこ紐", "ERGO", "GRACO", "baby bjorn"]
 
 使った抱っこ紐はそれぞれ`ERGO`, `GRACO`, `baby bjorn`の三社が出している製品。
 
----
-
-{{< ad/con/wide/shimajiro_dvd >}}
+{{< ad/con/wide/himo_bjorn >}}
 
 ---
 
-{{< ad/moshimo/kodomo_challenge >}}
+{{< ad/con/wide/himo_ergo >}}
+
+---
+
+{{< ad/con/wide/himo_graco >}}
 
 ---
