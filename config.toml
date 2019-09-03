@@ -13,8 +13,8 @@ pygmentsStyle = "mainroad"
 menu = ["main", "side", "footer"]
 
 [Author]
-  name = "まいつ"
-  bio = "子供がふたりいるやきう好きのエンジニァーです。"
+  name = "mait"
+  bio = "エンジニァーです。子供がいます。筒香嘉智さんとかと同い年です。"
   avatar = "/img/avatar.png"
 
 [Params]

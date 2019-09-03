@@ -854,7 +854,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .authorbox__name {
 	font-size: 16px;
 	font-size: 1rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 /* List content */
