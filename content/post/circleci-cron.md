@@ -14,7 +14,7 @@ CircleCIでジョブをcron設定し定期実行する。
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
 
 ---
 
@@ -64,6 +64,6 @@ workflows:
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
