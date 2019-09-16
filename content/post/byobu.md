@@ -72,6 +72,6 @@ tags: ["Byobu", "terminal"]
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---
