@@ -13,7 +13,7 @@ tags: ["インストール", "OS", "Ubuntu"]
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 
@@ -73,6 +73,6 @@ Ubuntu用のクライアントは無いし拡張機能も多分無い。Wineを�
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
