@@ -1,5 +1,5 @@
 ---
-title: "『リーダブルコード』の個人的まとめ"
+title: "『リーダブルコード』個人的まとめ"
 date: 2019-09-24T12:46:01+09:00
 draft: false
 comments: true
