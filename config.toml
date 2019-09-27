@@ -38,7 +38,7 @@ menu = ["main", "side", "footer"]
   list = "right"
   single = "right"
   # Enable widgets in given order
-  widgets = ["ad_top", "authorbox", "search", "ad_second", "populars", "recent", "categories", "social", "ad_bottom"]
+  widgets = ["ad_top", "authorbox", "search", "ad_second", "recent", "categories", "social", "ad_bottom"]
 
 [Params.widgets]
   popular_num = 7
