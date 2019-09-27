@@ -64,7 +64,7 @@ workflows:
   version: 2
   normal_build:
     jobs:
-      - build
+      - analytics
   nightly_build:
     triggers:
       - schedule:
