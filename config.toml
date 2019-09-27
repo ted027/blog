@@ -13,12 +13,12 @@ pygmentsStyle = "mainroad"
 menu = ["main", "side", "footer"]
 
 [Author]
-  name = "mait"
+  name = "ted027"
   bio = "エンジニァーです。子供がいます。筒香嘉智さんとかと同い年です。"
   avatar = "/img/avatar.png"
 
 [Params]
-  subtitle = "野球と育児とコンピュータサイエンスのブログ"
+  subtitle = "TERRIBLE HORRIBLE NO GOOD VERY BAD HACK."
   opengraph = true
   twitter_cards = true
   readmore = false

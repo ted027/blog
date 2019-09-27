@@ -24,7 +24,7 @@ gitでコミットを他のブランチにも反映させる際に`cherry-pick`(
 
 ### 通常のcherry-pick
 
-1. 取り込むコミットIDを調べる
+取り込むコミットIDを調べる。
 
 ```sh
 $ git log
@@ -32,7 +32,7 @@ $ git log
 
 もしくは、GitHubやGitLabのUI上でコミット履歴から調べられる。
 
-2. 取り込む
+コミットIDが分かったら、`cherry-pick`で指定し取り込む。
 
 ```sh
 $ git cherry-pick {commit_id}
@@ -86,7 +86,7 @@ $ git cherry-pick -m 1 {commit_id}
 $ git log {commit_id} # <- マージコミット
 
 commit {commit_id}(branch_name)
-**Merge: {parent_id1} {parent_id2}**
+Merge: {parent_id1} {parent_id2}
 Author: John Doe <john.doe@mail.con>
 Date:   Fri Sep 27 00:00:00 2019 +0000
 ...
