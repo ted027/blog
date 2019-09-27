@@ -1,2 +1,2 @@
-google-api-python-client==1.6.1
+google-api-python-client==1.7.11
 pyOpenSSL==16.2.0

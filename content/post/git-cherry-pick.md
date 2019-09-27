@@ -87,7 +87,7 @@ $ git log {commit_id} # <- マージコミット
 
 commit {commit_id}(branch_name)
 Merge: {parent_id1} {parent_id2}
-Author: John Doe <john.doe@mail.con>
+Author: John Doe <john.doe@mail.com>
 Date:   Fri Sep 27 00:00:00 2019 +0000
 ...
 ```
