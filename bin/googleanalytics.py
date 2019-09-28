@@ -83,7 +83,8 @@ def export_results(results):
     # Print data nicely for the user.
     output_json = {"pageviews": []}
     if results:
-        for r in results.get('rows'):
+        # export only top 15 articles to filter invalid links
+        for r in results.get('rows')[:15]:
             link = r[0][0:-1]
             title = r[1][0:].replace(' - 行けたら行く', '')
             output_json["pageviews"].append({'link': link, 'title': title})
@@ -106,7 +107,8 @@ def main():
     service = get_service('analytics', 'v3', scope, key_file_location,
                           service_account_email)
     profile = get_first_profile_id(service)
-    export_results(get_results(service, profile))
+    result_articles = get_results(service, profile)
+    export_results(result_articles)
 
 
 if __name__ == '__main__':
