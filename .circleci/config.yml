@@ -21,7 +21,7 @@ jobs:
           command: |
             rm -rf public
             git clone git@github.com:ted027/ted027.github.io public
-            hugo
+            # hugo
       - run:
           name: push
           command: |
