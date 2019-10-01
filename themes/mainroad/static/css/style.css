@@ -72,7 +72,7 @@ body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 2.25;
+	line-height: 2;
 	word-wrap: break-word;
 	background: #f7f7f7;
 	-webkit-font-smoothing: antialiased;
@@ -172,22 +172,22 @@ textarea {
 /* Typography */
 h1,
 h2 {
-	line-height: 150%;
+	line-height: 100%;
 }
 h3 {
-	line-height: 250%;
+	line-height: 200%;
 }
 h4 {
-	line-height: 250%;
+	line-height: 200%;
 }
 h5 {
-	line-height: 250%;
+	line-height: 200%;
 }
 h6 {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	font-weight: 700;
-	line-height: 250%;
+	line-height: 200%;
 	color: #000;
 }
 
