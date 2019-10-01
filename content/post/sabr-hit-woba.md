@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/purosupi2019 >}}
 
 ---
 
@@ -167,6 +167,6 @@ def woba_speed(hitter):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

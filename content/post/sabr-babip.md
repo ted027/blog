@@ -15,7 +15,7 @@ tags: ["Python", "セイバーメトリクス", "BABIP"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/pawapuro2018 >}}
 
 ---
 
@@ -126,6 +126,6 @@ def babip_h(hitter):
 
 ---
 
-{{< ad/afb/codecamp>}}
+{{< ad/afb/codecamp >}}
 
 ---

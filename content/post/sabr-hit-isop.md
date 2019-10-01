@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "長打力"]
 
 ---
 
-{{< ad/con/wide/pawapuro_switch>}}
+{{< ad/con/wide/pawapuro_switch >}}
 
 ---
 
@@ -82,6 +82,6 @@ def iso_p(hitter):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

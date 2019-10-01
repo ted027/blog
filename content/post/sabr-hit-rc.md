@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018>}}
+{{< ad/con/wide/pawapuro2018 >}}
 
 ---
 
@@ -186,6 +186,6 @@ def rc_xr_27(hitter, rc_xr):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

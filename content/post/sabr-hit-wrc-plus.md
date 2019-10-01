@@ -17,7 +17,7 @@ wRCにパークファクターを加味し、リーグ平均と比較して打�
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/sabr >}}
 
 ---
 
@@ -102,6 +102,6 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
 
 ---
 
-{{< ad/afb/codecamp>}}
+{{< ad/afb/codecamp >}}
 
 ---
