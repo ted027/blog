@@ -1,5 +1,5 @@
 ---
-title: "8/23に起きたAWSのシステムトラブルのこと"
+title: "AWS EC2のシステムトラブルのこと"
 date: 2019-08-24T14:41:46+09:00
 draft: false
 comments: true

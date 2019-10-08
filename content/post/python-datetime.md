@@ -107,7 +107,7 @@ datetime.now() - timedelta(microseconds=1)
 `pytz`を使う。
 
 ```py
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 import pytz
 
 # UTC時間を取得
@@ -117,6 +117,10 @@ datetime.datetime(2019, 9, 20, 3, 30, 59, 100000 tzinfo=<UTC>)
 '2019-09-20T12:30:59.100000+00:00'
 >>> datetime.now(pytz.utc).isoformat().replace('+00:00', 'Z')
 '2019-09-20T12:30:59.100000Z'
+
+# 指定のUTC時間を取得
+>>> datetime(2019,9,20,12,30,59,1000, tzinfo=timezone.utc)
+datetime.datetime(2019, 9, 20, 12, 30, 59, 1000, tzinfo=datetime.timezone.utc)
 
 # LocalTimeを取得
 >>> tz = pytz.timezone('Asia/Tokyo')
