@@ -1,0 +1,31 @@
+---
+title: "React+TypeScriptでPropTypesを使う"
+date: 2019-10-26T10:13:01+09:00
+draft: true
+comments: true
+toc: true
+categories: ["React"]
+tags: ["TypeScript", "JavaScript", "PropTypes"]
+---
+
+<!--more-->
+
+---
+
+{{< ad/a8/techacademy >}}
+
+---
+
+### TypeScript + PropTypes
+
+### TypeScriptでPropTypesは必要なのか？
+
+---
+
+{{< ad/con/wide/react >}}
+
+---
+
+{{< ad/a8/techacademy_ui >}}
+
+---
