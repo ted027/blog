@@ -1,11 +1,11 @@
 ---
-title: "React+TypeScriptでwithStylesを使う"
+title: "React+TypeScript+material-uiでwithStylesを使う"
 date: 2019-10-23T22:21:41+09:00
 draft: false
 comments: true
 toc: true
-categories: ["React"]
-tags: ["TypeScript", "JavaScript", "material-ui"]
+categories: ["TypeScript"]
+tags: ["React", "JavaScript", "material-ui"]
 ---
 
 <!--more-->
