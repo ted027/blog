@@ -66,7 +66,7 @@ WithStylesを拡張してPropsのインタフェースを作り、コンポー�
 
 としてあげると、`withStyles`でstyleを反映できます。
 
-```ts
+```js
 import * as React from "react";
 ...
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
