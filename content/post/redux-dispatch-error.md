@@ -4,7 +4,7 @@ date: 2019-06-29T13:47:16+09:00
 draft: false
 comments: true
 toc: false
-categories: [”React”]
+categories: ["React"]
 tags: ["Redux", "エラー"]
 ---
 
