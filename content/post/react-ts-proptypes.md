@@ -1,6 +1,6 @@
 ---
 title: "React+TypeScriptでPropTypesを使う"
-date: 2019-11-11T12:57:01+09:00
+date: 2019-11-10T12:57:01+09:00
 draft: false
 comments: true
 toc: true
