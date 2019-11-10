@@ -1,6 +1,6 @@
 ---
 title: "React+TypeScriptでPropTypesを使う"
-date: 2019-11-7T12:57:01+09:00
+date: 2019-11-11T12:57:01+09:00
 draft: false
 comments: true
 toc: true
@@ -58,6 +58,8 @@ SearchContents.propTypes = {
 };
 ```
 
+---
+
 ### TypeScript + PropTypes
 
 TypeScriptでPropTypesを使う場合は書き方が変わる。
@@ -107,9 +109,11 @@ class SearchContents extends React.Component<Props> {
 }
 ```
 
+---
+
 ### TypeScriptでPropTypesは必要か
 
-じゃあ不要じゃん…となるところだが、TypeScriptのIssueに以下のようなものがある。
+じゃあ不要じゃん…となるところだが、TypeScriptのgithubに以下のようなIssueがある。
 
 - [Support setting React PropTypes using TypeScript types #4833](https://github.com/Microsoft/TypeScript/issues/4833)
 
