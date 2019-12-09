@@ -112,6 +112,6 @@ $ pip install psycopg2
 
 ---
 
-{{< ad/afb/codecamp>}}
+{{< ad/afb/codecamp >}}
 
 ---
