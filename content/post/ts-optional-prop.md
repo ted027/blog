@@ -16,7 +16,7 @@ tags: ["property", "型"]
 
 ---
 
-TypeScriptで、指定しなくてもいいpropertyも含めた型宣言をしてしまうと、指定しなかった場合にエラーが出てしまう。
+TypeScriptで、必須でないpropertyも含めた型宣言をしてしまうと、指定しなかった場合にエラーが出てしまう。
 
 ```ts
 interface Props extends WithStyles<typeof styles> {
@@ -49,7 +49,7 @@ render() {
 
 ---
 
-Optionalな値は、宣言の際に`?`をつけることで、存在しない場合もあるが、存在する場合はこの型、といった指定ができる。
+Optionalな値を宣言したければ`?`をつければよい。この場合、必須ではないが指定するならこの型、といった宣言になる。
 
 ```ts
 interface Props extends WithStyles<typeof styles> {
