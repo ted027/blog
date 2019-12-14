@@ -13,7 +13,7 @@ Pythonのdecimal.quantizeを使って任意の桁で四捨五入する。
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
 
