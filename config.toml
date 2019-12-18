@@ -14,7 +14,7 @@ menu = ["main", "side", "footer"]
 
 [Author]
   name = "ted027"
-  bio = "エンジニァーです。子供がいます。筒香嘉智さんとかと同い年です。"
+  bio = "筒香嘉智さんとかと同い年です。子供がいます。プログラムを書いたり書かなかったりする仕事をしています。"
   avatar = "/img/avatar.png"
 
 [Params]
@@ -46,7 +46,7 @@ menu = ["main", "side", "footer"]
   tags_counter = true
 
 [Params.widgets.social]
-  twitter = "bb_ted027"
+  # twitter = "bb_ted027"
   github = "ted027"
   #email = "address"
   #facebook = "username"
