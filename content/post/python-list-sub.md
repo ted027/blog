@@ -16,7 +16,7 @@ tags: ["list"]
 
 ---
 
-### list同士の加減
+### list同士の加算減算
 
 Pythonで、list同士の足し算はできる。
 
