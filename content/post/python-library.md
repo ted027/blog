@@ -11,7 +11,7 @@ tags: ["ライブラリ", "pip", "モジュール"]
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
 
