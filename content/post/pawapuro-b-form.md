@@ -348,7 +348,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/purosupi2019>}}
+{{< ad/con/wide/purosupi2019 >}}
 
 ---
 
