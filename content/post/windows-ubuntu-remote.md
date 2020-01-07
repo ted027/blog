@@ -4,7 +4,7 @@ date: 2020-01-07T23:07:45+09:00
 draft: false
 comments: true
 toc: true
-categories: [”Linux”]
+categories: ["Linux"]
 tags: ["Windows", "リモート", "Remmina"]
 ---
 
@@ -92,7 +92,7 @@ $ sudo systemctl restart xrdp
 ### 参考
 
 - http://watarisein.hatenablog.com/entry/2017/06/24/235551
-- https://own-search-and-study.xyz/2017/07/22/windows10%E3%81%A8ubuntu16-04%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8E%A5%E7%B6%9A%E3%81%A7%E8%A1%8C%E3%81%8D%E6%9D%A5%E3%81%99%E3%82%8B/
+- [https://linux.just4fun.biz/?Ubuntu/WindowsからUbuntuにリモートデスクトップ接続する](https://linux.just4fun.biz/?Ubuntu/Windows%E3%81%8B%E3%82%89Ubuntu%E3%81%AB%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B)
 
 ---
 
