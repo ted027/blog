@@ -18,7 +18,7 @@ menu = ["main", "side", "footer"]
   avatar = "/img/avatar.png"
 
 [Params]
-  subtitle = "TERRIBLE HORRIBLE NO GOOD VERY BAD HACK."
+  subtitle = "Terrible Horrible No Good Very Bad Hack."
   opengraph = true
   twitter_cards = true
   readmore = false
