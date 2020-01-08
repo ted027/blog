@@ -1,7 +1,7 @@
 ---
 title: "パワプロで自分が開発者ならやりたいこと12選"
-date: 2020-01-07T23:54:05+09:00
-draft: true
+date: 2020-01-09T00:02:05+09:00
+draft: false
 comments: true
 toc: true
 categories: ["パワプロ", "野球"]
