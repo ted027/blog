@@ -32,11 +32,15 @@ const createIcon = (name: string) => {
 
 ---
 
-### 原因と対策
+### 原因
 
 デバッグのために、全てのコンポーネントに名前を付けることが推奨されるため。上だと`createIcon`の返り値が無名コンポーネントになるので怒られる。
 
-対策としては、関数名をつければよい。
+---
+
+### 対策①
+
+関数名をつければよい。
 
 ```ts
 const createIcon = (name: string) => {
@@ -47,6 +51,26 @@ const createIcon = (name: string) => {
     )
 }
 ```
+
+もしくは
+
+```ts
+const createIcon = (name: string) => {
+    const icon = (props) =>  <i {...props} class={name}>
+    return icon
+}
+```
+
+それか、debuggableにする価値もないような部分なら抑制すればよい。
+
+```ts
+const createIcon = (name: string) => {
+    // eslint-disable-next-line react/display-name
+    return (props => <i {...props} class={name}>)
+}
+```
+
+---
 
 `missing display name`と言われているが、`displayName`を指定する必要はない。（が、指定を推奨されている）
 
