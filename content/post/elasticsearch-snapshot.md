@@ -1,6 +1,6 @@
 ---
 title: "Elasticsearchのバックアップ/リストア"
-date: 2020-02-08T21:36:00+09:00
+date: 2020-02-08T23:36:00+09:00
 draft: false
 comments: true
 toc: true
@@ -17,6 +17,8 @@ tags: ["AWS", "snapshot", "Python"]
 requestsを使っても出来ますが、PythonのElasticsearch clientを使います。
 
 ちなみにAWS Elasticsearch Searviceを使ってます。レポジトリはS3を使います。
+
+---
 
 ## 基本
 
@@ -50,6 +52,8 @@ snaoshotを作成するため、以下のポリシーを付与したロール`Sn
   ]
 }
 ```
+
+---
 
 ### snapshot repository登録
 
@@ -86,6 +90,8 @@ body = {
 es.snapshot.create_repository(repository='repository-name', body=body)
 ```
 
+---
+
 ### snapshot取得
 
 ```py
@@ -110,6 +116,8 @@ es.snapshot.create(
     request_timeout=30)
 ```
 
+---
+
 ### restore
 
 ```py
@@ -131,11 +139,17 @@ snapshot作成時と同様、bodyでindicesも指定可能。
 
 共通のS3をsnapshot repositoryに登録するとデータコピーが不要。
 
+---
+
 ### 旧サーバでsnapshot取得
+
+上と同じ。
+
+---
 
 ### 新サーバでrestore
 
-#### ログをpublishしてElasticsearchに送信する場合
+#### 1. ログをpublishしてElasticsearchに送信する場合
 
 リアルタイムにログを送るので、先にpublish先を新サーバに切り替える。
 
@@ -153,7 +167,9 @@ es.snapshot.restore(
     request_timeout=30)
 ```
 
-#### ログをpollingしてElasticsearchに送信する場合
+---
+
+#### 2. ログをpollingしてElasticsearchに送信する場合
 
 この場合、先にpollingを切り替えてからリネームしてリストアすると、重複したログを保持してしまう。
 
