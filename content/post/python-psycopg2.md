@@ -13,7 +13,7 @@ Pythonでpip installしようとした時、表題のエラーで躓くことが
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
 
