@@ -196,6 +196,6 @@ $ hugo server --buildDrafts --watch
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---

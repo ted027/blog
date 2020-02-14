@@ -94,6 +94,6 @@ plantuml: export current diagram
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
 
 ---

@@ -13,7 +13,7 @@ tags: ["PlantUML", "AWS", "構成図"]
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 
@@ -130,6 +130,6 @@ table .[hidden]. web_bucket
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---

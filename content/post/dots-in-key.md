@@ -14,7 +14,7 @@ jsonのkey名に"."が入っていると困惑することになる。
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---
 

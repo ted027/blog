@@ -145,6 +145,6 @@ def update_team_park_records():
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

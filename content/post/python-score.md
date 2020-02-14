@@ -168,6 +168,6 @@ print(live_scores())
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---

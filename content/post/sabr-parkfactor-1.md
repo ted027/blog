@@ -13,11 +13,11 @@ tags: ["Python", "セイバーメトリクス", "パークファクター"]
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---
 
-{{< ad/con/wide/pawapuro_switch>}}
+{{< ad/con/wide/pawapuro_switch >}}
 
 ---
 
@@ -160,10 +160,10 @@ Warningを出すくらいの処理は入れようかと思う。いつか。
 
 ---
 
-{{< ad/con/wide/python_analytics>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

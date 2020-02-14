@@ -13,7 +13,7 @@ PlantUMLで図を作るとき、各種サービスやその他色々なアイコ
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 
@@ -211,6 +211,6 @@ crond --> letsencrypt : starts every month
 
 ---
 
-{{< ad/a8/techacademy1>}}
+{{< ad/a8/techacademy1 >}}
 
 ---

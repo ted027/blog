@@ -13,7 +13,7 @@ AutoScallingGroupのスタック削除で少々詰まったので備忘録。
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 

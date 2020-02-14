@@ -79,6 +79,6 @@ def wsb(hitter, league):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

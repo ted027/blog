@@ -191,10 +191,10 @@ def whip(pitcher):
 
 ---
 
-{{< ad/con/wide/python_analytics>}}
+{{< ad/con/wide/python_analytics >}}
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
 
 ---

@@ -123,6 +123,6 @@ $ make target-post
 
 ---
 
-{{< ad/a8/techacademy>}}
+{{< ad/a8/techacademy >}}
 
 ---

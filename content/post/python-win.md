@@ -11,7 +11,7 @@ tags: ["Windows", "インストール"]
 
 ---
 
-{{< ad/a8/techstars>}}
+{{< ad/a8/techstars >}}
 
 ---
 
@@ -101,6 +101,6 @@ $ python hello.py
 
 ---
 
-{{< ad/a8/techacademy2>}}
+{{< ad/a8/techacademy2 >}}
 
 ---

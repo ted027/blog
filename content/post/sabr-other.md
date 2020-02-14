@@ -42,7 +42,7 @@ tags: ["ネタ指標", "Python"]
 
 ---
 
-{{< ad/con/wide/oneouts>}}
+{{< ad/con/wide/oneouts >}}
 
 ---
 
@@ -166,6 +166,6 @@ def dan_percent(hitter):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

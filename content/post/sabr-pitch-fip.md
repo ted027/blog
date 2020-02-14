@@ -233,6 +233,6 @@ def fip(pitcher, league):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---

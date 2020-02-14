@@ -142,6 +142,6 @@ def wrc_plus(hitter, league, pf_list, raw_wrc):
 
 ---
 
-{{< ad/a8/dazn>}}
+{{< ad/a8/dazn >}}
 
 ---
