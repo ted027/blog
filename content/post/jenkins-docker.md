@@ -13,7 +13,7 @@ Jenkins PipelineジョブでDockerfileベースのイメージを使っていた
 
 ---
 
-{{< ad/a8/geekjob>}}
+{{< ad/a8/geekjob >}}
 
 ---
 

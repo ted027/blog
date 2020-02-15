@@ -13,7 +13,7 @@ Pythonでdictをコピーして使うときの諸々。
 
 ---
 
-{{< ad/a8/geekjob>}}
+{{< ad/a8/geekjob >}}
 
 ---
 
