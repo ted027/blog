@@ -16,27 +16,27 @@ tags: ["パワプロ2018", "再現", "ＯＢ", "パワナンバー"]
 
 ---
 
-{{< img src="/img/nomura-1.png" >}}
+{{< img src="/img/nomura-1.jpg" >}}
 
 ---
 
-{{< img src="/img/nomura-2.png" >}}
+{{< img src="/img/nomura-2.jpg" >}}
 
 ---
 
-{{< img src="/img/nomura-3.png" >}}
+{{< img src="/img/nomura-3.jpg" >}}
 
 ---
 
-{{< img src="/img/nomura-4.png" >}}
+{{< img src="/img/nomura-4.jpg" >}}
 
 ---
 
-{{< img src="/img/nomura-5.png" >}}
+{{< img src="/img/nomura-5.jpg" >}}
 
 ---
 
-{{< img src="/img/nomura-6.png" >}}
+{{< img src="/img/nomura-6.jpg" >}}
 
 ---
 
