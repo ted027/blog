@@ -3,7 +3,7 @@ title: "パワプロ2018（ＯＢ再現）野村克也捕手"
 date: 2020-02-17T01:21:55+09:00
 draft: false
 comments: true
-toc: true
+toc: false
 categories: ["パワプロ", "野球"]
 tags: ["パワプロ2018", "再現", "ＯＢ", "パワナンバー"]
 ---
