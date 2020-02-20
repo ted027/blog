@@ -74,6 +74,6 @@ www.ted027.com <= ted027.com
 
 ---
 
-{{< ad/a8/onamae>}}
+{{< ad/a8/onamae >}}
 
 ---

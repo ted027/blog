@@ -96,6 +96,6 @@ baseURL = "https://www.[your.domain]"
 
 ---
 
-{{< ad/a8/onamae>}}
+{{< ad/a8/onamae >}}
 
 ---
