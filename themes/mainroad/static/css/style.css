@@ -1057,6 +1057,10 @@ textarea {
 	border-bottom: 3px solid #e22d30;
 }
 
+.widget__content {
+	font-size: 14px;
+}
+
 .widget__item {
 	display: block;
 	padding: 5px 0;
