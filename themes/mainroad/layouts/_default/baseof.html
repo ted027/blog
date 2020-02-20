@@ -14,6 +14,8 @@
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{ end -}}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
