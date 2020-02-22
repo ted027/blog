@@ -13,7 +13,7 @@ tags: ["ドメイン", "ドメインプロテクション"]
 
 ---
 
-{{< ad/moshimo/samurai>}}
+{{< ad/moshimo/samurai >}}
 
 ---
 

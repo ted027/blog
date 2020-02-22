@@ -138,6 +138,6 @@ stage ('stage') {
 
 ---
 
-{{< ad/moshimo/samurai>}}
+{{< ad/moshimo/samurai >}}
 
 ---

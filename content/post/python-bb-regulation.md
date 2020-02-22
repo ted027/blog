@@ -95,6 +95,6 @@ def update_pitcher_y_records(pitcher_list, team_list):
 
 ---
 
-{{< ad/moshimo/samurai>}}
+{{< ad/moshimo/samurai >}}
 
 ---
