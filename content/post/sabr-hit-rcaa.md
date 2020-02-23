@@ -130,6 +130,6 @@ def rc_xr_win(hitter, full_league, rc_xr_plus):
 
 ---
 
-{{< ad/afb/codecamp>}}
+{{< ad/afb/codecamp >}}
 
 ---
