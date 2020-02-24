@@ -91,7 +91,7 @@ def update_pitcher_y_records(pitcher_list, team_list):
 
 ---
 
-{{< ad/con/wide/sabr>}}
+{{< ad/con/wide/sabr >}}
 
 ---
 
