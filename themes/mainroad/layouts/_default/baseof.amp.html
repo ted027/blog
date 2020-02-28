@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-	{{ $style := resources.Get "css/style.css" | toCSS | minify }}
-	{{ $custom := resources.Get "css/style.css" | toCSS | minify }}
+	{{ $style := resources.Get "css/style.css" }}
+	{{ $custom := resources.Get "css/style.css" }}
     {{ $css_content := $style.Content }}
     {{ $css_custom_content := $custom.Content }}
-    {{ $css_content = replace $css_content `@charset "UTF-8"` "" }}
-    {{ $css_custom_content = replace $css_custom_content `@charset "UTF-8"` "" }}
 	<style amp-custom>
 		{{ $css_content | safeCSS }}
 		{{ $css_custom_content | safeCSS }}
