@@ -56,6 +56,6 @@ menu = ["main", "side", "footer"]
   #gitlab = "username"
   #bitbucket = "username"
 
-# [outputs]
-# home = [ "HTML", "AMP"]
-# page = [ "HTML", "AMP"]
+[outputs]
+home = [ "HTML", "AMP"]
+page = [ "HTML", "AMP"]
