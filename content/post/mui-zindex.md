@@ -26,7 +26,7 @@ const styles = (theme: Theme): StyleRules => createStyles({
   selectYearForm: { // これを手前に持ってきたい
     top: theme.spacing(3),
     right: theme.spacing(5),
-    position: "absolute",
+    position: "fixed",
     width: 80,
   },
 }
@@ -49,7 +49,7 @@ const styles = (theme: Theme): StyleRules => createStyles({
   selectYearForm: { // これを手前に持ってきたい
     top: theme.spacing(3),
     right: theme.spacing(5),
-    position: "absolute",
+    position: "fixed",
     width: 80,
     zIndex: 110
   },
@@ -68,7 +68,7 @@ const styles = (theme: Theme): StyleRules => createStyles({
   selectYearForm: { // これを手前に持ってきたい
     top: theme.spacing(3),
     right: theme.spacing(5),
-    position: "absolute",
+    position: "fixed",
     width: 80,
     zIndex: theme.zIndex.appBar + 1
   },
