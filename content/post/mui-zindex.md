@@ -77,7 +77,23 @@ const styles = (theme: Theme): StyleRules => createStyles({
 
 {{< img src="/img/mui-zindex2.png" >}}
 
-`theme.{Parameter}.{Component}`で値が取れる模様。
+---
+
+なお、Material UIでコンポーネントのデフォルト`z-index`は以下のようになっている。
+
+```js
+const zIndex = {
+  mobileStepper: 1000,
+  speedDial: 1050,
+  appBar: 1100,
+  drawer: 1200,
+  modal: 1300,
+  snackbar: 1400,
+  tooltip: 1500,
+};
+```
+
+https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/styles/zIndex.js
 
 ---
 
