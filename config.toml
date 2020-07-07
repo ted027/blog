@@ -14,7 +14,7 @@ menu = ["main", "side", "footer"]
 
 [Author]
   name = "ted027"
-  bio = "筒香嘉智さんとかと同い年です。子供がいます。プログラムを書いたり書かなかったりする仕事をしています。"
+  bio = "野球と育児と技術を少し。プログラムを書いたり書かなかったりする仕事をしています。"
   avatar = "/img/avatar.png"
 
 [Params]
