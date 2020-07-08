@@ -12,7 +12,7 @@ tags: ["ログ"]
 
 ---
 
-{{< ad/a8/techacademy2 >}}
+{{< ad/a8/techacademy1 >}}
 
 ---
 
