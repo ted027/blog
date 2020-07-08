@@ -7,7 +7,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "e5:f7:07:ca:a4:5c:76:22:db:ba:db:23:1c:ae:b8:95"
+            - "5b:34:87:bd:d6:91:8b:25:22:32:04:16:30:88:c2:04"
       - run:
           name: install hugo
           command: |
@@ -23,7 +23,6 @@ jobs:
           command: |
             rm -rf public
             git clone git@github.com:ted027/ted027.github.io public
-            hugo version
             hugo
       - run:
           name: push
@@ -42,7 +41,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "e5:f7:07:ca:a4:5c:76:22:db:ba:db:23:1c:ae:b8:95"
+            - "5b:34:87:bd:d6:91:8b:25:22:32:04:16:30:88:c2:04"
       - run:
           name: analytics
           command: |
