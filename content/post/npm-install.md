@@ -12,7 +12,7 @@ tags: ["npm", "install", "version"]
 
 ---
 
-{{< ad/ >}}
+{{< ad/afb/codecamp >}}
 
 ---
 
@@ -65,6 +65,6 @@ npm install --save @types/react@16.9.43 --save-exact
 
 ---
 
-{{< ad/ >}}
+{{< ad/a8/techacademy_nodejs >}}
 
 ---
