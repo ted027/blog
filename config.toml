@@ -15,7 +15,7 @@ menu = ["main", "side", "footer"]
 [Author]
   name = "ted027"
   bio = "野球と育児と技術を少し。プログラムを書いたり書かなかったりする仕事をしています。"
-  avatar = "/img/avatar.png"
+  avatar = "/img/avatar.jpg"
 
 [Params]
   subtitle = "Terrible Horrible No Good Very Bad Hack."
