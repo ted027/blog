@@ -12,7 +12,7 @@ tags: ["パワプロ2018", "再現", "ＯＢ", "パワナンバー"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro2020_switch >}}
 
 ---
 
@@ -99,7 +99,7 @@ tags: ["パワプロ2018", "再現", "ＯＢ", "パワナンバー"]
 
 ---
 
-{{< ad/con/wide/purosupi2019 >}}
+{{< ad/con/wide/pawapuro2020_ps4 >}}
 
 ---
 

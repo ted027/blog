@@ -502,7 +502,7 @@ Pythonのwebスクレイピングと手書き（）のJSONファイルを使っ�
 
 ---
 
-{{< ad/con/wide/mlbtheshow19 >}}
+{{< ad/con/wide/pawapuro2020_ps4 >}}
 
 ---
 
