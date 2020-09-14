@@ -1,5 +1,5 @@
 ---
-title: "git cherry-pickいろいろ"
+title: "git cherry-pickもろもろ"
 date: 2019-09-27T12:34:38+09:00
 draft: false
 comments: true
@@ -42,9 +42,9 @@ $ git cherry-pick {commit_id}
 
 ### 範囲を指定してcherry-pick
 
-コミットをまとめて取り込むときは範囲指定が出来る。
+`..`で繋げば範囲指定が出来る。
 
-ただし、**始点に指定したコミットIDの次のコミット**から取り込むので注意する。
+ただし、**始点に指定したコミットIDの次のコミット**から取り込む。
 
 ```sh
 # commit_id1の次のコミットからcommit_id2までを取り込む
@@ -54,7 +54,7 @@ git cherry-pick {commit_id1}..{commit_id2}
 `^`をつけると「一つ前のコミット」を指定できるので、commit_id1から取り込む場合は以下のように指定する。
 
 ```sh
-# commit_id1の次のコミットからcommit_id2までを取り込む
+# commit_id1からcommit_id2までを取り込む
 $ git cherry-pick {commit_id1}^..{commit_id2}
 ```
 
@@ -62,7 +62,7 @@ $ git cherry-pick {commit_id1}^..{commit_id2}
 
 ### マージコミットのcherry-pick
 
-コミットをまとめて取り込むために、マージコミットを取り入れたいことがある。ただし、マージコミットを普通にcherry-pickしようとすると失敗する。
+マージコミットを普通にcherry-pickしようとすると失敗する。
 
 ```sh
 $ git cherry-pick {commit_id}
@@ -76,9 +76,7 @@ fatal: cherry-pick failed
 $ git cherry-pick -m 1 {commit_id}
 ```
 
-#### 解説
-
-理由は、マージコミットには2つのブランチを統合しているため親コミットが2つ存在し、どちらの親との差分を取り込めばいいかわからないため。
+---
 
 `git log`でマージコミットを確認すると、`Merge`欄に2つの親コミットが表示される。
 
@@ -92,9 +90,11 @@ Date:   Fri Sep 27 00:00:00 2019 +0000
 ...
 ```
 
+マージコミットには2つのブランチを統合しているため、このように親コミットが2つ存在する。なので指定しないと、どちらの親との差分を取り込めばいいかわからない。
+
 `-m`(`--mainline`)オプションの後に数字を指定すると、何番目の親との差分を取り込むか指定できる（`-m 1`なら{parent_id1}との差分、`-m 2`なら{parent_id2}との差分を取り込む）。
 
-マージコミットを取り込む時、多くの場合、マージされる側（{parent_id1}）に生じる変更を取り込みたいはず。なので上に書いたように、
+マージコミットを取り込む時、多くはマージされる側（{parent_id1}）に生じる変更を取り込みたいはず。なので上に書いたように、
 
 ```sh
 $ git cherry-pick -m 1 {commit_id}
