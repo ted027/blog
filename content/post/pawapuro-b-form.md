@@ -340,7 +340,9 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-- [[参考記事]パワプロ2018 投球フォーム一覧](https://www.ted027.com/post/pawapuro-p-form)
+- [[参考記事]パワプロ2020 打撃フォーム一覧（固有フォロースルーあり）](https://www.ted027.com/post/pawapuro2020-b-form)
+
+- [[参考記事]パワプロ2020 投球フォーム一覧](https://www.ted027.com/post/pawapuro2020-p-form)
 
 - [[参考記事]プロスピ2019 打撃フォーム一覧](https://www.ted027.com/post/purosupi-b-form)
 
