@@ -12,11 +12,11 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/a8/dazn >}}
+{{< ad/a8/skyperfect >}}
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+[[参考記事]パワプロ2018 投球フォーム一覧](https://www.ted027.com/post/pawapuro-p-form)
 
 ---
 
@@ -356,6 +356,8 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
+- [[参考記事]パワプロ2020 投球フォーム一覧](https://www.ted027.com/post/pawapuro2020-p-form)
+
 - [[参考記事]プロスピ2019 打撃フォーム一覧](https://www.ted027.com/post/purosupi-b-form)
 
 - [[参考記事]プロスピ2019 投球フォーム一覧](https://www.ted027.com/post/purosupi-p-form)
@@ -366,6 +368,6 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/a8/dazn >}}
 
 ---
