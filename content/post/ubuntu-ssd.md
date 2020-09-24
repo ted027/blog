@@ -73,7 +73,7 @@ mountして起動中のpartitionを弄ったりコピーしたり、は原則で
 
 ---
 
-### SSD上にpartition作成
+#### SSD上にpartition作成
 
 Ubuntuの`ディスク`からSSD上にpartitionを作成する。
 
@@ -84,7 +84,7 @@ Ubuntuの`ディスク`からSSD上にpartitionを作成する。
 
 ---
 
-### GPartedでHDDのpartitionを小さくする
+#### GPartedでHDDのpartitionを小さくする
 
 移植時間短縮のため、Ubuntuの`GParted`から、移植するHDD上partitionを縮小する。
 
@@ -92,7 +92,7 @@ Ubuntuの`ディスク`からSSD上にpartitionを作成する。
 
 ---
 
-### HDD→SSDにpartition移植
+#### HDD→SSDにpartition移植
 
 必要なpartition毎にddrescueで移植。
 
@@ -104,13 +104,13 @@ $ sudo ddrescue -v -f -r1 /dev/sdb2 /dev/sdb1
 $ sudo ddrescue -v -f -r1 /dev/sdb5 /dev/sdb2
 ```
 
-### SSD partitionのUUID変更
+#### SSD partitionのUUID変更
 
 UUIDごとコピーされているので、`GParted`から移植先のUUIDを変更する。
 
 `/dev/sdb1`, `/dev/sdb2`を順に選択して右クリック→「新しいUUID」で「実行」。
 
-### SSDにgrubをインストール
+#### SSDにgrubをインストール
 
 ```sh
 # Ubuntu領域とboot領域をmount
@@ -138,7 +138,7 @@ $ sudo umount /mnt/ssd/sys &&
 > sudo umount /mnt/ssd/dev
 ```
 
-### 起動時にSSD側領域をmountするよう修正
+#### 起動時にSSD側領域をmountするよう修正
 
 ```sh
 # SSDUbuntu領域をmount(上で既にしていれば不要)
@@ -162,7 +162,7 @@ $ sudo mount /dev/sda5 /mnt/hdd
 $ sudo vi /mnt/ssd/etc/fstab
 ```
 
-### GPartedでpartitionを調整
+#### GPartedでpartitionを調整
 
 SSDのpartitionが起動できることを確認したうえで、`GParted`でHDD側のpartitionを調整する。
 
