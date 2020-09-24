@@ -84,7 +84,7 @@ Ubuntuの`ディスク`からSSD上にpartitionを作成する。
 
 ---
 
-### GPartedでHDDのpartitionnoを小さくする
+### GPartedでHDDのpartitionを小さくする
 
 移植時間短縮のため、Ubuntuの`GParted`から、移植するHDD上partitionを縮小する。
 
@@ -162,7 +162,7 @@ $ sudo mount /dev/sda5 /mnt/hdd
 $ sudo vi /mnt/ssd/etc/fstab
 ```
 
-### GPartedでpartitionnoを調整
+### GPartedでpartitionを調整
 
 SSDのpartitionが起動できることを確認したうえで、`GParted`でHDD側のpartitionを調整する。
 
