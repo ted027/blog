@@ -25,9 +25,7 @@ tags: ["インストール", "OS", "Ubuntu"]
 
 ### Live USBを作成してインストール
 
-以下のサイトを参考
-
- - [UbuntuのLive USBをつくる](https://blog.mktia.com/how-to-make-ubuntu-live-usb/)
+参考: [UbuntuのLive USBをつくる](https://blog.mktia.com/how-to-make-ubuntu-live-usb/)
 
 ---
 
