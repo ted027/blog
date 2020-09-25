@@ -104,11 +104,15 @@ $ sudo ddrescue -v -f -r1 /dev/sdb2 /dev/sdb1
 $ sudo ddrescue -v -f -r1 /dev/sdb5 /dev/sdb2
 ```
 
+---
+
 #### SSD partitionのUUID変更
 
 UUIDごとコピーされているので、`GParted`から移植先のUUIDを変更する。
 
 `/dev/sdb1`, `/dev/sdb2`を順に選択して右クリック→「新しいUUID」で「実行」。
+
+---
 
 #### SSDにgrubをインストール
 
@@ -138,6 +142,8 @@ $ sudo umount /mnt/ssd/sys &&
 > sudo umount /mnt/ssd/dev
 ```
 
+---
+
 #### 起動時にSSD側領域をmountするよう修正
 
 ```sh
@@ -161,6 +167,8 @@ $ sudo mount /dev/sda5 /mnt/hdd
 # /etc/fstabを書き換え
 $ sudo vi /mnt/ssd/etc/fstab
 ```
+
+---
 
 #### GPartedでpartitionを調整
 
