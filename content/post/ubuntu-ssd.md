@@ -71,8 +71,6 @@ mountして起動中のpartitionを弄ったりコピーしたり、は原則で
 
 参考: [UbuntuのLive USBをつくる](https://blog.mktia.com/how-to-make-ubuntu-live-usb/)
 
----
-
 #### SSD上にpartition作成
 
 Ubuntuの`ディスク`からSSD上にpartitionを作成する。
@@ -82,15 +80,11 @@ Ubuntuの`ディスク`からSSD上にpartitionを作成する。
 
 `/dev/sdb1`はfat32(efi領域)、`/dev/sdb2`はext4でフォーマットする。
 
----
-
 #### GPartedでHDDのpartitionを小さくする
 
 移植時間短縮のため、Ubuntuの`GParted`から、移植するHDD上partitionを縮小する。
 
 `/dev/sda5/`を選択して右クリック→リサイズし、ギリギリ＋αくらいの容量にして「実行」。
-
----
 
 #### HDD→SSDにpartition移植
 
@@ -104,15 +98,11 @@ $ sudo ddrescue -v -f -r1 /dev/sdb2 /dev/sdb1
 $ sudo ddrescue -v -f -r1 /dev/sdb5 /dev/sdb2
 ```
 
----
-
 #### SSD partitionのUUID変更
 
 UUIDごとコピーされているので、`GParted`から移植先のUUIDを変更する。
 
 `/dev/sdb1`, `/dev/sdb2`を順に選択して右クリック→「新しいUUID」で「実行」。
-
----
 
 #### SSDにgrubをインストール
 
@@ -142,8 +132,6 @@ $ sudo umount /mnt/ssd/sys &&
 > sudo umount /mnt/ssd/dev
 ```
 
----
-
 #### 起動時にSSD側領域をmountするよう修正
 
 ```sh
@@ -167,8 +155,6 @@ $ sudo mount /dev/sda5 /mnt/hdd
 # /etc/fstabを書き換え
 $ sudo vi /mnt/ssd/etc/fstab
 ```
-
----
 
 #### GPartedでpartitionを調整
 
