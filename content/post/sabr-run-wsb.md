@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "走塁指標"]
 
 ---
 
-{{< ad/con/wide/mlbtheshow19>}}
+{{< ad/con/wide/mlbtheshow20>}}
 
 ---
 

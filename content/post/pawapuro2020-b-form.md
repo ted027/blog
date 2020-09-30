@@ -12,7 +12,7 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/a8/dazn >}}
 
 ---
 
@@ -368,6 +368,6 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/a8/dazn >}}
+{{< ad/con/wide/mlbtheshow20 >}}
 
 ---

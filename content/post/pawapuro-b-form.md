@@ -354,6 +354,6 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/con/wide/mlbtheshow20 >}}
 
 ---

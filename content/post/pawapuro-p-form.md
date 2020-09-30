@@ -12,11 +12,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/a8/dazn >}}
-
----
-
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2020_switch >}}
 
 ---
 
@@ -406,7 +402,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/mlbtheshow20 >}}
 
 ---
 
