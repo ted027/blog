@@ -1,6 +1,6 @@
 ---
 title: "パワプロ ペナントの補強思考設定（2019年8月時点）"
-date: 2019-04-23T09:32:03+09:00
+date: 2019-08-23T09:32:03+09:00
 draft: false
 comments: true
 categories: ["パワプロ", "野球"]
@@ -19,7 +19,7 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 ---
 
-{{< ad/con/wide/purosupi2019 >}}
+{{< ad/con/wide/pawapuro2020_switch >}}
 
 ---
 
@@ -29,9 +29,7 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 - [各球団のペナント補強思考【パワプロ2014】](http://disummer.blog.fc2.com/blog-entry-3.html)
 
-ありがたいですが、とはいえ数年前のデータなので、最近の情報が欲しいと思いプログラムを作成しました。
-
-条件判断は以下に記載。
+ありがたいですが数年前のデータなので、最近の情報が欲しいところ。
 
 - [[参考記事]パワプロ ペナント補強思考設定の条件判断](https://www.ted027.com/post/penant-add-descript)
 
@@ -482,9 +480,9 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 ### やったこと
 
-Pythonのwebスクレイピングと手書き（）のJSONファイルを使って、過去の補強傾向から特徴を抽出しました。
+Pythonのwebスクレイピング（と手書き）で作成したJSONファイルを使って、過去の補強傾向から特徴を抽出しました。
 
-細かい条件判断は[こちらに。](https://www.ted027.com/post/penant-add-descript)
+[細かい条件判断。](https://www.ted027.com/post/penant-add-descript)
 
 ---
 
