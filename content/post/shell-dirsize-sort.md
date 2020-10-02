@@ -1,9 +1,9 @@
 ---
 title: "Linuxでディレクトリサイズをソート"
-date: 2020-10-02T15:24:22+09:00
-draft: true
+date: 2020-10-03T00:24:22+09:00
+draft: false
 comments: true
-toc: true
+toc: false
 categories: ["Shell"]
 tags: ["Linux", "サイズ", "ソート"]
 ---
@@ -15,6 +15,12 @@ tags: ["Linux", "サイズ", "ソート"]
 {{< ad/a8/techacademy_ui >}}
 
 ---
+
+ディスク容量が一杯になった時など、ディレクトリを辿りながら大きい不要ファイルを探したりする。
+
+`du -h`の実行結果をソートするのが見やすい。
+
+`--max-depth=1`でカレントディレクトリのみ探せる。
 
 ```sh
 $ du -h --max-depth=1 | sort -hr
