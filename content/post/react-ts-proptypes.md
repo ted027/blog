@@ -12,7 +12,7 @@ tags: ["React", "JavaScript", "PropTypes"]
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---
 

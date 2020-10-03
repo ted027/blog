@@ -141,6 +141,6 @@ datetime.datetime(2019, 9, 20, 12, 30, 59, 100000, tzinfo=<DstTzInfo 'Asia/Tokyo
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

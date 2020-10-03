@@ -107,3 +107,7 @@ POSTは、複数個存在するリソースを対象として、新たな一つ�
 {{< ad/a8/techacademy1 >}}
 
 ---
+
+{{< ad/a8/techacademy_py_ai >}}
+
+---

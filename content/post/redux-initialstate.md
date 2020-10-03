@@ -14,7 +14,7 @@ combineReducersを使うと、Stateの初期設定でエラーが発生した。
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---
 

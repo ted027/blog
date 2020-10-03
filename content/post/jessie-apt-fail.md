@@ -58,6 +58,6 @@ RUN sed -i '/deb http:\/\/deb.debian.org\/debian jessie-updates main/d' /etc/apt
 
 ---
 
-{{< ad/a8/techacademy1 >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

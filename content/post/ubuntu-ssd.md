@@ -173,6 +173,10 @@ SSDのpartitionが起動できることを確認したうえで、`GParted`でHD
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

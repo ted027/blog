@@ -13,7 +13,7 @@ Pythonの内包表記で作れるもの、条件文との組み合わせ。
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/afb/codecamp >}}
 
 ---
 
@@ -117,6 +117,10 @@ ifのみの方はリストに格納するものを取捨選択する、if〜else
 
 ---
 
-{{< ad/afb/codecamp >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

@@ -52,6 +52,10 @@ SPAの中で、存在しないパスへのアクセスには404を返すよう�
 
 ---
 
-{{< ad/a8/techacademy1 >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

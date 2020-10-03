@@ -88,6 +88,6 @@ $ docker stop {countainer_id}
 
 ---
 
-{{< ad/a8/techacademy2 >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

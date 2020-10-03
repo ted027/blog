@@ -101,6 +101,6 @@ $ python hello.py
 
 ---
 
-{{< ad/a8/techacademy2 >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

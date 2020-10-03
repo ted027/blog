@@ -62,6 +62,10 @@ tags: ["OAuth", "OpenID"]
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

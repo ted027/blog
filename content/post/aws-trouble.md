@@ -111,6 +111,6 @@ EC2だと、どこのAZのサーバーを利用するか、複数利用するか
 
 ---
 
-{{< ad/a8/techacademy1 >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

@@ -65,6 +65,10 @@ uid   [  不明  ] home:manuelschneid3r OBS Project <home:manuelschneid3r@build.
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

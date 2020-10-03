@@ -140,6 +140,6 @@ GitHubとの連携が簡単な[CircleCI](https://circleci.com)を使いました
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---

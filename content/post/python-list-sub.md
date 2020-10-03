@@ -76,3 +76,7 @@ TypeError: unhashable type: 'list'
 {{< ad/a8/techacademy_python >}}
 
 ---
+
+{{< ad/a8/techacademy_py_ai >}}
+
+---

@@ -76,6 +76,10 @@ $ git revert -m 2 {commit_id}
 
 ---
 
-{{< ad/a8/techacademy1 >}}
+{{< ad/a8/techacademy_py_ai >}}
+
+---
+
+{{< ad/a8/techacademy_blockchain >}}
 
 ---

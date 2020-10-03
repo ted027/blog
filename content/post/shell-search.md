@@ -69,6 +69,6 @@ $ grep {search_word} -rl {directory/path}
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---
