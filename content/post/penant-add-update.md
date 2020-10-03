@@ -1,5 +1,5 @@
 ---
-title: "パワプロ ペナント補強思考設定を更新しました"
+title: "パワプロ ペナント補強思考設定を更新（2019年8月）"
 date: 2019-08-23T22:52:51+09:00
 draft: false
 comments: true
@@ -18,15 +18,13 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/purosupi2019 >}}
+{{< ad/con/wide/pawapuro2020_ps4 >}}
 
 ---
 
-### ペナントの補強思考設定
+### 補強思考設定
 
-移籍情報を反映した、2019年8月時点の結果。
-
-[[参考記事]パワプロ ペナントの補強思考設定（2019年8月時点）](https://www.ted027.com/post/penant-add)
+[[参考記事]パワプロ ペナントの補強思考設定](https://www.ted027.com/post/penant-add)
 
 ---
 
@@ -127,6 +125,6 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/pawapuro_switch >}}
+{{< ad/con/wide/pawapuro2020_switch >}}
 
 ---
