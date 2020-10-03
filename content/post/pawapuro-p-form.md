@@ -12,7 +12,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/a8/skyperfect >}}
 
 ---
 
@@ -402,10 +402,14 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/mlbtheshow20 >}}
+{{< ad/con/wide/pawapuro2020_ps4 >}}
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/con/wide/pawapuro2020_switch >}}
+
+---
+
+{{< ad/con/wide/mlbtheshow20 >}}
 
 ---
