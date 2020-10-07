@@ -7,13 +7,11 @@ categories: ["Python"]
 tags: ["エラー", "pip"]
 ---
 
-Pythonでpip installしようとした時、表題のエラーで躓くことがあった。
-
 <!--more-->
 
 ---
 
-{{< ad/a8/techacademy >}}
+{{< ad/a8/techacademy_py_ai >}}
 
 ---
 
@@ -34,7 +32,7 @@ Pythonでpip installしようとした時、表題のエラーで躓くことが
 
 #### pip / setuptoolsが最新でない
 
-こちらの場合は、単純にこれらをupgradeすればよい。
+これなら単純にupgradeすればよい。
 
 ```
 $ pip install --upgrade pip setuptools
@@ -44,11 +42,7 @@ $ pip install --upgrade pip setuptools
 
 #### 必要なライブラリが無い
 
-こちらはライブラリによって異なるので一概には言えないが、エラーを読むと何が足りないか書いてあったりする。
-
----
-
-### psycopg2のインストール
+エラーを読むと何が足りないか書いてあったりする。
 
 今回の現象は以下。
 
@@ -72,7 +66,9 @@ Error: pg_config executable not found.
 - `libpq-dev`(Debian/Ubuntu)
 - `postgresql`(MacOS)
 
-なので、環境によってそれぞれ以下のコマンドでインストールする。
+---
+
+### psycopg2のインストール
 
 - CentOS
 
@@ -83,7 +79,7 @@ $ yum install postgresql-devel
 - Debian/Ubuntu
 
 ```sh
-$ apt-get install libpq-dev
+$ apt install libpq-dev
 ```
 
 - MacOS
@@ -92,10 +88,10 @@ $ apt-get install libpq-dev
 $ brew install postgresql
 ```
 
-自分は`Ubuntu`環境なので、`apt`でインストールし、再度`psycopg2`を入れてみる。
+無事入るようになる。
 
 ```sh
-$ apt-get install libpq-dev
+$ apt install libpq-dev
 
 $ pip install psycopg2
 ```
@@ -103,8 +99,6 @@ $ pip install psycopg2
 ---
 
 ### おわり
-
-無事入りました。
 
 ---
 
