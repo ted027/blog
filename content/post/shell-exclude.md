@@ -31,13 +31,13 @@ $ rm -r *.log *.txt
 カレントディレクトリの`*.log`と`*.txt`だけ残して、他のファイルを全て削除したい場合。
 
 ```sh
-$ ls | grep -v  '*.log|*.txt' | xargs -r
+$ ls | grep -v  '*.log|*.txt' | xargs rm -r
 ```
 
 `ls -a`を指定すれば隠しファイルも消える。
 
 ```sh
-$ ls -a | grep -v  '*.log|*.txt' | xargs -r
+$ ls -a | grep -v  '*.log|*.txt' | xargs rm -r
 ```
 
 ---
