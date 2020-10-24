@@ -5,7 +5,7 @@ draft: false
 comments: true
 toc: true
 categories: ["AWS"]
-tags: ["SNS", "SQS", "Lambda"]
+tags: ["SNS", "Lambda", "serverless"]
 ---
 
 <!--more-->
