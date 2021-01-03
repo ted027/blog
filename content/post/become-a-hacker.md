@@ -1,5 +1,5 @@
 ---
-title: "ハッカーになろう How To Become A Hacker"
+title: "ハッカーになろう — How To Become A Hacker"
 date: 2021-01-03T22:50:26+09:00
 draft: false
 comments: true
