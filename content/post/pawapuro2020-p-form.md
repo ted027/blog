@@ -510,7 +510,7 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/ps4 >}}
 
 ---
 
