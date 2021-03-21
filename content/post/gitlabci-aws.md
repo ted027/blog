@@ -67,6 +67,7 @@ my_dynamodb_test:
   variables:
     DYNAMODB_ENDPOINT: http:amazon-dynamodb-local:8000
   script:
+    - aws dynamodb create-table --endpoint-url $DYNAMODB_ENDPOINT --table-name my-table ...
     - cd dynamodb && pytest test ...
 ```
 
@@ -89,6 +90,7 @@ my_s3_test:
   variables:
     S3_ENDPOINT: http:lphoward-fake-s3:4569
   script:
+    - aws s3 mb --endpoint-url $S3_ENDPOINT s3://my-bucket
     - cd s3 && pytest test ...
 ```
 
@@ -96,7 +98,7 @@ portはデフォルト (現状`4569`)を使う。
 
 なお、fake-s3に対してlist objectsの操作をする場合は注意点がある。
 
-* https://github.com/jubos/fake-s3/issues/17
+* [fake-s3にlist objectsをする際の注意点](https://www.ted027.com/post/fakes3-listobject/)
 
 ---
 
