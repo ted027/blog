@@ -1,8 +1,8 @@
-- ubuntu 20.04 upgrade
-  - 保留の話
-  - https://qiita.com/hitobb/items/2ee9b1c2c49760976e0f
-- ubuntu 20.04 kindle
-  - wine入れ直し？
-- マージコミットのrevert
-  - 前のと一緒
-- 成績更新のsslエラー解決
+* gitlab ciでaws環境を使う
+  * localstack, fake-s3, dynamodb-local
+* ↑のデフォルトhost, aliasの話
+* fake s3でlist objectがエラーになる
+* autoscaling terminateされてない話
+  * 結果整合性
+* shellの`|| true`とか`|| :`とか
+* mlb the show フォーム
