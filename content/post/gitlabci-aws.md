@@ -1,6 +1,6 @@
 ---
 title: "GitLab-CIでAWSローカル環境を使ったテストを行う"
-date: 2021-03-21T10:52:11+09:00
+date: 2021-03-21T11:27:11+09:00
 draft: false
 comments: true
 toc: true
@@ -20,6 +20,8 @@ AWS環境に接続する実装のテストを行う際、ローカルにAWS環�
 
 これをGitLab-CIで使う際、`services`のparameterで簡単にDocker環境を準備でき便利。
 
+* 参考: [GitLab-CIでservicesのコンテナに対してアクセスする](https://www.ted027.com/post/gitlabci-services-host/)
+
 ---
 
 ### Localstackを使う
@@ -32,13 +34,13 @@ CIでは、以下のDocker imageを利用。
 
 ```yaml
 my_aws_test:
-    services:
-      - localstack/localstack:0.12.8
-    variables:
-      DYNAMODB_ENDPOINT: http:localstack-locakstack:4566
-      S3_ENDPOINT: http:localstack-locakstack:4566
-    script:
-      - cd aws && pytest test ...
+  services:
+    - localstack/localstack:0.12.8
+  variables:
+    DYNAMODB_ENDPOINT: http:localstack-locakstack:4566
+    S3_ENDPOINT: http:localstack-locakstack:4566
+  script:
+    - cd aws && pytest test ...
 ```
 
 portは指定できず、imageのデフォルトを使う。  
@@ -60,12 +62,12 @@ Localstacldと比べるとパフォーマンスも良さそうで、DynamoDBだ�
 
 ```yaml
 my_dynamodb_test:
-    services:
-      - amazon/dynamodb-local:1.15.0
-    variables:
-      DYNAMODB_ENDPOINT: http:amazon-dynamodb-local:8000
-    script:
-      - cd dynamodb && pytest test ...
+  services:
+    - amazon/dynamodb-local:1.15.0
+  variables:
+    DYNAMODB_ENDPOINT: http:amazon-dynamodb-local:8000
+  script:
+    - cd dynamodb && pytest test ...
 ```
 
 portはデフォルト (`8000`)を使う。
@@ -82,12 +84,12 @@ portはデフォルト (`8000`)を使う。
 
 ```yaml
 my_s3_test:
-    services:
-      - lphoward/fake-s3:14.04
-    variables:
-      S3_ENDPOINT: http:lphoward-fake-s3:4569
-    script:
-      - cd s3 && pytest test ...
+  services:
+    - lphoward/fake-s3:14.04
+  variables:
+    S3_ENDPOINT: http:lphoward-fake-s3:4569
+  script:
+    - cd s3 && pytest test ...
 ```
 
 portはデフォルト (現状`4569`)を使う。
@@ -99,5 +101,9 @@ portはデフォルト (現状`4569`)を使う。
 ---
 
 {{< ad/con/wide/aws >}}
+
+---
+
+{{< ad/a8/techacademy_py_ai >}}
 
 ---
