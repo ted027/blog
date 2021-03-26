@@ -1,5 +1,5 @@
 ---
-title: "Python: List内包表記 vs. Generator"
+title: "Python List内包表記 vs. Generator"
 date: 2021-03-26T6:45:02+09:00
 draft: false
 comments: true
