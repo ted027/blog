@@ -512,6 +512,6 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 ---
 
-{{< ad/con/wide/mlbtheshow20 >}}
+{{< ad/con/wide/mlbtheshow >}}
 
 ---

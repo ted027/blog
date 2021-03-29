@@ -86,7 +86,7 @@ MLBでのベテランFA選手冷遇により、数多のビッグネームが来
 
 ---
 
-{{< ad/con/wide/mlbtheshow20 >}}
+{{< ad/con/wide/mlbtheshow >}}
 
 ---
 
