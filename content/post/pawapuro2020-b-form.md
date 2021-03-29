@@ -378,6 +378,6 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/mlbtheshow20 >}}
+{{< ad/con/wide/mlbtheshow >}}
 
 ---

@@ -121,7 +121,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/mlbtheshow20 >}}
+{{< ad/con/wide/mlbtheshow >}}
 
 ---
 

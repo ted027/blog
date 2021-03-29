@@ -17,7 +17,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/con/wide/mlbtheshow20>}}
+{{< ad/con/wide/mlbtheshow>}}
 
 ---
 
