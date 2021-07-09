@@ -124,7 +124,8 @@ MyDynamodbTable:
     - CloudformationのExport等を利用して参照する
 
 ちなみに、Cloudformationを用いて置換や作成/削除を行う場合、基本的に新しいリソースを作ってから古いリソースを削除します。
-   - [スタックのリソースの更新動作](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html)
+
+- [スタックのリソースの更新動作](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html)
 
 ---
 
