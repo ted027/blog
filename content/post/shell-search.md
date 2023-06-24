@@ -28,14 +28,34 @@ $ ls {directory/path} | grep {search_word}
 - 特定ディレクトリ配下のファイル名検索
 
 ```sh
-$ find {directory/path} | -type f -name \*{search_word}\*
+$ find {directory/path} -type f -name \*{search_word}\*
 ```
 
 - 特定ディレクトリ配下のディレクトリ名検索
 
 ```sh
-$ find {directory/path} | -type d -name \*{search_word}\*
+$ find {directory/path} -type d -name \*{search_word}\*
 ```
+
+---
+
+### ファイル名（パス形式）検索
+
+findの`-name`オプションにはパス形式（'/'含む）を指定できないので、`-path`を使う。
+
+- 特定ディレクトリ配下のパス形式ファイル名検索
+
+```sh
+$ find {prefix/dir} -type f -path "*/path/*/directory/file"
+```
+
+- 特定ディレクトリ配下のパス形式ディレクトリ名検索
+
+```sh
+$ find {prefix/dir} -type d -path "*/path/*/directory"
+```
+
+---
 
 ### ファイル内容検索
 
