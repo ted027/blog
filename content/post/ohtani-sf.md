@@ -1,6 +1,6 @@
 ---
 title: "大谷翔平を仮想獲得〜サンフランシスコ・ジャイアンツ〜"
-date: 2023-06-25T20:24:10+09:00
+date: 2023-06-26T20:24:10+09:00
 draft: false
 comments: true
 toc: true
