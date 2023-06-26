@@ -12,7 +12,7 @@ tags: ["MLB", "サンフランシスコ・ジャイアンツ"]
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
 
@@ -155,6 +155,6 @@ MLB有数の人気球団で、同地区**ロサンゼルス・ドジャース**�
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
