@@ -12,7 +12,7 @@ tags: ["パワプロ2020", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
 

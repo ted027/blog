@@ -13,7 +13,7 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
 

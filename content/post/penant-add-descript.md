@@ -13,7 +13,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
 

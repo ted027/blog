@@ -12,7 +12,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/afb/skyperfect >}}
+{{< ad/moshimo/skyperfect >}}
 
 ---
 
