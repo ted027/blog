@@ -72,7 +72,7 @@ body {
 	font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;	
-	line-height: 2;
+	line-height: 2.25;
 	word-wrap: break-word;
 	background: #f7f7f7;
 	-webkit-font-smoothing: antialiased;
@@ -1228,8 +1228,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
 	body {
-		font-size: 14px;
-		font-size: .875rem;
+		line-height: 2;
 	}
 
 	.wrapper {
