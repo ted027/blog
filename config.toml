@@ -14,7 +14,7 @@ menu = ["main", "side", "footer"]
 
 [Author]
   name = "ted027"
-  bio = "育児をしたり野球を見たり。ソフトウェアエンジニアを自称してお金を貰っています。"
+  bio = "育児をしたり野球を見たり。ソフトウェアエンジニアリングでお金を貰っています。"
   avatar = "/img/avatar.png"
 
 [Params]
