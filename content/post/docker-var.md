@@ -13,7 +13,7 @@ Dockerfileではコマンド実行結果を変数に入れられない。それ�
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/afb/motton_masa >}}
 
 ---
 

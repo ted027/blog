@@ -12,7 +12,7 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 
@@ -506,7 +506,7 @@ tags: ["パワプロ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

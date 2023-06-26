@@ -11,7 +11,7 @@ tags: ["PlantUML", "Visual Studio Code", "Ubuntu"]
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/afb/nobiru >}}
 
 ---
 

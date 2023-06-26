@@ -32,6 +32,6 @@ tags: ["整理"]
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/afb/nobiru >}}
 
 ---

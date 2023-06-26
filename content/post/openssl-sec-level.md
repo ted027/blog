@@ -12,7 +12,7 @@ tags: ["SSL", "OpensSSL"]
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/afb/musicjp >}}
 
 ---
 
