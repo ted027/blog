@@ -12,7 +12,7 @@ tags: ["パワプロ2018"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

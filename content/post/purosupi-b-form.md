@@ -16,7 +16,7 @@ tags: ["プロスピ2019", "プロスピ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 
@@ -337,6 +337,6 @@ tags: ["プロスピ2019", "プロスピ2020", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---

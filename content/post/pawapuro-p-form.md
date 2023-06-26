@@ -12,7 +12,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 
@@ -406,7 +406,7 @@ tags: ["パワプロ2018", "フォーム"]
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

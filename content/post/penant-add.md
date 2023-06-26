@@ -504,11 +504,11 @@ Pythonで近年の移籍情報を取得して、各球団の補強実績に即�
 
 ---
 
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

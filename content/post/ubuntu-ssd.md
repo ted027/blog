@@ -12,7 +12,7 @@ tags: ["Ubuntu", "SSD", "増設", "HDD"]
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/afb/backlog >}}
 
 ---
 

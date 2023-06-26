@@ -13,7 +13,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 
@@ -198,7 +198,7 @@ tags: ["パワプロ2018", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

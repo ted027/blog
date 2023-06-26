@@ -12,7 +12,7 @@ tags: ["パワプロ2020", "ペナント", "補強思考"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 
@@ -90,10 +90,10 @@ MLBでのベテランFA選手冷遇により、数多のビッグネームが来
 
 ---
 
-{{< ad/con/wide/pawapuro2020_ps4 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 
-{{< ad/con/wide/pawapuro2020_switch >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---

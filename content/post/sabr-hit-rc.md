@@ -13,11 +13,11 @@ tags: ["野手指標", "Python", "セイバーメトリクス", "得点能力"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

@@ -15,7 +15,7 @@ tags: ["Python", "セイバーメトリクス", "BABIP"]
 
 ---
 
-{{< ad/con/wide/pawapuro2018 >}}
+{{< ad/con/wide/pawapuro2022_ps4 >}}
 
 ---
 

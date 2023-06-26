@@ -13,7 +13,7 @@ tags: ["プロ野球", "Python", "個人成績"]
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 

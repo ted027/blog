@@ -15,7 +15,7 @@ Ubuntu用のKindle for PCクライアントは無いので、ちょっと手間�
 
 ---
 
-{{< ad/afb/foster >}}
+{{< ad/moshimo/kikuchi_bandel >}}
 
 ---
 

@@ -14,7 +14,7 @@ LOB%は、投手が塁に出した走者をどれだけ残塁させたかを表�
 
 ---
 
-{{< ad/a8/skyperfect >}}
+{{< ad/afb/skyperfect >}}
 
 ---
 
